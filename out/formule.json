@@ -1,0 +1,797 @@
+[
+  {
+    "id": "n01",
+    "drevo": "T_M",
+    "oznaka": "Obvezne zahteve",
+    "op": "AND",
+    "formula_propMinimization": "A⋀B⋀C",
+    "formula_propositional": "P⋀Q⋀R",
+    "legenda": {
+      "A": {
+        "tip": "vozlišče",
+        "id": "n02",
+        "oznaka": "Obvezne zahteve – del 1/3",
+        "pogoj": "glej formulo n02"
+      },
+      "B": {
+        "tip": "vozlišče",
+        "id": "n12",
+        "oznaka": "Obvezne zahteve – del 2/3",
+        "pogoj": "glej formulo n12"
+      },
+      "C": {
+        "tip": "vozlišče",
+        "id": "n16",
+        "oznaka": "Obvezne zahteve – del 3/3",
+        "pogoj": "glej formulo n16"
+      }
+    },
+    "minimalna_DNF": [
+      "A⋀B⋀C"
+    ],
+    "resnicnih_vrstic": "1/8",
+    "opomba": null
+  },
+  {
+    "id": "n22",
+    "drevo": "T_N",
+    "oznaka": "Dodatno (nice to have)",
+    "op": "SCORE",
+    "formula_propMinimization": "A⋁B⋁C",
+    "formula_propositional": "P⋁Q⋁R",
+    "legenda": {
+      "A": {
+        "tip": "atom",
+        "id": "a12",
+        "oznaka": "Full-stack experience",
+        "pogoj": "raven ≥3",
+        "obveznost": "N",
+        "signal": "experience"
+      },
+      "B": {
+        "tip": "atom",
+        "id": "a39",
+        "oznaka": "data science (statistical modeling, experimentation)",
+        "pogoj": "raven ≥3",
+        "obveznost": "N",
+        "signal": "experience"
+      },
+      "C": {
+        "tip": "atom",
+        "id": "a40",
+        "oznaka": "mentoring junior AI engineers",
+        "pogoj": "raven ≥1",
+        "obveznost": "N",
+        "signal": "interest"
+      }
+    },
+    "minimalna_DNF": [
+      "A",
+      "B",
+      "C"
+    ],
+    "resnicnih_vrstic": "7/8",
+    "opomba": "točkovanje: ⋁ = vsaj en izpolnjen; štej izpolnjene"
+  },
+  {
+    "id": "n23",
+    "drevo": "T_P",
+    "oznaka": "Naloge (pričakovano)",
+    "op": "SCORE",
+    "formula_propMinimization": "A⋁B",
+    "formula_propositional": "P⋁Q",
+    "legenda": {
+      "A": {
+        "tip": "vozlišče",
+        "id": "n24",
+        "oznaka": "Naloge (pričakovano) – del 1/2",
+        "pogoj": "glej formulo n24"
+      },
+      "B": {
+        "tip": "vozlišče",
+        "id": "n25",
+        "oznaka": "Naloge (pričakovano) – del 2/2",
+        "pogoj": "glej formulo n25"
+      }
+    },
+    "minimalna_DNF": [
+      "A",
+      "B"
+    ],
+    "resnicnih_vrstic": "3/4",
+    "opomba": "točkovanje: ⋁ = vsaj en izpolnjen; štej izpolnjene"
+  },
+  {
+    "id": "n02",
+    "drevo": "T_M",
+    "oznaka": "Obvezne zahteve – del 1/3",
+    "op": "AND",
+    "formula_propMinimization": "A⋀B⋀C",
+    "formula_propositional": "P⋀Q⋀R",
+    "legenda": {
+      "A": {
+        "tip": "vozlišče",
+        "id": "n03",
+        "oznaka": "Programming",
+        "pogoj": "glej formulo n03"
+      },
+      "B": {
+        "tip": "vozlišče",
+        "id": "n05",
+        "oznaka": "AI/ML Expertise",
+        "pogoj": "glej formulo n05"
+      },
+      "C": {
+        "tip": "vozlišče",
+        "id": "n09",
+        "oznaka": "Software Engineering",
+        "pogoj": "glej formulo n09"
+      }
+    },
+    "minimalna_DNF": [
+      "A⋀B⋀C"
+    ],
+    "resnicnih_vrstic": "1/8",
+    "opomba": null
+  },
+  {
+    "id": "n12",
+    "drevo": "T_M",
+    "oznaka": "Obvezne zahteve – del 2/3",
+    "op": "AND",
+    "formula_propMinimization": "A⋀B⋀C⋀D",
+    "formula_propositional": null,
+    "legenda": {
+      "A": {
+        "tip": "vozlišče",
+        "id": "n13",
+        "oznaka": "Architecture",
+        "pogoj": "glej formulo n13"
+      },
+      "B": {
+        "tip": "vozlišče",
+        "id": "n14",
+        "oznaka": "Platforms",
+        "pogoj": "glej formulo n14"
+      },
+      "C": {
+        "tip": "atom",
+        "id": "a35",
+        "oznaka": "Strong analytical skills",
+        "pogoj": "raven ≥4",
+        "obveznost": "M",
+        "signal": "strong skills"
+      },
+      "D": {
+        "tip": "atom",
+        "id": "a36",
+        "oznaka": "clearly communicate complex technical concepts",
+        "pogoj": "raven ≥3",
+        "obveznost": "M",
+        "signal": "ability"
+      }
+    },
+    "minimalna_DNF": [
+      "A⋀B⋀C⋀D"
+    ],
+    "resnicnih_vrstic": "1/16",
+    "opomba": null
+  },
+  {
+    "id": "n16",
+    "drevo": "T_M",
+    "oznaka": "Obvezne zahteve – del 3/3",
+    "op": "AND",
+    "formula_propMinimization": "A⋀B⋀C⋀D",
+    "formula_propositional": null,
+    "legenda": {
+      "A": {
+        "tip": "atom",
+        "id": "a37",
+        "oznaka": "banking/financial services",
+        "pogoj": "raven ≥3",
+        "obveznost": "M",
+        "signal": "solid understanding"
+      },
+      "B": {
+        "tip": "atom",
+        "id": "a38",
+        "oznaka": "regulated environments",
+        "pogoj": "raven ≥3",
+        "obveznost": "M",
+        "signal": "solid understanding"
+      },
+      "C": {
+        "tip": "vozlišče",
+        "id": "n18",
+        "oznaka": "Experience",
+        "pogoj": "glej formulo n18"
+      },
+      "D": {
+        "tip": "vozlišče",
+        "id": "n20",
+        "oznaka": "Education",
+        "pogoj": "glej formulo n20"
+      }
+    },
+    "minimalna_DNF": [
+      "A⋀B⋀C⋀D"
+    ],
+    "resnicnih_vrstic": "1/16",
+    "opomba": null
+  },
+  {
+    "id": "n24",
+    "drevo": "T_P",
+    "oznaka": "Naloge (pričakovano) – del 1/2",
+    "op": "SCORE",
+    "formula_propMinimization": "A⋁B⋁C⋁D",
+    "formula_propositional": null,
+    "legenda": {
+      "A": {
+        "tip": "atom",
+        "id": "a01",
+        "oznaka": "AI Solution Development",
+        "pogoj": "izpolnjeno",
+        "obveznost": "P",
+        "signal": ""
+      },
+      "B": {
+        "tip": "atom",
+        "id": "a02",
+        "oznaka": "Agentic Systems",
+        "pogoj": "izpolnjeno",
+        "obveznost": "P",
+        "signal": ""
+      },
+      "C": {
+        "tip": "atom",
+        "id": "a03",
+        "oznaka": "Full-Stack AI Engineering",
+        "pogoj": "izpolnjeno",
+        "obveznost": "P",
+        "signal": ""
+      },
+      "D": {
+        "tip": "atom",
+        "id": "a04",
+        "oznaka": "Iterative Delivery",
+        "pogoj": "izpolnjeno",
+        "obveznost": "P",
+        "signal": ""
+      }
+    },
+    "minimalna_DNF": [
+      "A",
+      "B",
+      "C",
+      "D"
+    ],
+    "resnicnih_vrstic": "15/16",
+    "opomba": "točkovanje: ⋁ = vsaj en izpolnjen; štej izpolnjene"
+  },
+  {
+    "id": "n25",
+    "drevo": "T_P",
+    "oznaka": "Naloge (pričakovano) – del 2/2",
+    "op": "SCORE",
+    "formula_propMinimization": "A⋁B⋁C⋁D",
+    "formula_propositional": null,
+    "legenda": {
+      "A": {
+        "tip": "atom",
+        "id": "a05",
+        "oznaka": "Evaluation & Optimization",
+        "pogoj": "izpolnjeno",
+        "obveznost": "P",
+        "signal": ""
+      },
+      "B": {
+        "tip": "atom",
+        "id": "a06",
+        "oznaka": "Emerging Technologies",
+        "pogoj": "izpolnjeno",
+        "obveznost": "P",
+        "signal": ""
+      },
+      "C": {
+        "tip": "atom",
+        "id": "a07",
+        "oznaka": "Technical Collaboration",
+        "pogoj": "izpolnjeno",
+        "obveznost": "P",
+        "signal": ""
+      },
+      "D": {
+        "tip": "atom",
+        "id": "a08",
+        "oznaka": "Domain Alignment",
+        "pogoj": "izpolnjeno",
+        "obveznost": "P",
+        "signal": ""
+      }
+    },
+    "minimalna_DNF": [
+      "A",
+      "B",
+      "C",
+      "D"
+    ],
+    "resnicnih_vrstic": "15/16",
+    "opomba": "točkovanje: ⋁ = vsaj en izpolnjen; štej izpolnjene"
+  },
+  {
+    "id": "n03",
+    "drevo": "T_M",
+    "oznaka": "Programming",
+    "op": "AND",
+    "formula_propMinimization": "(A⋁B)⋀C",
+    "formula_propositional": "(P⋁Q)⋀R",
+    "legenda": {
+      "A": {
+        "tip": "atom",
+        "id": "a09",
+        "oznaka": "Python",
+        "pogoj": "raven ≥4",
+        "obveznost": "M",
+        "signal": "strong proficiency"
+      },
+      "B": {
+        "tip": "atom",
+        "id": "a10",
+        "oznaka": "Java (Spring Boot)",
+        "pogoj": "raven ≥4",
+        "obveznost": "M",
+        "signal": "strong proficiency"
+      },
+      "C": {
+        "tip": "atom",
+        "id": "a11",
+        "oznaka": "JavaScript/TypeScript (Angular, Node.js)",
+        "pogoj": "raven ≥2",
+        "obveznost": "M",
+        "signal": "working knowledge"
+      }
+    },
+    "minimalna_DNF": [
+      "A⋀C",
+      "B⋀C"
+    ],
+    "resnicnih_vrstic": "3/8",
+    "opomba": null
+  },
+  {
+    "id": "n05",
+    "drevo": "T_M",
+    "oznaka": "AI/ML Expertise",
+    "op": "AND",
+    "formula_propMinimization": "A⋀B⋀C⋀D",
+    "formula_propositional": null,
+    "legenda": {
+      "A": {
+        "tip": "atom",
+        "id": "a13",
+        "oznaka": "core AI concepts",
+        "pogoj": "raven ≥3",
+        "obveznost": "M",
+        "signal": "solid understanding"
+      },
+      "B": {
+        "tip": "vozlišče",
+        "id": "n06",
+        "oznaka": "LLMs, RAG, prompt engineering, MCPs, and agent frameworks",
+        "pogoj": "glej formulo n06"
+      },
+      "C": {
+        "tip": "atom",
+        "id": "a19",
+        "oznaka": "ML frameworks and libraries (TensorFlow, PyTorch, Scikit-learn, NumPy, Pandas)",
+        "pogoj": "raven ≥3",
+        "obveznost": "M",
+        "signal": "practical experience"
+      },
+      "D": {
+        "tip": "atom",
+        "id": "a20",
+        "oznaka": "AI coding tools",
+        "pogoj": "raven ≥1",
+        "obveznost": "M",
+        "signal": "familiarity"
+      }
+    },
+    "minimalna_DNF": [
+      "A⋀B⋀C⋀D"
+    ],
+    "resnicnih_vrstic": "1/16",
+    "opomba": null
+  },
+  {
+    "id": "n09",
+    "drevo": "T_M",
+    "oznaka": "Software Engineering",
+    "op": "AND",
+    "formula_propMinimization": "A⋀B⋀C⋀D",
+    "formula_propositional": null,
+    "legenda": {
+      "A": {
+        "tip": "vozlišče",
+        "id": "n10",
+        "oznaka": "Software Engineering – del 1/2",
+        "pogoj": "glej formulo n10"
+      },
+      "B": {
+        "tip": "atom",
+        "id": "a25",
+        "oznaka": "agile delivery",
+        "pogoj": "raven ≥4",
+        "obveznost": "M",
+        "signal": "strong grounding"
+      },
+      "C": {
+        "tip": "atom",
+        "id": "a26",
+        "oznaka": "application resiliency",
+        "pogoj": "raven ≥4",
+        "obveznost": "M",
+        "signal": "strong grounding"
+      },
+      "D": {
+        "tip": "atom",
+        "id": "a27",
+        "oznaka": "security",
+        "pogoj": "raven ≥4",
+        "obveznost": "M",
+        "signal": "strong grounding"
+      }
+    },
+    "minimalna_DNF": [
+      "A⋀B⋀C⋀D"
+    ],
+    "resnicnih_vrstic": "1/16",
+    "opomba": null
+  },
+  {
+    "id": "n13",
+    "drevo": "T_M",
+    "oznaka": "Architecture",
+    "op": "AND",
+    "formula_propMinimization": "A⋀B⋀C⋀D",
+    "formula_propositional": null,
+    "legenda": {
+      "A": {
+        "tip": "atom",
+        "id": "a28",
+        "oznaka": "API-first architectures",
+        "pogoj": "raven ≥3",
+        "obveznost": "M",
+        "signal": "experience"
+      },
+      "B": {
+        "tip": "atom",
+        "id": "a29",
+        "oznaka": "microservices-based architectures",
+        "pogoj": "raven ≥3",
+        "obveznost": "M",
+        "signal": "experience"
+      },
+      "C": {
+        "tip": "atom",
+        "id": "a30",
+        "oznaka": "event-driven architectures",
+        "pogoj": "raven ≥3",
+        "obveznost": "M",
+        "signal": "experience"
+      },
+      "D": {
+        "tip": "atom",
+        "id": "a31",
+        "oznaka": "data engineering patterns for AI systems",
+        "pogoj": "raven ≥3",
+        "obveznost": "M",
+        "signal": "experience"
+      }
+    },
+    "minimalna_DNF": [
+      "A⋀B⋀C⋀D"
+    ],
+    "resnicnih_vrstic": "1/16",
+    "opomba": null
+  },
+  {
+    "id": "n14",
+    "drevo": "T_M",
+    "oznaka": "Platforms",
+    "op": "AND",
+    "formula_propMinimization": "A⋀B⋀C",
+    "formula_propositional": "P⋀Q⋀R",
+    "legenda": {
+      "A": {
+        "tip": "atom",
+        "id": "a32",
+        "oznaka": "Docker",
+        "pogoj": "raven ≥3",
+        "obveznost": "M",
+        "signal": "hands-on experience"
+      },
+      "B": {
+        "tip": "atom",
+        "id": "a33",
+        "oznaka": "Kubernetes",
+        "pogoj": "raven ≥3",
+        "obveznost": "M",
+        "signal": "hands-on experience"
+      },
+      "C": {
+        "tip": "atom",
+        "id": "a34",
+        "oznaka": "OpenShift",
+        "pogoj": "raven ≥3",
+        "obveznost": "M",
+        "signal": "hands-on experience"
+      }
+    },
+    "minimalna_DNF": [
+      "A⋀B⋀C"
+    ],
+    "resnicnih_vrstic": "1/8",
+    "opomba": null
+  },
+  {
+    "id": "n18",
+    "drevo": "T_M",
+    "oznaka": "Experience",
+    "op": "AND",
+    "formula_propMinimization": "A⋀B⋀C⋀D",
+    "formula_propositional": null,
+    "legenda": {
+      "A": {
+        "tip": "atom",
+        "id": "a41",
+        "oznaka": "≥6 let: progressive software engineering experience",
+        "pogoj": "prag ≥6 let",
+        "obveznost": "M",
+        "signal": "6–10 years"
+      },
+      "B": {
+        "tip": "atom",
+        "id": "a42",
+        "oznaka": "strong hands-on coding background",
+        "pogoj": "raven ≥4",
+        "obveznost": "M",
+        "signal": "strong hands-on background"
+      },
+      "C": {
+        "tip": "vozlišče",
+        "id": "n19",
+        "oznaka": "2+ years focused on AI software development, LLM-based solutions, agentic systems, and/or machine learning",
+        "pogoj": "glej formulo n19"
+      },
+      "D": {
+        "tip": "atom",
+        "id": "a47",
+        "oznaka": "enterprise-scale AI capabilities into production",
+        "pogoj": "raven ≥4",
+        "obveznost": "M",
+        "signal": "demonstrated experience"
+      }
+    },
+    "minimalna_DNF": [
+      "A⋀B⋀C⋀D"
+    ],
+    "resnicnih_vrstic": "1/16",
+    "opomba": null
+  },
+  {
+    "id": "n20",
+    "drevo": "T_M",
+    "oznaka": "Education",
+    "op": "AND",
+    "formula_propMinimization": "(A⋁B)⋀C",
+    "formula_propositional": "(P⋁Q)⋀R",
+    "legenda": {
+      "A": {
+        "tip": "atom",
+        "id": "a48",
+        "oznaka": "diploma: Bachelor's",
+        "pogoj": "izpolnjeno",
+        "obveznost": "M",
+        "signal": "degree"
+      },
+      "B": {
+        "tip": "atom",
+        "id": "a49",
+        "oznaka": "diploma: Master's",
+        "pogoj": "izpolnjeno",
+        "obveznost": "M",
+        "signal": "degree"
+      },
+      "C": {
+        "tip": "atom",
+        "id": "a50",
+        "oznaka": "področje: Computer Science / AI / Robotics / related quantitative discipline",
+        "pogoj": "izpolnjeno",
+        "obveznost": "M",
+        "signal": "degree in"
+      }
+    },
+    "minimalna_DNF": [
+      "A⋀C",
+      "B⋀C"
+    ],
+    "resnicnih_vrstic": "3/8",
+    "opomba": null
+  },
+  {
+    "id": "n06",
+    "drevo": "T_M",
+    "oznaka": "LLMs, RAG, prompt engineering, MCPs, and agent frameworks",
+    "op": "AND",
+    "formula_propMinimization": "A⋀B⋀C",
+    "formula_propositional": "P⋀Q⋀R",
+    "legenda": {
+      "A": {
+        "tip": "vozlišče",
+        "id": "n07",
+        "oznaka": "LLMs, RAG, prompt engineering, MCPs, and agent frameworks – del 1/2",
+        "pogoj": "glej formulo n07"
+      },
+      "B": {
+        "tip": "atom",
+        "id": "a17",
+        "oznaka": "MCPs",
+        "pogoj": "raven ≥3",
+        "obveznost": "M",
+        "signal": "hands-on experience"
+      },
+      "C": {
+        "tip": "atom",
+        "id": "a18",
+        "oznaka": "agent frameworks",
+        "pogoj": "raven ≥3",
+        "obveznost": "M",
+        "signal": "hands-on experience"
+      }
+    },
+    "minimalna_DNF": [
+      "A⋀B⋀C"
+    ],
+    "resnicnih_vrstic": "1/8",
+    "opomba": null
+  },
+  {
+    "id": "n10",
+    "drevo": "T_M",
+    "oznaka": "Software Engineering – del 1/2",
+    "op": "AND",
+    "formula_propMinimization": "A⋀B⋀C⋀D",
+    "formula_propositional": null,
+    "legenda": {
+      "A": {
+        "tip": "atom",
+        "id": "a21",
+        "oznaka": "Git",
+        "pogoj": "raven ≥4",
+        "obveznost": "M",
+        "signal": "strong grounding"
+      },
+      "B": {
+        "tip": "atom",
+        "id": "a22",
+        "oznaka": "CI/CD",
+        "pogoj": "raven ≥4",
+        "obveznost": "M",
+        "signal": "strong grounding"
+      },
+      "C": {
+        "tip": "atom",
+        "id": "a23",
+        "oznaka": "testing",
+        "pogoj": "raven ≥4",
+        "obveznost": "M",
+        "signal": "strong grounding"
+      },
+      "D": {
+        "tip": "atom",
+        "id": "a24",
+        "oznaka": "code reviews",
+        "pogoj": "raven ≥4",
+        "obveznost": "M",
+        "signal": "strong grounding"
+      }
+    },
+    "minimalna_DNF": [
+      "A⋀B⋀C⋀D"
+    ],
+    "resnicnih_vrstic": "1/16",
+    "opomba": null
+  },
+  {
+    "id": "n19",
+    "drevo": "T_M",
+    "oznaka": "2+ years focused on AI software development, LLM-based solutions, agentic systems, and/or machine learning",
+    "op": "OR",
+    "formula_propMinimization": "A⋁B⋁C⋁D",
+    "formula_propositional": null,
+    "legenda": {
+      "A": {
+        "tip": "atom",
+        "id": "a43",
+        "oznaka": "≥2 let: AI software development",
+        "pogoj": "prag ≥2 let",
+        "obveznost": "M",
+        "signal": "2+ years"
+      },
+      "B": {
+        "tip": "atom",
+        "id": "a44",
+        "oznaka": "≥2 let: LLM-based solutions",
+        "pogoj": "prag ≥2 let",
+        "obveznost": "M",
+        "signal": "2+ years"
+      },
+      "C": {
+        "tip": "atom",
+        "id": "a45",
+        "oznaka": "≥2 let: agentic systems",
+        "pogoj": "prag ≥2 let",
+        "obveznost": "M",
+        "signal": "2+ years"
+      },
+      "D": {
+        "tip": "atom",
+        "id": "a46",
+        "oznaka": "≥2 let: machine learning",
+        "pogoj": "prag ≥2 let",
+        "obveznost": "M",
+        "signal": "2+ years"
+      }
+    },
+    "minimalna_DNF": [
+      "A",
+      "B",
+      "C",
+      "D"
+    ],
+    "resnicnih_vrstic": "15/16",
+    "opomba": null
+  },
+  {
+    "id": "n07",
+    "drevo": "T_M",
+    "oznaka": "LLMs, RAG, prompt engineering, MCPs, and agent frameworks – del 1/2",
+    "op": "AND",
+    "formula_propMinimization": "A⋀B⋀C",
+    "formula_propositional": "P⋀Q⋀R",
+    "legenda": {
+      "A": {
+        "tip": "atom",
+        "id": "a14",
+        "oznaka": "LLMs",
+        "pogoj": "raven ≥3",
+        "obveznost": "M",
+        "signal": "hands-on experience"
+      },
+      "B": {
+        "tip": "atom",
+        "id": "a15",
+        "oznaka": "RAG",
+        "pogoj": "raven ≥3",
+        "obveznost": "M",
+        "signal": "hands-on experience"
+      },
+      "C": {
+        "tip": "atom",
+        "id": "a16",
+        "oznaka": "prompt engineering",
+        "pogoj": "raven ≥3",
+        "obveznost": "M",
+        "signal": "hands-on experience"
+      }
+    },
+    "minimalna_DNF": [
+      "A⋀B⋀C"
+    ],
+    "resnicnih_vrstic": "1/8",
+    "opomba": null
+  }
+]

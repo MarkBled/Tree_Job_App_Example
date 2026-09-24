@@ -1,0 +1,873 @@
+{
+  "vir": "JobReqId26984690.pdf",
+  "lestvica": {
+    "1": "poznavanje",
+    "2": "delovno",
+    "3": "praktično",
+    "4": "ekspert"
+  },
+  "drevesa": [
+    {
+      "op": "AND",
+      "oznaka": "Obvezne zahteve",
+      "koren": "T_M",
+      "vloga": "vrata",
+      "otroci": [
+        {
+          "op": "AND",
+          "oznaka": "Obvezne zahteve – del 1/3",
+          "sinteticno": true,
+          "otroci": [
+            {
+              "op": "AND",
+              "oznaka": "Programming",
+              "postavka": "I10",
+              "otroci": [
+                {
+                  "op": "OR",
+                  "oznaka": "Python and/or Java (Spring Boot)",
+                  "otroci": [
+                    {
+                      "op": "ATOM",
+                      "id": "a09",
+                      "oznaka": "Python",
+                      "obveznost": "M",
+                      "raven": 4,
+                      "signal": [
+                        "strong",
+                        "proficiency"
+                      ]
+                    },
+                    {
+                      "op": "ATOM",
+                      "id": "a10",
+                      "oznaka": "Java (Spring Boot)",
+                      "obveznost": "M",
+                      "raven": 4,
+                      "signal": [
+                        "strong",
+                        "proficiency"
+                      ]
+                    }
+                  ],
+                  "primeri": [],
+                  "raven": 4,
+                  "signal": [
+                    "strong",
+                    "proficiency"
+                  ],
+                  "id": "n04"
+                },
+                {
+                  "op": "ATOM",
+                  "id": "a11",
+                  "oznaka": "JavaScript/TypeScript (Angular, Node.js)",
+                  "obveznost": "M",
+                  "raven": 2,
+                  "signal": [
+                    "working",
+                    "knowledge"
+                  ]
+                }
+              ],
+              "id": "n03"
+            },
+            {
+              "op": "AND",
+              "oznaka": "AI/ML Expertise",
+              "postavka": "I11",
+              "otroci": [
+                {
+                  "op": "ATOM",
+                  "id": "a13",
+                  "oznaka": "core AI concepts",
+                  "obveznost": "M",
+                  "raven": 3,
+                  "signal": [
+                    "solid",
+                    "understanding"
+                  ],
+                  "primeri": [
+                    "knowledge representation",
+                    "planning",
+                    "multi-agent systems"
+                  ]
+                },
+                {
+                  "op": "AND",
+                  "oznaka": "LLMs, RAG, prompt engineering, MCPs, and agent frameworks",
+                  "otroci": [
+                    {
+                      "op": "AND",
+                      "oznaka": "LLMs, RAG, prompt engineering, MCPs, and agent frameworks – del 1/2",
+                      "sinteticno": true,
+                      "otroci": [
+                        {
+                          "op": "ATOM",
+                          "id": "a14",
+                          "oznaka": "LLMs",
+                          "obveznost": "M",
+                          "raven": 3,
+                          "signal": [
+                            "hands-on",
+                            "experience"
+                          ]
+                        },
+                        {
+                          "op": "ATOM",
+                          "id": "a15",
+                          "oznaka": "RAG",
+                          "obveznost": "M",
+                          "raven": 3,
+                          "signal": [
+                            "hands-on",
+                            "experience"
+                          ]
+                        },
+                        {
+                          "op": "ATOM",
+                          "id": "a16",
+                          "oznaka": "prompt engineering",
+                          "obveznost": "M",
+                          "raven": 3,
+                          "signal": [
+                            "hands-on",
+                            "experience"
+                          ]
+                        }
+                      ],
+                      "id": "n07"
+                    },
+                    {
+                      "op": "AND",
+                      "oznaka": "LLMs, RAG, prompt engineering, MCPs, and agent frameworks – del 2/2",
+                      "sinteticno": true,
+                      "otroci": [
+                        {
+                          "op": "ATOM",
+                          "id": "a17",
+                          "oznaka": "MCPs",
+                          "obveznost": "M",
+                          "raven": 3,
+                          "signal": [
+                            "hands-on",
+                            "experience"
+                          ]
+                        },
+                        {
+                          "op": "ATOM",
+                          "id": "a18",
+                          "oznaka": "agent frameworks",
+                          "obveznost": "M",
+                          "raven": 3,
+                          "signal": [
+                            "hands-on",
+                            "experience"
+                          ]
+                        }
+                      ],
+                      "id": "n08"
+                    }
+                  ],
+                  "primeri": [
+                    "Google ADK"
+                  ],
+                  "raven": 3,
+                  "signal": [
+                    "hands-on",
+                    "experience"
+                  ],
+                  "id": "n06"
+                },
+                {
+                  "op": "ATOM",
+                  "id": "a19",
+                  "oznaka": "ML frameworks and libraries (TensorFlow, PyTorch, Scikit-learn, NumPy, Pandas)",
+                  "obveznost": "M",
+                  "raven": 3,
+                  "signal": [
+                    "practical",
+                    "experience"
+                  ]
+                },
+                {
+                  "op": "ATOM",
+                  "id": "a20",
+                  "oznaka": "AI coding tools",
+                  "obveznost": "M",
+                  "raven": 1,
+                  "signal": [
+                    "familiarity"
+                  ],
+                  "primeri": [
+                    "Devin",
+                    "Claude Code",
+                    "GitHub Copilot",
+                    "Antigravity"
+                  ]
+                }
+              ],
+              "id": "n05"
+            },
+            {
+              "op": "AND",
+              "oznaka": "Software Engineering",
+              "otroci": [
+                {
+                  "op": "AND",
+                  "oznaka": "Software Engineering – del 1/2",
+                  "sinteticno": true,
+                  "otroci": [
+                    {
+                      "op": "ATOM",
+                      "id": "a21",
+                      "oznaka": "Git",
+                      "obveznost": "M",
+                      "raven": 4,
+                      "signal": [
+                        "strong",
+                        "grounding"
+                      ],
+                      "krovni_pojem": "modern engineering practices"
+                    },
+                    {
+                      "op": "ATOM",
+                      "id": "a22",
+                      "oznaka": "CI/CD",
+                      "obveznost": "M",
+                      "raven": 4,
+                      "signal": [
+                        "strong",
+                        "grounding"
+                      ],
+                      "krovni_pojem": "modern engineering practices"
+                    },
+                    {
+                      "op": "ATOM",
+                      "id": "a23",
+                      "oznaka": "testing",
+                      "obveznost": "M",
+                      "raven": 4,
+                      "signal": [
+                        "strong",
+                        "grounding"
+                      ],
+                      "krovni_pojem": "modern engineering practices"
+                    },
+                    {
+                      "op": "ATOM",
+                      "id": "a24",
+                      "oznaka": "code reviews",
+                      "obveznost": "M",
+                      "raven": 4,
+                      "signal": [
+                        "strong",
+                        "grounding"
+                      ],
+                      "krovni_pojem": "modern engineering practices"
+                    }
+                  ],
+                  "id": "n10"
+                },
+                {
+                  "op": "AND",
+                  "oznaka": "Software Engineering – del 2/2",
+                  "sinteticno": true,
+                  "otroci": [
+                    {
+                      "op": "ATOM",
+                      "id": "a25",
+                      "oznaka": "agile delivery",
+                      "obveznost": "M",
+                      "raven": 4,
+                      "signal": [
+                        "strong",
+                        "grounding"
+                      ],
+                      "krovni_pojem": "modern engineering practices"
+                    },
+                    {
+                      "op": "ATOM",
+                      "id": "a26",
+                      "oznaka": "application resiliency",
+                      "obveznost": "M",
+                      "raven": 4,
+                      "signal": [
+                        "strong",
+                        "grounding"
+                      ],
+                      "krovni_pojem": "modern engineering practices"
+                    },
+                    {
+                      "op": "ATOM",
+                      "id": "a27",
+                      "oznaka": "security",
+                      "obveznost": "M",
+                      "raven": 4,
+                      "signal": [
+                        "strong",
+                        "grounding"
+                      ],
+                      "krovni_pojem": "modern engineering practices"
+                    }
+                  ],
+                  "id": "n11"
+                }
+              ],
+              "primeri": [],
+              "raven": 4,
+              "signal": [
+                "strong",
+                "grounding"
+              ],
+              "besedilo": "modern engineering practices",
+              "postavka": "I12",
+              "id": "n09"
+            }
+          ],
+          "id": "n02"
+        },
+        {
+          "op": "AND",
+          "oznaka": "Obvezne zahteve – del 2/3",
+          "sinteticno": true,
+          "otroci": [
+            {
+              "op": "AND",
+              "oznaka": "Architecture",
+              "otroci": [
+                {
+                  "op": "ATOM",
+                  "id": "a28",
+                  "oznaka": "API-first architectures",
+                  "obveznost": "M",
+                  "raven": 3,
+                  "signal": [
+                    "experience"
+                  ]
+                },
+                {
+                  "op": "ATOM",
+                  "id": "a29",
+                  "oznaka": "microservices-based architectures",
+                  "obveznost": "M",
+                  "raven": 3,
+                  "signal": [
+                    "experience"
+                  ]
+                },
+                {
+                  "op": "ATOM",
+                  "id": "a30",
+                  "oznaka": "event-driven architectures",
+                  "obveznost": "M",
+                  "raven": 3,
+                  "signal": [
+                    "experience"
+                  ]
+                },
+                {
+                  "op": "ATOM",
+                  "id": "a31",
+                  "oznaka": "data engineering patterns for AI systems",
+                  "obveznost": "M",
+                  "raven": 3,
+                  "signal": [
+                    "experience"
+                  ]
+                }
+              ],
+              "primeri": [],
+              "raven": 3,
+              "signal": [
+                "experience"
+              ],
+              "besedilo": "API-first, microservices-based and event-driven architectures",
+              "postavka": "I13",
+              "id": "n13"
+            },
+            {
+              "op": "AND",
+              "oznaka": "Platforms",
+              "otroci": [
+                {
+                  "op": "ATOM",
+                  "id": "a32",
+                  "oznaka": "Docker",
+                  "obveznost": "M",
+                  "raven": 3,
+                  "signal": [
+                    "hands-on",
+                    "experience"
+                  ]
+                },
+                {
+                  "op": "ATOM",
+                  "id": "a33",
+                  "oznaka": "Kubernetes",
+                  "obveznost": "M",
+                  "raven": 3,
+                  "signal": [
+                    "hands-on",
+                    "experience"
+                  ]
+                },
+                {
+                  "op": "ATOM",
+                  "id": "a34",
+                  "oznaka": "OpenShift",
+                  "obveznost": "M",
+                  "raven": 3,
+                  "signal": [
+                    "hands-on",
+                    "experience"
+                  ]
+                }
+              ],
+              "primeri": [],
+              "raven": 3,
+              "signal": [
+                "hands-on",
+                "experience"
+              ],
+              "besedilo": "Docker, Kubernetes, and OpenShift",
+              "postavka": "I14",
+              "id": "n14"
+            },
+            {
+              "op": "AND",
+              "oznaka": "Problem Solving & Communication",
+              "postavka": "I15",
+              "otroci": [
+                {
+                  "op": "ATOM",
+                  "id": "a35",
+                  "oznaka": "Strong analytical skills",
+                  "obveznost": "M",
+                  "raven": 4,
+                  "signal": [
+                    "strong",
+                    "skills"
+                  ]
+                },
+                {
+                  "op": "ATOM",
+                  "id": "a36",
+                  "oznaka": "clearly communicate complex technical concepts",
+                  "obveznost": "M",
+                  "raven": 3,
+                  "signal": [
+                    "ability"
+                  ]
+                }
+              ],
+              "id": "n15"
+            }
+          ],
+          "id": "n12"
+        },
+        {
+          "op": "AND",
+          "oznaka": "Obvezne zahteve – del 3/3",
+          "sinteticno": true,
+          "otroci": [
+            {
+              "op": "AND",
+              "oznaka": "Domain Knowledge",
+              "otroci": [
+                {
+                  "op": "ATOM",
+                  "id": "a37",
+                  "oznaka": "banking/financial services",
+                  "obveznost": "M",
+                  "raven": 3,
+                  "signal": [
+                    "solid",
+                    "understanding"
+                  ]
+                },
+                {
+                  "op": "ATOM",
+                  "id": "a38",
+                  "oznaka": "regulated environments",
+                  "obveznost": "M",
+                  "raven": 3,
+                  "signal": [
+                    "solid",
+                    "understanding"
+                  ]
+                }
+              ],
+              "primeri": [],
+              "raven": 3,
+              "signal": [
+                "solid",
+                "understanding"
+              ],
+              "besedilo": "banking/financial services and regulated environments",
+              "postavka": "I16",
+              "id": "n17"
+            },
+            {
+              "op": "AND",
+              "oznaka": "Experience",
+              "postavka": "I18",
+              "otroci": [
+                {
+                  "op": "ATOM",
+                  "id": "a41",
+                  "oznaka": "≥6 let: progressive software engineering experience",
+                  "obveznost": "M",
+                  "raven": null,
+                  "signal": [
+                    "6–10 years"
+                  ],
+                  "prag_let": 6
+                },
+                {
+                  "op": "ATOM",
+                  "id": "a42",
+                  "oznaka": "strong hands-on coding background",
+                  "obveznost": "M",
+                  "raven": 4,
+                  "signal": [
+                    "strong",
+                    "hands-on",
+                    "background"
+                  ]
+                },
+                {
+                  "op": "OR",
+                  "oznaka": "2+ years focused on AI software development, LLM-based solutions, agentic systems, and/or machine learning",
+                  "otroci": [
+                    {
+                      "op": "ATOM",
+                      "id": "a43",
+                      "oznaka": "≥2 let: AI software development",
+                      "obveznost": "M",
+                      "raven": null,
+                      "signal": [
+                        "2+ years"
+                      ],
+                      "prag_let": 2
+                    },
+                    {
+                      "op": "ATOM",
+                      "id": "a44",
+                      "oznaka": "≥2 let: LLM-based solutions",
+                      "obveznost": "M",
+                      "raven": null,
+                      "signal": [
+                        "2+ years"
+                      ],
+                      "prag_let": 2
+                    },
+                    {
+                      "op": "ATOM",
+                      "id": "a45",
+                      "oznaka": "≥2 let: agentic systems",
+                      "obveznost": "M",
+                      "raven": null,
+                      "signal": [
+                        "2+ years"
+                      ],
+                      "prag_let": 2
+                    },
+                    {
+                      "op": "ATOM",
+                      "id": "a46",
+                      "oznaka": "≥2 let: machine learning",
+                      "obveznost": "M",
+                      "raven": null,
+                      "signal": [
+                        "2+ years"
+                      ],
+                      "prag_let": 2
+                    }
+                  ],
+                  "primeri": [],
+                  "id": "n19"
+                },
+                {
+                  "op": "ATOM",
+                  "id": "a47",
+                  "oznaka": "enterprise-scale AI capabilities into production",
+                  "obveznost": "M",
+                  "raven": 4,
+                  "signal": [
+                    "demonstrated",
+                    "experience"
+                  ]
+                }
+              ],
+              "id": "n18"
+            },
+            {
+              "op": "AND",
+              "oznaka": "Education",
+              "otroci": [
+                {
+                  "op": "OR",
+                  "oznaka": "stopnja izobrazbe",
+                  "otroci": [
+                    {
+                      "op": "ATOM",
+                      "id": "a48",
+                      "oznaka": "diploma: Bachelor's",
+                      "obveznost": "M",
+                      "raven": null,
+                      "signal": [
+                        "degree"
+                      ]
+                    },
+                    {
+                      "op": "ATOM",
+                      "id": "a49",
+                      "oznaka": "diploma: Master's",
+                      "obveznost": "M",
+                      "raven": null,
+                      "signal": [
+                        "degree"
+                      ]
+                    }
+                  ],
+                  "id": "n21"
+                },
+                {
+                  "op": "ATOM",
+                  "id": "a50",
+                  "oznaka": "področje: Computer Science / AI / Robotics / related quantitative discipline",
+                  "obveznost": "M",
+                  "raven": null,
+                  "signal": [
+                    "degree in"
+                  ],
+                  "alternative": [
+                    "Computer Science",
+                    "AI",
+                    "Robotics",
+                    "related quantitative discipline"
+                  ]
+                }
+              ],
+              "primeri": [],
+              "besedilo": "Bachelor's or Master's degree in Computer Science, AI, Robotics, or a related quantitative discipline",
+              "postavka": "I19",
+              "id": "n20"
+            }
+          ],
+          "id": "n16"
+        }
+      ],
+      "id": "n01"
+    },
+    {
+      "op": "SCORE",
+      "oznaka": "Dodatno (nice to have)",
+      "koren": "T_N",
+      "vloga": "točkovanje",
+      "otroci": [
+        {
+          "op": "ATOM",
+          "id": "a12",
+          "oznaka": "Full-stack experience",
+          "obveznost": "N",
+          "raven": 3,
+          "signal": [
+            "experience"
+          ]
+        },
+        {
+          "op": "ATOM",
+          "id": "a39",
+          "oznaka": "data science (statistical modeling, experimentation)",
+          "obveznost": "N",
+          "raven": 3,
+          "signal": [
+            "experience"
+          ]
+        },
+        {
+          "op": "ATOM",
+          "id": "a40",
+          "oznaka": "mentoring junior AI engineers",
+          "obveznost": "N",
+          "raven": 1,
+          "signal": [
+            "interest"
+          ]
+        }
+      ],
+      "id": "n22"
+    },
+    {
+      "op": "SCORE",
+      "oznaka": "Naloge (pričakovano)",
+      "koren": "T_P",
+      "vloga": "točkovanje",
+      "otroci": [
+        {
+          "op": "SCORE",
+          "oznaka": "Naloge (pričakovano) – del 1/2",
+          "sinteticno": true,
+          "otroci": [
+            {
+              "op": "ATOM",
+              "id": "a01",
+              "oznaka": "AI Solution Development",
+              "obveznost": "P",
+              "raven": null,
+              "signal": [],
+              "besedilo": "Design, implement, and deploy scalable agentic AI frameworks and generative AI solutions for critical business use cases, ensuring robustness, performance, security, and reliability."
+            },
+            {
+              "op": "ATOM",
+              "id": "a02",
+              "oznaka": "Agentic Systems",
+              "obveznost": "P",
+              "raven": null,
+              "signal": [],
+              "besedilo": "Develop and integrate agentic AI systems leveraging multiple model providers and platforms (e.g., OpenAI, Anthropic, Google APIs).",
+              "primeri": [
+                "OpenAI",
+                "Anthropic",
+                "Google APIs"
+              ]
+            },
+            {
+              "op": "ATOM",
+              "id": "a03",
+              "oznaka": "Full-Stack AI Engineering",
+              "obveznost": "P",
+              "raven": null,
+              "signal": [],
+              "besedilo": "Build full-stack applications integrating LLM-driven workflows and AI coding tools (e.g., Devin, GitHub Copilot).",
+              "primeri": [
+                "Devin",
+                "GitHub Copilot"
+              ]
+            },
+            {
+              "op": "ATOM",
+              "id": "a04",
+              "oznaka": "Iterative Delivery",
+              "obveznost": "P",
+              "raven": null,
+              "signal": [],
+              "besedilo": "Drive an MVP-first, rapid-iteration approach with continuous experimentation and improvement."
+            }
+          ],
+          "id": "n24"
+        },
+        {
+          "op": "SCORE",
+          "oznaka": "Naloge (pričakovano) – del 2/2",
+          "sinteticno": true,
+          "otroci": [
+            {
+              "op": "ATOM",
+              "id": "a05",
+              "oznaka": "Evaluation & Optimization",
+              "obveznost": "P",
+              "raven": null,
+              "signal": [],
+              "besedilo": "Define and implement metrics, evaluation strategies, and feedback loops to continuously improve AI system performance and behavior."
+            },
+            {
+              "op": "ATOM",
+              "id": "a06",
+              "oznaka": "Emerging Technologies",
+              "obveznost": "P",
+              "raven": null,
+              "signal": [],
+              "besedilo": "Research, prototype, and integrate advances in agent-based, autonomous, and generative AI technologies."
+            },
+            {
+              "op": "ATOM",
+              "id": "a07",
+              "oznaka": "Technical Collaboration",
+              "obveznost": "P",
+              "raven": null,
+              "signal": [],
+              "besedilo": "Contribute hands-on within cross-functional teams and provide technical guidance and mentorship to junior engineers."
+            },
+            {
+              "op": "ATOM",
+              "id": "a08",
+              "oznaka": "Domain Alignment",
+              "obveznost": "P",
+              "raven": null,
+              "signal": [],
+              "besedilo": "Ensure AI solutions are well-aligned to banking and financial services requirements, constraints, and business outcomes."
+            }
+          ],
+          "id": "n25"
+        }
+      ],
+      "id": "n23"
+    }
+  ],
+  "st_atomov": 50,
+  "dvoumnosti": [
+    {
+      "postavka": "I10",
+      "klavzula": "Strong proficiency in Python and/or Java (Spring Boot)",
+      "koda": "and_or",
+      "razlaga": "'and/or' razlagam kot vključujoči ALI (⋁)."
+    },
+    {
+      "postavka": "I10",
+      "klavzula": "Strong proficiency in Python and/or Java (Spring Boot)",
+      "koda": "oklepaj_brez_eg",
+      "razlaga": "Naštevanje v oklepaju brez 'e.g.' razlagam kot specifikacijo pojma, ne kot ločene obveznosti."
+    },
+    {
+      "postavka": "I10",
+      "klavzula": "working knowledge of JavaScript/TypeScript (Angular, Node.js)",
+      "koda": "oklepaj_brez_eg",
+      "razlaga": "Naštevanje v oklepaju brez 'e.g.' razlagam kot specifikacijo pojma, ne kot ločene obveznosti."
+    },
+    {
+      "postavka": "I11",
+      "klavzula": "Practical experience with ML frameworks and libraries (TensorFlow, PyTorch, Scikit-learn, NumPy, Pandas)",
+      "koda": "oklepaj_brez_eg",
+      "razlaga": "Naštevanje v oklepaju brez 'e.g.' razlagam kot specifikacijo pojma, ne kot ločene obveznosti."
+    },
+    {
+      "postavka": "I12",
+      "klavzula": "Strong grounding in modern engineering practices including Git, CI/CD, testing, code reviews, agile delivery, application resiliency, and security",
+      "koda": "including",
+      "razlaga": "Naštevanje za 'including' razlagam kot sestavne dele (AND)."
+    },
+    {
+      "postavka": "I13",
+      "klavzula": "Experience designing API-first, microservices-based and event-driven architectures, including data engineering patterns for AI systems",
+      "koda": "including",
+      "razlaga": "Naštevanje za 'including' razlagam kot sestavne dele (AND)."
+    },
+    {
+      "postavka": "I17",
+      "klavzula": "Experience in data science (statistical modeling, experimentation)",
+      "koda": "oklepaj_brez_eg",
+      "razlaga": "Naštevanje v oklepaju brez 'e.g.' razlagam kot specifikacijo pojma, ne kot ločene obveznosti."
+    },
+    {
+      "postavka": "I18",
+      "klavzula": "6–10 years of progressive software engineering experience",
+      "koda": "range_years",
+      "razlaga": "Razpon let (npr. 6–10): razlagam kot spodnji prag (≥ min); zgornja meja NI izločilna."
+    },
+    {
+      "postavka": "I18",
+      "klavzula": "2+ years focused on AI software development, LLM-based solutions, agentic systems, and/or machine learning",
+      "koda": "and_or",
+      "razlaga": "'and/or' razlagam kot vključujoči ALI (⋁)."
+    },
+    {
+      "postavka": "I19",
+      "klavzula": "Bachelor's or Master's degree in Computer Science, AI, Robotics, or a related quantitative discipline",
+      "koda": "degree_implication",
+      "razlaga": "Master's praviloma vključuje Bachelor's; v logiki ostane A⋁B, minimalna oblika to razkrije."
+    }
+  ]
+}

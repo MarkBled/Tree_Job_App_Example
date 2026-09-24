@@ -1,0 +1,3666 @@
+{
+  "dejstva": [
+    {
+      "k": "K1",
+      "atom": "a09",
+      "citat": "visoko usposobljen v jeziku Java (Spring Boot) in Python",
+      "signal": "visoko usposobljen",
+      "vrsta": "E",
+      "idx": "D001",
+      "vrednost_dejstva": "T",
+      "razlaga": "raven 4 ≥ zahtevana 4"
+    },
+    {
+      "k": "K1",
+      "atom": "a10",
+      "citat": "visoko usposobljen v jeziku Java (Spring Boot) in Python",
+      "signal": "visoko usposobljen",
+      "vrsta": "E",
+      "idx": "D002",
+      "vrednost_dejstva": "T",
+      "razlaga": "raven 4 ≥ zahtevana 4"
+    },
+    {
+      "k": "K1",
+      "atom": "a32",
+      "citat": "vsakodnevno pa uporabljam Docker, Kubernetes",
+      "signal": "uporabljam",
+      "vrsta": "E",
+      "idx": "D003",
+      "vrednost_dejstva": "T",
+      "razlaga": "raven 3 ≥ zahtevana 3"
+    },
+    {
+      "k": "K1",
+      "atom": "a33",
+      "citat": "vsakodnevno pa uporabljam Docker, Kubernetes",
+      "signal": "uporabljam",
+      "vrsta": "E",
+      "idx": "D004",
+      "vrednost_dejstva": "T",
+      "razlaga": "raven 3 ≥ zahtevana 3"
+    },
+    {
+      "k": "K1",
+      "atom": "a20",
+      "citat": "uporabljam Docker, Kubernetes ter orodja, kot sta GitHub Copilot in Devin, za pospešitev kodiranja",
+      "signal": "uporabljam",
+      "vrsta": "E",
+      "idx": "D005",
+      "vrednost_dejstva": "T",
+      "razlaga": "raven 3 ≥ zahtevana 1"
+    },
+    {
+      "k": "K1",
+      "atom": "a25",
+      "citat": "Moje izkušnje se popolnoma ujemajo z vašimi zahtevami za regulirana okolja in agilno MVP-dostavo",
+      "signal": "izkušnje",
+      "vrsta": "E",
+      "opomba": "raven 3 < zahtevana 4 → ni dokazano",
+      "idx": "D006",
+      "vrednost_dejstva": "U",
+      "razlaga": "raven 3 < zahtevana 4 (spodnja meja, ne ovrže)"
+    },
+    {
+      "k": "K1",
+      "atom": "a38",
+      "citat": "Moje izkušnje se popolnoma ujemajo z vašimi zahtevami za regulirana okolja",
+      "signal": "izkušnje",
+      "vrsta": "E",
+      "idx": "D007",
+      "vrednost_dejstva": "T",
+      "razlaga": "raven 3 ≥ zahtevana 3"
+    },
+    {
+      "k": "K1",
+      "atom": "a37",
+      "citat": "poznavanjem bančnega ekosistema",
+      "signal": "poznavanjem",
+      "vrsta": "E",
+      "opomba": "raven 2 < zahtevana 3 → ni dokazano",
+      "idx": "D008",
+      "vrednost_dejstva": "U",
+      "razlaga": "raven 2 < zahtevana 3 (spodnja meja, ne ovrže)"
+    },
+    {
+      "k": "K1",
+      "atom": "a37",
+      "citat": "Zadnjih 8 let sem zaposlen v mednarodni banki",
+      "vrsta": "I",
+      "pravilo": "B2",
+      "raven": 3,
+      "idx": "D009",
+      "vrednost_dejstva": "T",
+      "razlaga": "raven 3 ≥ zahtevana 3"
+    },
+    {
+      "k": "K1",
+      "atom": "a43",
+      "citat": "zadnji dve leti vodil implementacijo generativnih modelov",
+      "leta": 2,
+      "kvantifikator": "≥",
+      "vrsta": "E",
+      "idx": "D010",
+      "vrednost_dejstva": "T",
+      "razlaga": "≥2 let ≥ prag 2"
+    },
+    {
+      "k": "K1",
+      "atom": "a44",
+      "citat": "zadnji dve leti vodil implementacijo generativnih modelov",
+      "leta": 2,
+      "kvantifikator": "≥",
+      "vrsta": "I",
+      "pravilo": "B4",
+      "idx": "D011",
+      "vrednost_dejstva": "T",
+      "razlaga": "≥2 let ≥ prag 2"
+    },
+    {
+      "k": "K1",
+      "atom": "a14",
+      "citat": "integracijo zunanjih modelov (OpenAI, Anthropic) prek obstoječih API-jev",
+      "vrsta": "I",
+      "pravilo": "B3",
+      "raven": 3,
+      "idx": "D012",
+      "vrednost_dejstva": "T",
+      "razlaga": "raven 3 ≥ zahtevana 3"
+    },
+    {
+      "k": "K1",
+      "atom": "a41",
+      "citat": "Zadnjih 8 let sem zaposlen v mednarodni banki",
+      "leta": 8,
+      "kvantifikator": "≥",
+      "vrsta": "I",
+      "pravilo": "B8",
+      "idx": "D013",
+      "vrednost_dejstva": "T",
+      "razlaga": "≥8 let ≥ prag 6"
+    },
+    {
+      "k": "K1",
+      "atom": "a04",
+      "citat": "agilno MVP-dostavo",
+      "vrednost": true,
+      "vrsta": "E",
+      "idx": "D014",
+      "vrednost_dejstva": "T",
+      "razlaga": "izrecna trditev"
+    },
+    {
+      "k": "K1",
+      "atom": "a08",
+      "citat": "tehnične rešitve brezpogojno slediti viziji poslovnega segmenta",
+      "vrednost": true,
+      "vrsta": "E",
+      "idx": "D015",
+      "vrednost_dejstva": "T",
+      "razlaga": "izrecna trditev"
+    },
+    {
+      "k": "K1",
+      "atom": "a01",
+      "citat": "ne izgubljam časa z redefiniranjem obstoječih sistemov ali gradnjo lastnih internih ogrodij",
+      "vrednost": false,
+      "vrsta": "I",
+      "pravilo": "B10",
+      "idx": "D016",
+      "vrednost_dejstva": "F",
+      "razlaga": "izrecna negacija"
+    },
+    {
+      "k": "K2",
+      "atom": "a13",
+      "citat": "globokem razumevanju simbolne umetne inteligence, nevronskih mrež",
+      "signal": "globokem razumevanju",
+      "vrsta": "E",
+      "idx": "D017",
+      "vrednost_dejstva": "T",
+      "razlaga": "raven 3 ≥ zahtevana 3"
+    },
+    {
+      "k": "K2",
+      "atom": "a09",
+      "citat": "Moje tehnično znanje obsega Python, PyTorch",
+      "signal": "znanje obsega",
+      "vrsta": "E",
+      "opomba": "raven 2 < 4",
+      "idx": "D018",
+      "vrednost_dejstva": "U",
+      "razlaga": "raven 2 < zahtevana 4 (spodnja meja, ne ovrže)"
+    },
+    {
+      "k": "K2",
+      "atom": "a19",
+      "citat": "Moje tehnično znanje obsega Python, PyTorch",
+      "signal": "znanje obsega",
+      "vrsta": "E",
+      "opomba": "raven 2 < 3",
+      "idx": "D019",
+      "vrednost_dejstva": "U",
+      "razlaga": "raven 2 < zahtevana 3 (spodnja meja, ne ovrže)"
+    },
+    {
+      "k": "K2",
+      "atom": "a17",
+      "citat": "znanje obsega Python, PyTorch in napredne agentne sisteme (MCP, RAG)",
+      "signal": "znanje obsega",
+      "vrsta": "E",
+      "idx": "D020",
+      "vrednost_dejstva": "U",
+      "razlaga": "raven 2 < zahtevana 3 (spodnja meja, ne ovrže)"
+    },
+    {
+      "k": "K2",
+      "atom": "a15",
+      "citat": "znanje obsega Python, PyTorch in napredne agentne sisteme (MCP, RAG)",
+      "signal": "znanje obsega",
+      "vrsta": "E",
+      "idx": "D021",
+      "vrednost_dejstva": "U",
+      "razlaga": "raven 2 < zahtevana 3 (spodnja meja, ne ovrže)"
+    },
+    {
+      "k": "K2",
+      "atom": "a32",
+      "citat": "obvladam pa tudi celoten spektrum vsebnikov (Docker, OpenShift)",
+      "signal": "obvladam",
+      "vrsta": "E",
+      "idx": "D022",
+      "vrednost_dejstva": "T",
+      "razlaga": "raven 4 ≥ zahtevana 3"
+    },
+    {
+      "k": "K2",
+      "atom": "a34",
+      "citat": "obvladam pa tudi celoten spektrum vsebnikov (Docker, OpenShift)",
+      "signal": "obvladam",
+      "vrsta": "E",
+      "idx": "D023",
+      "vrednost_dejstva": "T",
+      "razlaga": "raven 4 ≥ zahtevana 3"
+    },
+    {
+      "k": "K2",
+      "atom": "a43",
+      "citat": "zadnjih 6 let vodila razvoj kritičnih AI sistemov",
+      "leta": 6,
+      "kvantifikator": "≥",
+      "vrsta": "E",
+      "idx": "D024",
+      "vrednost_dejstva": "T",
+      "razlaga": "≥6 let ≥ prag 2"
+    },
+    {
+      "k": "K2",
+      "atom": "a41",
+      "citat": "zadnjih 6 let vodila razvoj kritičnih AI sistemov",
+      "leta": 6,
+      "kvantifikator": "≥",
+      "vrsta": "I",
+      "pravilo": "B8",
+      "idx": "D025",
+      "vrednost_dejstva": "T",
+      "razlaga": "≥6 let ≥ prag 6"
+    },
+    {
+      "k": "K2",
+      "atom": "a37",
+      "citat": "nimam neposrednih izkušenj v korporativnem bančništvu",
+      "vrednost": false,
+      "vrsta": "I",
+      "pravilo": "B1",
+      "idx": "D026",
+      "vrednost_dejstva": "F",
+      "razlaga": "izrecna negacija"
+    },
+    {
+      "k": "K2",
+      "atom": "a49",
+      "citat": "Kandidat 2: Dr. Ksenija",
+      "vrednost": true,
+      "vrsta": "I",
+      "pravilo": "B6",
+      "idx": "D027",
+      "vrednost_dejstva": "T",
+      "razlaga": "izrecna trditev"
+    },
+    {
+      "k": "K2",
+      "atom": "a05",
+      "citat": "vzpostavitev 'Ground Truth' sistemov preverjanja",
+      "vrednost": true,
+      "vrsta": "E",
+      "idx": "D028",
+      "vrednost_dejstva": "T",
+      "razlaga": "izrecna trditev"
+    },
+    {
+      "k": "K2",
+      "atom": "a04",
+      "citat": "zanesljivih, produkcijskih AI aplikacij ne da razvijati 'bliskovito' brez ustreznih temeljev",
+      "vrednost": false,
+      "vrsta": "I",
+      "pravilo": "B10",
+      "idx": "D029",
+      "vrednost_dejstva": "F",
+      "razlaga": "izrecna negacija"
+    },
+    {
+      "k": "K3",
+      "atom": "a41",
+      "citat": "Imam dobrih 6 let izkušenj s programiranjem",
+      "leta": 6,
+      "kvantifikator": "≥",
+      "vrsta": "E",
+      "idx": "D030",
+      "vrednost_dejstva": "T",
+      "razlaga": "≥6 let ≥ prag 6"
+    },
+    {
+      "k": "K3",
+      "atom": "a45",
+      "citat": "zadnja 3 leta delam izključno na agentnih AI ogrodjih",
+      "leta": 3,
+      "kvantifikator": "≥",
+      "vrsta": "E",
+      "idx": "D031",
+      "vrednost_dejstva": "T",
+      "razlaga": "≥3 let ≥ prag 2"
+    },
+    {
+      "k": "K3",
+      "atom": "a18",
+      "citat": "delam izključno na agentnih AI ogrodjih",
+      "signal": "delam",
+      "vrsta": "E",
+      "idx": "D032",
+      "vrednost_dejstva": "T",
+      "razlaga": "raven 3 ≥ zahtevana 3"
+    },
+    {
+      "k": "K3",
+      "atom": "a16",
+      "citat": "delam izključno na agentnih AI ogrodjih, prompt inženiringu",
+      "signal": "delam",
+      "vrsta": "E",
+      "idx": "D033",
+      "vrednost_dejstva": "T",
+      "razlaga": "raven 3 ≥ zahtevana 3"
+    },
+    {
+      "k": "K3",
+      "atom": "a14",
+      "citat": "integraciji večmodelnih platform (Claude, GPT-4, Google APIs)",
+      "vrsta": "I",
+      "pravilo": "B3",
+      "raven": 3,
+      "idx": "D034",
+      "vrednost_dejstva": "T",
+      "razlaga": "raven 3 ≥ zahtevana 3"
+    },
+    {
+      "k": "K3",
+      "atom": "a20",
+      "citat": "Moje glavno orožje so AI coding pomočniki (Devin, Copilot, Claude Code)",
+      "signal": "glavno orožje",
+      "vrsta": "E",
+      "idx": "D035",
+      "vrednost_dejstva": "T",
+      "razlaga": "raven 3 ≥ zahtevana 1"
+    },
+    {
+      "k": "K3",
+      "atom": "a11",
+      "citat": "Odlično se znajdem v JavaScript/TypeScript (Node.js/Angular) in Pythonu",
+      "signal": "odlično se znajdem",
+      "vrsta": "E",
+      "idx": "D036",
+      "vrednost_dejstva": "T",
+      "razlaga": "raven 4 ≥ zahtevana 2"
+    },
+    {
+      "k": "K3",
+      "atom": "a09",
+      "citat": "Odlično se znajdem v JavaScript/TypeScript (Node.js/Angular) in Pythonu",
+      "signal": "odlično se znajdem",
+      "vrsta": "E",
+      "idx": "D037",
+      "vrednost_dejstva": "T",
+      "razlaga": "raven 4 ≥ zahtevana 4"
+    },
+    {
+      "k": "K3",
+      "atom": "a32",
+      "citat": "sistemi, kot sta Docker in Kubernetes, pa so zame standardni del CI/CD cevovoda",
+      "signal": "standardni del",
+      "vrsta": "E",
+      "idx": "D038",
+      "vrednost_dejstva": "T",
+      "razlaga": "raven 3 ≥ zahtevana 3"
+    },
+    {
+      "k": "K3",
+      "atom": "a33",
+      "citat": "sistemi, kot sta Docker in Kubernetes, pa so zame standardni del CI/CD cevovoda",
+      "signal": "standardni del",
+      "vrsta": "E",
+      "idx": "D039",
+      "vrednost_dejstva": "T",
+      "razlaga": "raven 3 ≥ zahtevana 3"
+    },
+    {
+      "k": "K3",
+      "atom": "a22",
+      "citat": "standardni del CI/CD cevovoda",
+      "signal": "standardni del",
+      "vrsta": "E",
+      "opomba": "raven 3 < 4",
+      "idx": "D040",
+      "vrednost_dejstva": "U",
+      "razlaga": "raven 3 < zahtevana 4 (spodnja meja, ne ovrže)"
+    },
+    {
+      "k": "K3",
+      "atom": "a12",
+      "citat": "full-stack AI navdušenec",
+      "signal": "navdušenec",
+      "vrsta": "E",
+      "opomba": "raven 1 < 3",
+      "idx": "D041",
+      "vrednost_dejstva": "U",
+      "razlaga": "raven 1 < zahtevana 3 (spodnja meja, ne ovrže)"
+    },
+    {
+      "k": "K3",
+      "atom": "a37",
+      "citat": "Nimam bančnih izkušenj",
+      "vrednost": false,
+      "vrsta": "I",
+      "pravilo": "B1",
+      "idx": "D042",
+      "vrednost_dejstva": "F",
+      "razlaga": "izrecna negacija"
+    },
+    {
+      "k": "K3",
+      "atom": "a02",
+      "citat": "integraciji večmodelnih platform (Claude, GPT-4, Google APIs)",
+      "vrednost": true,
+      "vrsta": "E",
+      "idx": "D043",
+      "vrednost_dejstva": "T",
+      "razlaga": "izrecna trditev"
+    },
+    {
+      "k": "K3",
+      "atom": "a03",
+      "citat": "full-stack AI navdušenec",
+      "vrednost": true,
+      "vrsta": "E",
+      "idx": "D044",
+      "vrednost_dejstva": "T",
+      "razlaga": "izrecna trditev"
+    },
+    {
+      "k": "K3",
+      "atom": "a04",
+      "citat": "obožujem rapidno prototipiranje, MVP-je in iterativno dostavo",
+      "vrednost": true,
+      "vrsta": "E",
+      "idx": "D045",
+      "vrednost_dejstva": "T",
+      "razlaga": "izrecna trditev"
+    },
+    {
+      "k": "K3",
+      "atom": "a01",
+      "citat": "se ne poglabljam rad v dolgotrajno analizo podatkovnih baz ali gradnjo kompleksnih internih infrastruktur",
+      "vrednost": false,
+      "vrsta": "I",
+      "pravilo": "B10",
+      "idx": "D046",
+      "vrednost_dejstva": "F",
+      "razlaga": "izrecna negacija"
+    },
+    {
+      "k": "K4",
+      "atom": "a41",
+      "citat": "Prinašam 9 let progresivnih programerskih izkušenj",
+      "leta": 9,
+      "kvantifikator": "≥",
+      "vrsta": "E",
+      "idx": "D047",
+      "vrednost_dejstva": "T",
+      "razlaga": "≥9 let ≥ prag 6"
+    },
+    {
+      "k": "K4",
+      "atom": "a09",
+      "citat": "9 let progresivnih programerskih izkušenj v jeziku Java (Spring Boot) in Python",
+      "signal": "izkušenj",
+      "vrsta": "E",
+      "opomba": "raven 3 < 4",
+      "idx": "D048",
+      "vrednost_dejstva": "U",
+      "razlaga": "raven 3 < zahtevana 4 (spodnja meja, ne ovrže)"
+    },
+    {
+      "k": "K4",
+      "atom": "a10",
+      "citat": "9 let progresivnih programerskih izkušenj v jeziku Java (Spring Boot) in Python",
+      "signal": "izkušenj",
+      "vrsta": "E",
+      "opomba": "raven 3 < 4",
+      "idx": "D049",
+      "vrednost_dejstva": "U",
+      "razlaga": "raven 3 < zahtevana 4 (spodnja meja, ne ovrže)"
+    },
+    {
+      "k": "K4",
+      "atom": "a09",
+      "citat": "9 let progresivnih programerskih izkušenj v jeziku Java (Spring Boot) in Python",
+      "vrsta": "I",
+      "pravilo": "B5",
+      "raven": 4,
+      "idx": "D050",
+      "vrednost_dejstva": "T",
+      "razlaga": "raven 4 ≥ zahtevana 4"
+    },
+    {
+      "k": "K4",
+      "atom": "a10",
+      "citat": "9 let progresivnih programerskih izkušenj v jeziku Java (Spring Boot) in Python",
+      "vrsta": "I",
+      "pravilo": "B5",
+      "raven": 4,
+      "idx": "D051",
+      "vrednost_dejstva": "T",
+      "razlaga": "raven 4 ≥ zahtevana 4"
+    },
+    {
+      "k": "K4",
+      "atom": "a42",
+      "citat": "9 let progresivnih programerskih izkušenj",
+      "vrsta": "I",
+      "pravilo": "B5",
+      "raven": 4,
+      "idx": "D052",
+      "vrednost_dejstva": "T",
+      "razlaga": "raven 4 ≥ zahtevana 4"
+    },
+    {
+      "k": "K4",
+      "atom": "a38",
+      "citat": "zadnja leta preživel v visoko regulirani obrambni industriji",
+      "signal": "preživel",
+      "vrsta": "E",
+      "idx": "D053",
+      "vrednost_dejstva": "T",
+      "razlaga": "raven 3 ≥ zahtevana 3"
+    },
+    {
+      "k": "K4",
+      "atom": "a13",
+      "citat": "kjer smo razvijali avtonomne in multi-agentne sisteme",
+      "vrsta": "I",
+      "pravilo": "B9",
+      "raven": 3,
+      "idx": "D054",
+      "vrednost_dejstva": "T",
+      "razlaga": "raven 3 ≥ zahtevana 3"
+    },
+    {
+      "k": "K4",
+      "atom": "a45",
+      "citat": "zadnja leta preživel v visoko regulirani obrambni industriji, kjer smo razvijali avtonomne in multi-agentne sisteme",
+      "leta": 2,
+      "kvantifikator": "≥",
+      "vrsta": "I",
+      "pravilo": "B7",
+      "idx": "D055",
+      "vrednost_dejstva": "T",
+      "razlaga": "≥2 let ≥ prag 2"
+    },
+    {
+      "k": "K4",
+      "atom": "a28",
+      "citat": "Sem strokovnjak za API-first in dogodkovno vodene arhitekture",
+      "signal": "strokovnjak",
+      "vrsta": "E",
+      "idx": "D056",
+      "vrednost_dejstva": "T",
+      "razlaga": "raven 4 ≥ zahtevana 3"
+    },
+    {
+      "k": "K4",
+      "atom": "a30",
+      "citat": "Sem strokovnjak za API-first in dogodkovno vodene arhitekture",
+      "signal": "strokovnjak",
+      "vrsta": "E",
+      "idx": "D057",
+      "vrednost_dejstva": "T",
+      "razlaga": "raven 4 ≥ zahtevana 3"
+    },
+    {
+      "k": "K4",
+      "atom": "a32",
+      "citat": "strokovnjak za API-first in dogodkovno vodene arhitekture ter Docker/Kubernetes platforme",
+      "signal": "strokovnjak",
+      "vrsta": "E",
+      "idx": "D058",
+      "vrednost_dejstva": "T",
+      "razlaga": "raven 4 ≥ zahtevana 3"
+    },
+    {
+      "k": "K4",
+      "atom": "a33",
+      "citat": "strokovnjak za API-first in dogodkovno vodene arhitekture ter Docker/Kubernetes platforme",
+      "signal": "strokovnjak",
+      "vrsta": "E",
+      "idx": "D059",
+      "vrednost_dejstva": "T",
+      "razlaga": "raven 4 ≥ zahtevana 3"
+    },
+    {
+      "k": "K4",
+      "atom": "a22",
+      "citat": "obrambni sektor v smislu varnosti, CI/CD praks, aplikacijske odpornosti",
+      "vrsta": "I",
+      "pravilo": "B11",
+      "raven": 3,
+      "idx": "D060",
+      "vrednost_dejstva": "U",
+      "razlaga": "raven 3 < zahtevana 4 (spodnja meja, ne ovrže)"
+    },
+    {
+      "k": "K4",
+      "atom": "a26",
+      "citat": "obrambni sektor v smislu varnosti, CI/CD praks, aplikacijske odpornosti",
+      "vrsta": "I",
+      "pravilo": "B11",
+      "raven": 3,
+      "idx": "D061",
+      "vrednost_dejstva": "U",
+      "razlaga": "raven 3 < zahtevana 4 (spodnja meja, ne ovrže)"
+    },
+    {
+      "k": "K4",
+      "atom": "a27",
+      "citat": "obrambni sektor v smislu varnosti, CI/CD praks, aplikacijske odpornosti",
+      "vrsta": "I",
+      "pravilo": "B11",
+      "raven": 3,
+      "idx": "D062",
+      "vrednost_dejstva": "U",
+      "razlaga": "raven 3 < zahtevana 4 (spodnja meja, ne ovrže)"
+    },
+    {
+      "k": "K4",
+      "atom": "a25",
+      "citat": "Delujem znotraj agilnih timov",
+      "signal": "delujem",
+      "vrsta": "E",
+      "opomba": "raven 3 < 4",
+      "idx": "D063",
+      "vrednost_dejstva": "U",
+      "razlaga": "raven 3 < zahtevana 4 (spodnja meja, ne ovrže)"
+    },
+    {
+      "k": "K4",
+      "atom": "a37",
+      "citat": "nimam izkušenj neposredno v bančništvu",
+      "vrednost": false,
+      "vrsta": "I",
+      "pravilo": "B1",
+      "idx": "D064",
+      "vrednost_dejstva": "F",
+      "razlaga": "izrecna negacija"
+    },
+    {
+      "k": "K4",
+      "atom": "a01",
+      "citat": "je moja prva naloga vzpostavitev robustnega infrastrukturnega ogrodja in orodij",
+      "vrednost": true,
+      "vrsta": "E",
+      "idx": "D065",
+      "vrednost_dejstva": "T",
+      "razlaga": "izrecna trditev"
+    },
+    {
+      "k": "K4",
+      "atom": "a04",
+      "citat": "Preden začnemo brezglavo hiteti v produkcijo z MVP rešitvami",
+      "vrednost": false,
+      "vrsta": "I",
+      "pravilo": "B10",
+      "idx": "D066",
+      "vrednost_dejstva": "F",
+      "razlaga": "izrecna negacija"
+    },
+    {
+      "k": "K5",
+      "atom": "a41",
+      "citat": "formalno dosegam 4 leta izkušenj na področju programske opreme (kar je manj od navedenih 6–10 let)",
+      "leta": 4,
+      "kvantifikator": "=",
+      "vrsta": "E",
+      "idx": "D067",
+      "vrednost_dejstva": "F",
+      "razlaga": "natančno 4 let < prag 6"
+    },
+    {
+      "k": "K5",
+      "atom": "a43",
+      "citat": "zadnja 2 leta v celoti osredotočena na napredne generativne AI rešitve in RAG sisteme",
+      "leta": 2,
+      "kvantifikator": "≥",
+      "vrsta": "E",
+      "idx": "D068",
+      "vrednost_dejstva": "T",
+      "razlaga": "≥2 let ≥ prag 2"
+    },
+    {
+      "k": "K5",
+      "atom": "a44",
+      "citat": "zadnja 2 leta v celoti osredotočena na napredne generativne AI rešitve",
+      "leta": 2,
+      "kvantifikator": "≥",
+      "vrsta": "I",
+      "pravilo": "B4",
+      "idx": "D069",
+      "vrednost_dejstva": "T",
+      "razlaga": "≥2 let ≥ prag 2"
+    },
+    {
+      "k": "K5",
+      "atom": "a15",
+      "citat": "osredotočena na napredne generativne AI rešitve in RAG sisteme",
+      "signal": "osredotočena",
+      "vrsta": "E",
+      "idx": "D070",
+      "vrednost_dejstva": "T",
+      "razlaga": "raven 3 ≥ zahtevana 3"
+    },
+    {
+      "k": "K5",
+      "atom": "a09",
+      "citat": "Odlično obvladam Python",
+      "signal": "odlično obvladam",
+      "vrsta": "E",
+      "idx": "D071",
+      "vrednost_dejstva": "T",
+      "razlaga": "raven 4 ≥ zahtevana 4"
+    },
+    {
+      "k": "K5",
+      "atom": "a19",
+      "citat": "Odlično obvladam Python, knjižnice NumPy/Pandas, strojno učenje (Scikit-learn)",
+      "signal": "odlično obvladam",
+      "vrsta": "E",
+      "idx": "D072",
+      "vrednost_dejstva": "T",
+      "razlaga": "raven 4 ≥ zahtevana 3"
+    },
+    {
+      "k": "K5",
+      "atom": "a16",
+      "citat": "Odlično obvladam Python, knjižnice NumPy/Pandas, strojno učenje (Scikit-learn) ter prompt inženiring",
+      "signal": "odlično obvladam",
+      "vrsta": "E",
+      "idx": "D073",
+      "vrednost_dejstva": "T",
+      "razlaga": "raven 4 ≥ zahtevana 3"
+    },
+    {
+      "k": "K5",
+      "atom": "a20",
+      "citat": "uporaba sodobnih AI orodij (Copilot)",
+      "signal": "uporaba",
+      "vrsta": "E",
+      "idx": "D074",
+      "vrednost_dejstva": "T",
+      "razlaga": "raven 3 ≥ zahtevana 1"
+    },
+    {
+      "k": "K5",
+      "atom": "a35",
+      "citat": "sposobnost razumevanja kompleksnih problemov",
+      "signal": "sposobnost",
+      "vrsta": "E",
+      "opomba": "raven 3 < 4",
+      "idx": "D075",
+      "vrednost_dejstva": "U",
+      "razlaga": "raven 3 < zahtevana 4 (spodnja meja, ne ovrže)"
+    },
+    {
+      "k": "K5",
+      "atom": "a37",
+      "citat": "Nimam bančnega ozadja",
+      "vrednost": false,
+      "vrsta": "I",
+      "pravilo": "B1",
+      "idx": "D076",
+      "vrednost_dejstva": "F",
+      "razlaga": "izrecna negacija"
+    },
+    {
+      "k": "K5",
+      "atom": "a01",
+      "citat": "ne težim k dolgotrajni gradnji lastnih zaprtih infrastruktur",
+      "vrednost": false,
+      "vrsta": "I",
+      "pravilo": "B10",
+      "idx": "D077",
+      "vrednost_dejstva": "F",
+      "razlaga": "izrecna negacija"
+    }
+  ],
+  "neuporabljene_izjave": [
+    {
+      "k": "K1",
+      "citat": "s svojo poslušnostjo, disciplino",
+      "razlog": "Oglas ne vsebuje zahteve po poslušnosti; lastnost ni atom."
+    },
+    {
+      "k": "K1",
+      "citat": "sem se strogo držal navodil poslovnih analitikov",
+      "razlog": "Stališče do dela, ni atom zahtev."
+    },
+    {
+      "k": "K1",
+      "citat": "Globoko razumem pomen spoštovanja strogih bančnih regulatornih okvirov in varnostnih standardov",
+      "razlog": "Razumevanje POMENA standardov ni veščina 'security' (a27); vezava bi zahtevala novo premostitveno pravilo."
+    },
+    {
+      "k": "K2",
+      "citat": "verifikacijske logične filtre, ki preprečujejo halucinacije LLM modelov",
+      "razlog": "Namera za prihodnost, ne izkušnja."
+    },
+    {
+      "k": "K2",
+      "citat": "v akademskem in raziskovalnem okolju",
+      "razlog": "Relevantno za a47 (enterprise-scale v produkciji), ne dokazuje ga niti ne ovrže → U."
+    },
+    {
+      "k": "K3",
+      "citat": "dosegam 3-kratno hitrost običajnega programerja",
+      "razlog": "Samoocena brez merljive podlage; ni atom."
+    },
+    {
+      "k": "K3",
+      "citat": "se ne poglabljam rad v dolgotrajno analizo podatkovnih baz",
+      "razlog": "Preferenca, ne zmožnost; za a31 (data engineering patterns) ni uporabljena, ker B10 velja samo za naloge P."
+    },
+    {
+      "k": "K4",
+      "citat": "vedno z distanco zdravega razuma do zahtev netehničnega osebja",
+      "razlog": "Stališče; za a08 (Domain Alignment) dvoumno – ni uporabljeno."
+    },
+    {
+      "k": "K4",
+      "citat": "Moja obrambna referenca deluje kot garant za absolutno stabilnost",
+      "razlog": "Trditev brez preverljive vsebine."
+    },
+    {
+      "k": "K5",
+      "citat": "ki ga starejši kadri včasih izgubijo",
+      "razlog": "Posplošitev o starosti; ni atom in je ne smemo upoštevati."
+    },
+    {
+      "k": "K5",
+      "citat": "pripravljenost na mentorstvo s strani izkušenejših sodelavcev",
+      "razlog": "PAST: beseda 'mentorstvo' se ujema z a40 ('interest in mentoring junior AI engineers'), smer pa je obratna (prejemanje, ne dajanje) → ni uporabljeno."
+    }
+  ],
+  "izluscil": "Claude (claude-opus-5-5), 2026-09-24",
+  "vrednosti": {
+    "K1": {
+      "S": {
+        "a09": {
+          "v": "T",
+          "dejstva": [
+            "D001"
+          ],
+          "opomba": ""
+        },
+        "a10": {
+          "v": "T",
+          "dejstva": [
+            "D002"
+          ],
+          "opomba": ""
+        },
+        "a11": {
+          "v": "U",
+          "dejstva": [],
+          "opomba": "ni podatka"
+        },
+        "a13": {
+          "v": "U",
+          "dejstva": [],
+          "opomba": "ni podatka"
+        },
+        "a14": {
+          "v": "U",
+          "dejstva": [],
+          "opomba": "ni podatka"
+        },
+        "a15": {
+          "v": "U",
+          "dejstva": [],
+          "opomba": "ni podatka"
+        },
+        "a16": {
+          "v": "U",
+          "dejstva": [],
+          "opomba": "ni podatka"
+        },
+        "a17": {
+          "v": "U",
+          "dejstva": [],
+          "opomba": "ni podatka"
+        },
+        "a18": {
+          "v": "U",
+          "dejstva": [],
+          "opomba": "ni podatka"
+        },
+        "a19": {
+          "v": "U",
+          "dejstva": [],
+          "opomba": "ni podatka"
+        },
+        "a20": {
+          "v": "T",
+          "dejstva": [
+            "D005"
+          ],
+          "opomba": ""
+        },
+        "a21": {
+          "v": "U",
+          "dejstva": [],
+          "opomba": "ni podatka"
+        },
+        "a22": {
+          "v": "U",
+          "dejstva": [],
+          "opomba": "ni podatka"
+        },
+        "a23": {
+          "v": "U",
+          "dejstva": [],
+          "opomba": "ni podatka"
+        },
+        "a24": {
+          "v": "U",
+          "dejstva": [],
+          "opomba": "ni podatka"
+        },
+        "a25": {
+          "v": "U",
+          "dejstva": [
+            "D006"
+          ],
+          "opomba": ""
+        },
+        "a26": {
+          "v": "U",
+          "dejstva": [],
+          "opomba": "ni podatka"
+        },
+        "a27": {
+          "v": "U",
+          "dejstva": [],
+          "opomba": "ni podatka"
+        },
+        "a28": {
+          "v": "U",
+          "dejstva": [],
+          "opomba": "ni podatka"
+        },
+        "a29": {
+          "v": "U",
+          "dejstva": [],
+          "opomba": "ni podatka"
+        },
+        "a30": {
+          "v": "U",
+          "dejstva": [],
+          "opomba": "ni podatka"
+        },
+        "a31": {
+          "v": "U",
+          "dejstva": [],
+          "opomba": "ni podatka"
+        },
+        "a32": {
+          "v": "T",
+          "dejstva": [
+            "D003"
+          ],
+          "opomba": ""
+        },
+        "a33": {
+          "v": "T",
+          "dejstva": [
+            "D004"
+          ],
+          "opomba": ""
+        },
+        "a34": {
+          "v": "U",
+          "dejstva": [],
+          "opomba": "ni podatka"
+        },
+        "a35": {
+          "v": "U",
+          "dejstva": [],
+          "opomba": "ni podatka"
+        },
+        "a36": {
+          "v": "U",
+          "dejstva": [],
+          "opomba": "ni podatka"
+        },
+        "a37": {
+          "v": "U",
+          "dejstva": [
+            "D008"
+          ],
+          "opomba": ""
+        },
+        "a38": {
+          "v": "T",
+          "dejstva": [
+            "D007"
+          ],
+          "opomba": ""
+        },
+        "a41": {
+          "v": "U",
+          "dejstva": [],
+          "opomba": "ni podatka"
+        },
+        "a42": {
+          "v": "U",
+          "dejstva": [],
+          "opomba": "ni podatka"
+        },
+        "a43": {
+          "v": "T",
+          "dejstva": [
+            "D010"
+          ],
+          "opomba": ""
+        },
+        "a44": {
+          "v": "U",
+          "dejstva": [],
+          "opomba": "ni podatka"
+        },
+        "a45": {
+          "v": "U",
+          "dejstva": [],
+          "opomba": "ni podatka"
+        },
+        "a46": {
+          "v": "U",
+          "dejstva": [],
+          "opomba": "ni podatka"
+        },
+        "a47": {
+          "v": "U",
+          "dejstva": [],
+          "opomba": "ni podatka"
+        },
+        "a48": {
+          "v": "U",
+          "dejstva": [],
+          "opomba": "ni podatka"
+        },
+        "a49": {
+          "v": "U",
+          "dejstva": [],
+          "opomba": "ni podatka"
+        },
+        "a50": {
+          "v": "U",
+          "dejstva": [],
+          "opomba": "ni podatka"
+        },
+        "a12": {
+          "v": "U",
+          "dejstva": [],
+          "opomba": "ni podatka"
+        },
+        "a39": {
+          "v": "U",
+          "dejstva": [],
+          "opomba": "ni podatka"
+        },
+        "a40": {
+          "v": "U",
+          "dejstva": [],
+          "opomba": "ni podatka"
+        },
+        "a01": {
+          "v": "U",
+          "dejstva": [],
+          "opomba": "ni podatka"
+        },
+        "a02": {
+          "v": "U",
+          "dejstva": [],
+          "opomba": "ni podatka"
+        },
+        "a03": {
+          "v": "U",
+          "dejstva": [],
+          "opomba": "ni podatka"
+        },
+        "a04": {
+          "v": "T",
+          "dejstva": [
+            "D014"
+          ],
+          "opomba": ""
+        },
+        "a05": {
+          "v": "U",
+          "dejstva": [],
+          "opomba": "ni podatka"
+        },
+        "a06": {
+          "v": "U",
+          "dejstva": [],
+          "opomba": "ni podatka"
+        },
+        "a07": {
+          "v": "U",
+          "dejstva": [],
+          "opomba": "ni podatka"
+        },
+        "a08": {
+          "v": "T",
+          "dejstva": [
+            "D015"
+          ],
+          "opomba": ""
+        }
+      },
+      "B": {
+        "a09": {
+          "v": "T",
+          "dejstva": [
+            "D001"
+          ],
+          "opomba": ""
+        },
+        "a10": {
+          "v": "T",
+          "dejstva": [
+            "D002"
+          ],
+          "opomba": ""
+        },
+        "a11": {
+          "v": "U",
+          "dejstva": [],
+          "opomba": "ni podatka"
+        },
+        "a13": {
+          "v": "U",
+          "dejstva": [],
+          "opomba": "ni podatka"
+        },
+        "a14": {
+          "v": "T",
+          "dejstva": [
+            "D012"
+          ],
+          "opomba": ""
+        },
+        "a15": {
+          "v": "U",
+          "dejstva": [],
+          "opomba": "ni podatka"
+        },
+        "a16": {
+          "v": "U",
+          "dejstva": [],
+          "opomba": "ni podatka"
+        },
+        "a17": {
+          "v": "U",
+          "dejstva": [],
+          "opomba": "ni podatka"
+        },
+        "a18": {
+          "v": "U",
+          "dejstva": [],
+          "opomba": "ni podatka"
+        },
+        "a19": {
+          "v": "U",
+          "dejstva": [],
+          "opomba": "ni podatka"
+        },
+        "a20": {
+          "v": "T",
+          "dejstva": [
+            "D005"
+          ],
+          "opomba": ""
+        },
+        "a21": {
+          "v": "U",
+          "dejstva": [],
+          "opomba": "ni podatka"
+        },
+        "a22": {
+          "v": "U",
+          "dejstva": [],
+          "opomba": "ni podatka"
+        },
+        "a23": {
+          "v": "U",
+          "dejstva": [],
+          "opomba": "ni podatka"
+        },
+        "a24": {
+          "v": "U",
+          "dejstva": [],
+          "opomba": "ni podatka"
+        },
+        "a25": {
+          "v": "U",
+          "dejstva": [
+            "D006"
+          ],
+          "opomba": ""
+        },
+        "a26": {
+          "v": "U",
+          "dejstva": [],
+          "opomba": "ni podatka"
+        },
+        "a27": {
+          "v": "U",
+          "dejstva": [],
+          "opomba": "ni podatka"
+        },
+        "a28": {
+          "v": "U",
+          "dejstva": [],
+          "opomba": "ni podatka"
+        },
+        "a29": {
+          "v": "U",
+          "dejstva": [],
+          "opomba": "ni podatka"
+        },
+        "a30": {
+          "v": "U",
+          "dejstva": [],
+          "opomba": "ni podatka"
+        },
+        "a31": {
+          "v": "U",
+          "dejstva": [],
+          "opomba": "ni podatka"
+        },
+        "a32": {
+          "v": "T",
+          "dejstva": [
+            "D003"
+          ],
+          "opomba": ""
+        },
+        "a33": {
+          "v": "T",
+          "dejstva": [
+            "D004"
+          ],
+          "opomba": ""
+        },
+        "a34": {
+          "v": "U",
+          "dejstva": [],
+          "opomba": "ni podatka"
+        },
+        "a35": {
+          "v": "U",
+          "dejstva": [],
+          "opomba": "ni podatka"
+        },
+        "a36": {
+          "v": "U",
+          "dejstva": [],
+          "opomba": "ni podatka"
+        },
+        "a37": {
+          "v": "T",
+          "dejstva": [
+            "D008",
+            "D009"
+          ],
+          "opomba": ""
+        },
+        "a38": {
+          "v": "T",
+          "dejstva": [
+            "D007"
+          ],
+          "opomba": ""
+        },
+        "a41": {
+          "v": "T",
+          "dejstva": [
+            "D013"
+          ],
+          "opomba": ""
+        },
+        "a42": {
+          "v": "U",
+          "dejstva": [],
+          "opomba": "ni podatka"
+        },
+        "a43": {
+          "v": "T",
+          "dejstva": [
+            "D010"
+          ],
+          "opomba": ""
+        },
+        "a44": {
+          "v": "T",
+          "dejstva": [
+            "D011"
+          ],
+          "opomba": ""
+        },
+        "a45": {
+          "v": "U",
+          "dejstva": [],
+          "opomba": "ni podatka"
+        },
+        "a46": {
+          "v": "U",
+          "dejstva": [],
+          "opomba": "ni podatka"
+        },
+        "a47": {
+          "v": "U",
+          "dejstva": [],
+          "opomba": "ni podatka"
+        },
+        "a48": {
+          "v": "U",
+          "dejstva": [],
+          "opomba": "ni podatka"
+        },
+        "a49": {
+          "v": "U",
+          "dejstva": [],
+          "opomba": "ni podatka"
+        },
+        "a50": {
+          "v": "U",
+          "dejstva": [],
+          "opomba": "ni podatka"
+        },
+        "a12": {
+          "v": "U",
+          "dejstva": [],
+          "opomba": "ni podatka"
+        },
+        "a39": {
+          "v": "U",
+          "dejstva": [],
+          "opomba": "ni podatka"
+        },
+        "a40": {
+          "v": "U",
+          "dejstva": [],
+          "opomba": "ni podatka"
+        },
+        "a01": {
+          "v": "F",
+          "dejstva": [
+            "D016"
+          ],
+          "opomba": ""
+        },
+        "a02": {
+          "v": "U",
+          "dejstva": [],
+          "opomba": "ni podatka"
+        },
+        "a03": {
+          "v": "U",
+          "dejstva": [],
+          "opomba": "ni podatka"
+        },
+        "a04": {
+          "v": "T",
+          "dejstva": [
+            "D014"
+          ],
+          "opomba": ""
+        },
+        "a05": {
+          "v": "U",
+          "dejstva": [],
+          "opomba": "ni podatka"
+        },
+        "a06": {
+          "v": "U",
+          "dejstva": [],
+          "opomba": "ni podatka"
+        },
+        "a07": {
+          "v": "U",
+          "dejstva": [],
+          "opomba": "ni podatka"
+        },
+        "a08": {
+          "v": "T",
+          "dejstva": [
+            "D015"
+          ],
+          "opomba": ""
+        }
+      }
+    },
+    "K2": {
+      "S": {
+        "a09": {
+          "v": "U",
+          "dejstva": [
+            "D018"
+          ],
+          "opomba": ""
+        },
+        "a10": {
+          "v": "U",
+          "dejstva": [],
+          "opomba": "ni podatka"
+        },
+        "a11": {
+          "v": "U",
+          "dejstva": [],
+          "opomba": "ni podatka"
+        },
+        "a13": {
+          "v": "T",
+          "dejstva": [
+            "D017"
+          ],
+          "opomba": ""
+        },
+        "a14": {
+          "v": "U",
+          "dejstva": [],
+          "opomba": "ni podatka"
+        },
+        "a15": {
+          "v": "U",
+          "dejstva": [
+            "D021"
+          ],
+          "opomba": ""
+        },
+        "a16": {
+          "v": "U",
+          "dejstva": [],
+          "opomba": "ni podatka"
+        },
+        "a17": {
+          "v": "U",
+          "dejstva": [
+            "D020"
+          ],
+          "opomba": ""
+        },
+        "a18": {
+          "v": "U",
+          "dejstva": [],
+          "opomba": "ni podatka"
+        },
+        "a19": {
+          "v": "U",
+          "dejstva": [
+            "D019"
+          ],
+          "opomba": ""
+        },
+        "a20": {
+          "v": "U",
+          "dejstva": [],
+          "opomba": "ni podatka"
+        },
+        "a21": {
+          "v": "U",
+          "dejstva": [],
+          "opomba": "ni podatka"
+        },
+        "a22": {
+          "v": "U",
+          "dejstva": [],
+          "opomba": "ni podatka"
+        },
+        "a23": {
+          "v": "U",
+          "dejstva": [],
+          "opomba": "ni podatka"
+        },
+        "a24": {
+          "v": "U",
+          "dejstva": [],
+          "opomba": "ni podatka"
+        },
+        "a25": {
+          "v": "U",
+          "dejstva": [],
+          "opomba": "ni podatka"
+        },
+        "a26": {
+          "v": "U",
+          "dejstva": [],
+          "opomba": "ni podatka"
+        },
+        "a27": {
+          "v": "U",
+          "dejstva": [],
+          "opomba": "ni podatka"
+        },
+        "a28": {
+          "v": "U",
+          "dejstva": [],
+          "opomba": "ni podatka"
+        },
+        "a29": {
+          "v": "U",
+          "dejstva": [],
+          "opomba": "ni podatka"
+        },
+        "a30": {
+          "v": "U",
+          "dejstva": [],
+          "opomba": "ni podatka"
+        },
+        "a31": {
+          "v": "U",
+          "dejstva": [],
+          "opomba": "ni podatka"
+        },
+        "a32": {
+          "v": "T",
+          "dejstva": [
+            "D022"
+          ],
+          "opomba": ""
+        },
+        "a33": {
+          "v": "U",
+          "dejstva": [],
+          "opomba": "ni podatka"
+        },
+        "a34": {
+          "v": "T",
+          "dejstva": [
+            "D023"
+          ],
+          "opomba": ""
+        },
+        "a35": {
+          "v": "U",
+          "dejstva": [],
+          "opomba": "ni podatka"
+        },
+        "a36": {
+          "v": "U",
+          "dejstva": [],
+          "opomba": "ni podatka"
+        },
+        "a37": {
+          "v": "U",
+          "dejstva": [],
+          "opomba": "ni podatka"
+        },
+        "a38": {
+          "v": "U",
+          "dejstva": [],
+          "opomba": "ni podatka"
+        },
+        "a41": {
+          "v": "U",
+          "dejstva": [],
+          "opomba": "ni podatka"
+        },
+        "a42": {
+          "v": "U",
+          "dejstva": [],
+          "opomba": "ni podatka"
+        },
+        "a43": {
+          "v": "T",
+          "dejstva": [
+            "D024"
+          ],
+          "opomba": ""
+        },
+        "a44": {
+          "v": "U",
+          "dejstva": [],
+          "opomba": "ni podatka"
+        },
+        "a45": {
+          "v": "U",
+          "dejstva": [],
+          "opomba": "ni podatka"
+        },
+        "a46": {
+          "v": "U",
+          "dejstva": [],
+          "opomba": "ni podatka"
+        },
+        "a47": {
+          "v": "U",
+          "dejstva": [],
+          "opomba": "ni podatka"
+        },
+        "a48": {
+          "v": "U",
+          "dejstva": [],
+          "opomba": "ni podatka"
+        },
+        "a49": {
+          "v": "U",
+          "dejstva": [],
+          "opomba": "ni podatka"
+        },
+        "a50": {
+          "v": "U",
+          "dejstva": [],
+          "opomba": "ni podatka"
+        },
+        "a12": {
+          "v": "U",
+          "dejstva": [],
+          "opomba": "ni podatka"
+        },
+        "a39": {
+          "v": "U",
+          "dejstva": [],
+          "opomba": "ni podatka"
+        },
+        "a40": {
+          "v": "U",
+          "dejstva": [],
+          "opomba": "ni podatka"
+        },
+        "a01": {
+          "v": "U",
+          "dejstva": [],
+          "opomba": "ni podatka"
+        },
+        "a02": {
+          "v": "U",
+          "dejstva": [],
+          "opomba": "ni podatka"
+        },
+        "a03": {
+          "v": "U",
+          "dejstva": [],
+          "opomba": "ni podatka"
+        },
+        "a04": {
+          "v": "U",
+          "dejstva": [],
+          "opomba": "ni podatka"
+        },
+        "a05": {
+          "v": "T",
+          "dejstva": [
+            "D028"
+          ],
+          "opomba": ""
+        },
+        "a06": {
+          "v": "U",
+          "dejstva": [],
+          "opomba": "ni podatka"
+        },
+        "a07": {
+          "v": "U",
+          "dejstva": [],
+          "opomba": "ni podatka"
+        },
+        "a08": {
+          "v": "U",
+          "dejstva": [],
+          "opomba": "ni podatka"
+        }
+      },
+      "B": {
+        "a09": {
+          "v": "U",
+          "dejstva": [
+            "D018"
+          ],
+          "opomba": ""
+        },
+        "a10": {
+          "v": "U",
+          "dejstva": [],
+          "opomba": "ni podatka"
+        },
+        "a11": {
+          "v": "U",
+          "dejstva": [],
+          "opomba": "ni podatka"
+        },
+        "a13": {
+          "v": "T",
+          "dejstva": [
+            "D017"
+          ],
+          "opomba": ""
+        },
+        "a14": {
+          "v": "U",
+          "dejstva": [],
+          "opomba": "ni podatka"
+        },
+        "a15": {
+          "v": "U",
+          "dejstva": [
+            "D021"
+          ],
+          "opomba": ""
+        },
+        "a16": {
+          "v": "U",
+          "dejstva": [],
+          "opomba": "ni podatka"
+        },
+        "a17": {
+          "v": "U",
+          "dejstva": [
+            "D020"
+          ],
+          "opomba": ""
+        },
+        "a18": {
+          "v": "U",
+          "dejstva": [],
+          "opomba": "ni podatka"
+        },
+        "a19": {
+          "v": "U",
+          "dejstva": [
+            "D019"
+          ],
+          "opomba": ""
+        },
+        "a20": {
+          "v": "U",
+          "dejstva": [],
+          "opomba": "ni podatka"
+        },
+        "a21": {
+          "v": "U",
+          "dejstva": [],
+          "opomba": "ni podatka"
+        },
+        "a22": {
+          "v": "U",
+          "dejstva": [],
+          "opomba": "ni podatka"
+        },
+        "a23": {
+          "v": "U",
+          "dejstva": [],
+          "opomba": "ni podatka"
+        },
+        "a24": {
+          "v": "U",
+          "dejstva": [],
+          "opomba": "ni podatka"
+        },
+        "a25": {
+          "v": "U",
+          "dejstva": [],
+          "opomba": "ni podatka"
+        },
+        "a26": {
+          "v": "U",
+          "dejstva": [],
+          "opomba": "ni podatka"
+        },
+        "a27": {
+          "v": "U",
+          "dejstva": [],
+          "opomba": "ni podatka"
+        },
+        "a28": {
+          "v": "U",
+          "dejstva": [],
+          "opomba": "ni podatka"
+        },
+        "a29": {
+          "v": "U",
+          "dejstva": [],
+          "opomba": "ni podatka"
+        },
+        "a30": {
+          "v": "U",
+          "dejstva": [],
+          "opomba": "ni podatka"
+        },
+        "a31": {
+          "v": "U",
+          "dejstva": [],
+          "opomba": "ni podatka"
+        },
+        "a32": {
+          "v": "T",
+          "dejstva": [
+            "D022"
+          ],
+          "opomba": ""
+        },
+        "a33": {
+          "v": "U",
+          "dejstva": [],
+          "opomba": "ni podatka"
+        },
+        "a34": {
+          "v": "T",
+          "dejstva": [
+            "D023"
+          ],
+          "opomba": ""
+        },
+        "a35": {
+          "v": "U",
+          "dejstva": [],
+          "opomba": "ni podatka"
+        },
+        "a36": {
+          "v": "U",
+          "dejstva": [],
+          "opomba": "ni podatka"
+        },
+        "a37": {
+          "v": "F",
+          "dejstva": [
+            "D026"
+          ],
+          "opomba": ""
+        },
+        "a38": {
+          "v": "U",
+          "dejstva": [],
+          "opomba": "ni podatka"
+        },
+        "a41": {
+          "v": "T",
+          "dejstva": [
+            "D025"
+          ],
+          "opomba": ""
+        },
+        "a42": {
+          "v": "U",
+          "dejstva": [],
+          "opomba": "ni podatka"
+        },
+        "a43": {
+          "v": "T",
+          "dejstva": [
+            "D024"
+          ],
+          "opomba": ""
+        },
+        "a44": {
+          "v": "U",
+          "dejstva": [],
+          "opomba": "ni podatka"
+        },
+        "a45": {
+          "v": "U",
+          "dejstva": [],
+          "opomba": "ni podatka"
+        },
+        "a46": {
+          "v": "U",
+          "dejstva": [],
+          "opomba": "ni podatka"
+        },
+        "a47": {
+          "v": "U",
+          "dejstva": [],
+          "opomba": "ni podatka"
+        },
+        "a48": {
+          "v": "U",
+          "dejstva": [],
+          "opomba": "ni podatka"
+        },
+        "a49": {
+          "v": "T",
+          "dejstva": [
+            "D027"
+          ],
+          "opomba": ""
+        },
+        "a50": {
+          "v": "U",
+          "dejstva": [],
+          "opomba": "ni podatka"
+        },
+        "a12": {
+          "v": "U",
+          "dejstva": [],
+          "opomba": "ni podatka"
+        },
+        "a39": {
+          "v": "U",
+          "dejstva": [],
+          "opomba": "ni podatka"
+        },
+        "a40": {
+          "v": "U",
+          "dejstva": [],
+          "opomba": "ni podatka"
+        },
+        "a01": {
+          "v": "U",
+          "dejstva": [],
+          "opomba": "ni podatka"
+        },
+        "a02": {
+          "v": "U",
+          "dejstva": [],
+          "opomba": "ni podatka"
+        },
+        "a03": {
+          "v": "U",
+          "dejstva": [],
+          "opomba": "ni podatka"
+        },
+        "a04": {
+          "v": "F",
+          "dejstva": [
+            "D029"
+          ],
+          "opomba": ""
+        },
+        "a05": {
+          "v": "T",
+          "dejstva": [
+            "D028"
+          ],
+          "opomba": ""
+        },
+        "a06": {
+          "v": "U",
+          "dejstva": [],
+          "opomba": "ni podatka"
+        },
+        "a07": {
+          "v": "U",
+          "dejstva": [],
+          "opomba": "ni podatka"
+        },
+        "a08": {
+          "v": "U",
+          "dejstva": [],
+          "opomba": "ni podatka"
+        }
+      }
+    },
+    "K3": {
+      "S": {
+        "a09": {
+          "v": "T",
+          "dejstva": [
+            "D037"
+          ],
+          "opomba": ""
+        },
+        "a10": {
+          "v": "U",
+          "dejstva": [],
+          "opomba": "ni podatka"
+        },
+        "a11": {
+          "v": "T",
+          "dejstva": [
+            "D036"
+          ],
+          "opomba": ""
+        },
+        "a13": {
+          "v": "U",
+          "dejstva": [],
+          "opomba": "ni podatka"
+        },
+        "a14": {
+          "v": "U",
+          "dejstva": [],
+          "opomba": "ni podatka"
+        },
+        "a15": {
+          "v": "U",
+          "dejstva": [],
+          "opomba": "ni podatka"
+        },
+        "a16": {
+          "v": "T",
+          "dejstva": [
+            "D033"
+          ],
+          "opomba": ""
+        },
+        "a17": {
+          "v": "U",
+          "dejstva": [],
+          "opomba": "ni podatka"
+        },
+        "a18": {
+          "v": "T",
+          "dejstva": [
+            "D032"
+          ],
+          "opomba": ""
+        },
+        "a19": {
+          "v": "U",
+          "dejstva": [],
+          "opomba": "ni podatka"
+        },
+        "a20": {
+          "v": "T",
+          "dejstva": [
+            "D035"
+          ],
+          "opomba": ""
+        },
+        "a21": {
+          "v": "U",
+          "dejstva": [],
+          "opomba": "ni podatka"
+        },
+        "a22": {
+          "v": "U",
+          "dejstva": [
+            "D040"
+          ],
+          "opomba": ""
+        },
+        "a23": {
+          "v": "U",
+          "dejstva": [],
+          "opomba": "ni podatka"
+        },
+        "a24": {
+          "v": "U",
+          "dejstva": [],
+          "opomba": "ni podatka"
+        },
+        "a25": {
+          "v": "U",
+          "dejstva": [],
+          "opomba": "ni podatka"
+        },
+        "a26": {
+          "v": "U",
+          "dejstva": [],
+          "opomba": "ni podatka"
+        },
+        "a27": {
+          "v": "U",
+          "dejstva": [],
+          "opomba": "ni podatka"
+        },
+        "a28": {
+          "v": "U",
+          "dejstva": [],
+          "opomba": "ni podatka"
+        },
+        "a29": {
+          "v": "U",
+          "dejstva": [],
+          "opomba": "ni podatka"
+        },
+        "a30": {
+          "v": "U",
+          "dejstva": [],
+          "opomba": "ni podatka"
+        },
+        "a31": {
+          "v": "U",
+          "dejstva": [],
+          "opomba": "ni podatka"
+        },
+        "a32": {
+          "v": "T",
+          "dejstva": [
+            "D038"
+          ],
+          "opomba": ""
+        },
+        "a33": {
+          "v": "T",
+          "dejstva": [
+            "D039"
+          ],
+          "opomba": ""
+        },
+        "a34": {
+          "v": "U",
+          "dejstva": [],
+          "opomba": "ni podatka"
+        },
+        "a35": {
+          "v": "U",
+          "dejstva": [],
+          "opomba": "ni podatka"
+        },
+        "a36": {
+          "v": "U",
+          "dejstva": [],
+          "opomba": "ni podatka"
+        },
+        "a37": {
+          "v": "U",
+          "dejstva": [],
+          "opomba": "ni podatka"
+        },
+        "a38": {
+          "v": "U",
+          "dejstva": [],
+          "opomba": "ni podatka"
+        },
+        "a41": {
+          "v": "T",
+          "dejstva": [
+            "D030"
+          ],
+          "opomba": ""
+        },
+        "a42": {
+          "v": "U",
+          "dejstva": [],
+          "opomba": "ni podatka"
+        },
+        "a43": {
+          "v": "U",
+          "dejstva": [],
+          "opomba": "ni podatka"
+        },
+        "a44": {
+          "v": "U",
+          "dejstva": [],
+          "opomba": "ni podatka"
+        },
+        "a45": {
+          "v": "T",
+          "dejstva": [
+            "D031"
+          ],
+          "opomba": ""
+        },
+        "a46": {
+          "v": "U",
+          "dejstva": [],
+          "opomba": "ni podatka"
+        },
+        "a47": {
+          "v": "U",
+          "dejstva": [],
+          "opomba": "ni podatka"
+        },
+        "a48": {
+          "v": "U",
+          "dejstva": [],
+          "opomba": "ni podatka"
+        },
+        "a49": {
+          "v": "U",
+          "dejstva": [],
+          "opomba": "ni podatka"
+        },
+        "a50": {
+          "v": "U",
+          "dejstva": [],
+          "opomba": "ni podatka"
+        },
+        "a12": {
+          "v": "U",
+          "dejstva": [
+            "D041"
+          ],
+          "opomba": ""
+        },
+        "a39": {
+          "v": "U",
+          "dejstva": [],
+          "opomba": "ni podatka"
+        },
+        "a40": {
+          "v": "U",
+          "dejstva": [],
+          "opomba": "ni podatka"
+        },
+        "a01": {
+          "v": "U",
+          "dejstva": [],
+          "opomba": "ni podatka"
+        },
+        "a02": {
+          "v": "T",
+          "dejstva": [
+            "D043"
+          ],
+          "opomba": ""
+        },
+        "a03": {
+          "v": "T",
+          "dejstva": [
+            "D044"
+          ],
+          "opomba": ""
+        },
+        "a04": {
+          "v": "T",
+          "dejstva": [
+            "D045"
+          ],
+          "opomba": ""
+        },
+        "a05": {
+          "v": "U",
+          "dejstva": [],
+          "opomba": "ni podatka"
+        },
+        "a06": {
+          "v": "U",
+          "dejstva": [],
+          "opomba": "ni podatka"
+        },
+        "a07": {
+          "v": "U",
+          "dejstva": [],
+          "opomba": "ni podatka"
+        },
+        "a08": {
+          "v": "U",
+          "dejstva": [],
+          "opomba": "ni podatka"
+        }
+      },
+      "B": {
+        "a09": {
+          "v": "T",
+          "dejstva": [
+            "D037"
+          ],
+          "opomba": ""
+        },
+        "a10": {
+          "v": "U",
+          "dejstva": [],
+          "opomba": "ni podatka"
+        },
+        "a11": {
+          "v": "T",
+          "dejstva": [
+            "D036"
+          ],
+          "opomba": ""
+        },
+        "a13": {
+          "v": "U",
+          "dejstva": [],
+          "opomba": "ni podatka"
+        },
+        "a14": {
+          "v": "T",
+          "dejstva": [
+            "D034"
+          ],
+          "opomba": ""
+        },
+        "a15": {
+          "v": "U",
+          "dejstva": [],
+          "opomba": "ni podatka"
+        },
+        "a16": {
+          "v": "T",
+          "dejstva": [
+            "D033"
+          ],
+          "opomba": ""
+        },
+        "a17": {
+          "v": "U",
+          "dejstva": [],
+          "opomba": "ni podatka"
+        },
+        "a18": {
+          "v": "T",
+          "dejstva": [
+            "D032"
+          ],
+          "opomba": ""
+        },
+        "a19": {
+          "v": "U",
+          "dejstva": [],
+          "opomba": "ni podatka"
+        },
+        "a20": {
+          "v": "T",
+          "dejstva": [
+            "D035"
+          ],
+          "opomba": ""
+        },
+        "a21": {
+          "v": "U",
+          "dejstva": [],
+          "opomba": "ni podatka"
+        },
+        "a22": {
+          "v": "U",
+          "dejstva": [
+            "D040"
+          ],
+          "opomba": ""
+        },
+        "a23": {
+          "v": "U",
+          "dejstva": [],
+          "opomba": "ni podatka"
+        },
+        "a24": {
+          "v": "U",
+          "dejstva": [],
+          "opomba": "ni podatka"
+        },
+        "a25": {
+          "v": "U",
+          "dejstva": [],
+          "opomba": "ni podatka"
+        },
+        "a26": {
+          "v": "U",
+          "dejstva": [],
+          "opomba": "ni podatka"
+        },
+        "a27": {
+          "v": "U",
+          "dejstva": [],
+          "opomba": "ni podatka"
+        },
+        "a28": {
+          "v": "U",
+          "dejstva": [],
+          "opomba": "ni podatka"
+        },
+        "a29": {
+          "v": "U",
+          "dejstva": [],
+          "opomba": "ni podatka"
+        },
+        "a30": {
+          "v": "U",
+          "dejstva": [],
+          "opomba": "ni podatka"
+        },
+        "a31": {
+          "v": "U",
+          "dejstva": [],
+          "opomba": "ni podatka"
+        },
+        "a32": {
+          "v": "T",
+          "dejstva": [
+            "D038"
+          ],
+          "opomba": ""
+        },
+        "a33": {
+          "v": "T",
+          "dejstva": [
+            "D039"
+          ],
+          "opomba": ""
+        },
+        "a34": {
+          "v": "U",
+          "dejstva": [],
+          "opomba": "ni podatka"
+        },
+        "a35": {
+          "v": "U",
+          "dejstva": [],
+          "opomba": "ni podatka"
+        },
+        "a36": {
+          "v": "U",
+          "dejstva": [],
+          "opomba": "ni podatka"
+        },
+        "a37": {
+          "v": "F",
+          "dejstva": [
+            "D042"
+          ],
+          "opomba": ""
+        },
+        "a38": {
+          "v": "U",
+          "dejstva": [],
+          "opomba": "ni podatka"
+        },
+        "a41": {
+          "v": "T",
+          "dejstva": [
+            "D030"
+          ],
+          "opomba": ""
+        },
+        "a42": {
+          "v": "U",
+          "dejstva": [],
+          "opomba": "ni podatka"
+        },
+        "a43": {
+          "v": "U",
+          "dejstva": [],
+          "opomba": "ni podatka"
+        },
+        "a44": {
+          "v": "U",
+          "dejstva": [],
+          "opomba": "ni podatka"
+        },
+        "a45": {
+          "v": "T",
+          "dejstva": [
+            "D031"
+          ],
+          "opomba": ""
+        },
+        "a46": {
+          "v": "U",
+          "dejstva": [],
+          "opomba": "ni podatka"
+        },
+        "a47": {
+          "v": "U",
+          "dejstva": [],
+          "opomba": "ni podatka"
+        },
+        "a48": {
+          "v": "U",
+          "dejstva": [],
+          "opomba": "ni podatka"
+        },
+        "a49": {
+          "v": "U",
+          "dejstva": [],
+          "opomba": "ni podatka"
+        },
+        "a50": {
+          "v": "U",
+          "dejstva": [],
+          "opomba": "ni podatka"
+        },
+        "a12": {
+          "v": "U",
+          "dejstva": [
+            "D041"
+          ],
+          "opomba": ""
+        },
+        "a39": {
+          "v": "U",
+          "dejstva": [],
+          "opomba": "ni podatka"
+        },
+        "a40": {
+          "v": "U",
+          "dejstva": [],
+          "opomba": "ni podatka"
+        },
+        "a01": {
+          "v": "F",
+          "dejstva": [
+            "D046"
+          ],
+          "opomba": ""
+        },
+        "a02": {
+          "v": "T",
+          "dejstva": [
+            "D043"
+          ],
+          "opomba": ""
+        },
+        "a03": {
+          "v": "T",
+          "dejstva": [
+            "D044"
+          ],
+          "opomba": ""
+        },
+        "a04": {
+          "v": "T",
+          "dejstva": [
+            "D045"
+          ],
+          "opomba": ""
+        },
+        "a05": {
+          "v": "U",
+          "dejstva": [],
+          "opomba": "ni podatka"
+        },
+        "a06": {
+          "v": "U",
+          "dejstva": [],
+          "opomba": "ni podatka"
+        },
+        "a07": {
+          "v": "U",
+          "dejstva": [],
+          "opomba": "ni podatka"
+        },
+        "a08": {
+          "v": "U",
+          "dejstva": [],
+          "opomba": "ni podatka"
+        }
+      }
+    },
+    "K4": {
+      "S": {
+        "a09": {
+          "v": "U",
+          "dejstva": [
+            "D048"
+          ],
+          "opomba": ""
+        },
+        "a10": {
+          "v": "U",
+          "dejstva": [
+            "D049"
+          ],
+          "opomba": ""
+        },
+        "a11": {
+          "v": "U",
+          "dejstva": [],
+          "opomba": "ni podatka"
+        },
+        "a13": {
+          "v": "U",
+          "dejstva": [],
+          "opomba": "ni podatka"
+        },
+        "a14": {
+          "v": "U",
+          "dejstva": [],
+          "opomba": "ni podatka"
+        },
+        "a15": {
+          "v": "U",
+          "dejstva": [],
+          "opomba": "ni podatka"
+        },
+        "a16": {
+          "v": "U",
+          "dejstva": [],
+          "opomba": "ni podatka"
+        },
+        "a17": {
+          "v": "U",
+          "dejstva": [],
+          "opomba": "ni podatka"
+        },
+        "a18": {
+          "v": "U",
+          "dejstva": [],
+          "opomba": "ni podatka"
+        },
+        "a19": {
+          "v": "U",
+          "dejstva": [],
+          "opomba": "ni podatka"
+        },
+        "a20": {
+          "v": "U",
+          "dejstva": [],
+          "opomba": "ni podatka"
+        },
+        "a21": {
+          "v": "U",
+          "dejstva": [],
+          "opomba": "ni podatka"
+        },
+        "a22": {
+          "v": "U",
+          "dejstva": [],
+          "opomba": "ni podatka"
+        },
+        "a23": {
+          "v": "U",
+          "dejstva": [],
+          "opomba": "ni podatka"
+        },
+        "a24": {
+          "v": "U",
+          "dejstva": [],
+          "opomba": "ni podatka"
+        },
+        "a25": {
+          "v": "U",
+          "dejstva": [
+            "D063"
+          ],
+          "opomba": ""
+        },
+        "a26": {
+          "v": "U",
+          "dejstva": [],
+          "opomba": "ni podatka"
+        },
+        "a27": {
+          "v": "U",
+          "dejstva": [],
+          "opomba": "ni podatka"
+        },
+        "a28": {
+          "v": "T",
+          "dejstva": [
+            "D056"
+          ],
+          "opomba": ""
+        },
+        "a29": {
+          "v": "U",
+          "dejstva": [],
+          "opomba": "ni podatka"
+        },
+        "a30": {
+          "v": "T",
+          "dejstva": [
+            "D057"
+          ],
+          "opomba": ""
+        },
+        "a31": {
+          "v": "U",
+          "dejstva": [],
+          "opomba": "ni podatka"
+        },
+        "a32": {
+          "v": "T",
+          "dejstva": [
+            "D058"
+          ],
+          "opomba": ""
+        },
+        "a33": {
+          "v": "T",
+          "dejstva": [
+            "D059"
+          ],
+          "opomba": ""
+        },
+        "a34": {
+          "v": "U",
+          "dejstva": [],
+          "opomba": "ni podatka"
+        },
+        "a35": {
+          "v": "U",
+          "dejstva": [],
+          "opomba": "ni podatka"
+        },
+        "a36": {
+          "v": "U",
+          "dejstva": [],
+          "opomba": "ni podatka"
+        },
+        "a37": {
+          "v": "U",
+          "dejstva": [],
+          "opomba": "ni podatka"
+        },
+        "a38": {
+          "v": "T",
+          "dejstva": [
+            "D053"
+          ],
+          "opomba": ""
+        },
+        "a41": {
+          "v": "T",
+          "dejstva": [
+            "D047"
+          ],
+          "opomba": ""
+        },
+        "a42": {
+          "v": "U",
+          "dejstva": [],
+          "opomba": "ni podatka"
+        },
+        "a43": {
+          "v": "U",
+          "dejstva": [],
+          "opomba": "ni podatka"
+        },
+        "a44": {
+          "v": "U",
+          "dejstva": [],
+          "opomba": "ni podatka"
+        },
+        "a45": {
+          "v": "U",
+          "dejstva": [],
+          "opomba": "ni podatka"
+        },
+        "a46": {
+          "v": "U",
+          "dejstva": [],
+          "opomba": "ni podatka"
+        },
+        "a47": {
+          "v": "U",
+          "dejstva": [],
+          "opomba": "ni podatka"
+        },
+        "a48": {
+          "v": "U",
+          "dejstva": [],
+          "opomba": "ni podatka"
+        },
+        "a49": {
+          "v": "U",
+          "dejstva": [],
+          "opomba": "ni podatka"
+        },
+        "a50": {
+          "v": "U",
+          "dejstva": [],
+          "opomba": "ni podatka"
+        },
+        "a12": {
+          "v": "U",
+          "dejstva": [],
+          "opomba": "ni podatka"
+        },
+        "a39": {
+          "v": "U",
+          "dejstva": [],
+          "opomba": "ni podatka"
+        },
+        "a40": {
+          "v": "U",
+          "dejstva": [],
+          "opomba": "ni podatka"
+        },
+        "a01": {
+          "v": "T",
+          "dejstva": [
+            "D065"
+          ],
+          "opomba": ""
+        },
+        "a02": {
+          "v": "U",
+          "dejstva": [],
+          "opomba": "ni podatka"
+        },
+        "a03": {
+          "v": "U",
+          "dejstva": [],
+          "opomba": "ni podatka"
+        },
+        "a04": {
+          "v": "U",
+          "dejstva": [],
+          "opomba": "ni podatka"
+        },
+        "a05": {
+          "v": "U",
+          "dejstva": [],
+          "opomba": "ni podatka"
+        },
+        "a06": {
+          "v": "U",
+          "dejstva": [],
+          "opomba": "ni podatka"
+        },
+        "a07": {
+          "v": "U",
+          "dejstva": [],
+          "opomba": "ni podatka"
+        },
+        "a08": {
+          "v": "U",
+          "dejstva": [],
+          "opomba": "ni podatka"
+        }
+      },
+      "B": {
+        "a09": {
+          "v": "T",
+          "dejstva": [
+            "D048",
+            "D050"
+          ],
+          "opomba": ""
+        },
+        "a10": {
+          "v": "T",
+          "dejstva": [
+            "D049",
+            "D051"
+          ],
+          "opomba": ""
+        },
+        "a11": {
+          "v": "U",
+          "dejstva": [],
+          "opomba": "ni podatka"
+        },
+        "a13": {
+          "v": "T",
+          "dejstva": [
+            "D054"
+          ],
+          "opomba": ""
+        },
+        "a14": {
+          "v": "U",
+          "dejstva": [],
+          "opomba": "ni podatka"
+        },
+        "a15": {
+          "v": "U",
+          "dejstva": [],
+          "opomba": "ni podatka"
+        },
+        "a16": {
+          "v": "U",
+          "dejstva": [],
+          "opomba": "ni podatka"
+        },
+        "a17": {
+          "v": "U",
+          "dejstva": [],
+          "opomba": "ni podatka"
+        },
+        "a18": {
+          "v": "U",
+          "dejstva": [],
+          "opomba": "ni podatka"
+        },
+        "a19": {
+          "v": "U",
+          "dejstva": [],
+          "opomba": "ni podatka"
+        },
+        "a20": {
+          "v": "U",
+          "dejstva": [],
+          "opomba": "ni podatka"
+        },
+        "a21": {
+          "v": "U",
+          "dejstva": [],
+          "opomba": "ni podatka"
+        },
+        "a22": {
+          "v": "U",
+          "dejstva": [
+            "D060"
+          ],
+          "opomba": ""
+        },
+        "a23": {
+          "v": "U",
+          "dejstva": [],
+          "opomba": "ni podatka"
+        },
+        "a24": {
+          "v": "U",
+          "dejstva": [],
+          "opomba": "ni podatka"
+        },
+        "a25": {
+          "v": "U",
+          "dejstva": [
+            "D063"
+          ],
+          "opomba": ""
+        },
+        "a26": {
+          "v": "U",
+          "dejstva": [
+            "D061"
+          ],
+          "opomba": ""
+        },
+        "a27": {
+          "v": "U",
+          "dejstva": [
+            "D062"
+          ],
+          "opomba": ""
+        },
+        "a28": {
+          "v": "T",
+          "dejstva": [
+            "D056"
+          ],
+          "opomba": ""
+        },
+        "a29": {
+          "v": "U",
+          "dejstva": [],
+          "opomba": "ni podatka"
+        },
+        "a30": {
+          "v": "T",
+          "dejstva": [
+            "D057"
+          ],
+          "opomba": ""
+        },
+        "a31": {
+          "v": "U",
+          "dejstva": [],
+          "opomba": "ni podatka"
+        },
+        "a32": {
+          "v": "T",
+          "dejstva": [
+            "D058"
+          ],
+          "opomba": ""
+        },
+        "a33": {
+          "v": "T",
+          "dejstva": [
+            "D059"
+          ],
+          "opomba": ""
+        },
+        "a34": {
+          "v": "U",
+          "dejstva": [],
+          "opomba": "ni podatka"
+        },
+        "a35": {
+          "v": "U",
+          "dejstva": [],
+          "opomba": "ni podatka"
+        },
+        "a36": {
+          "v": "U",
+          "dejstva": [],
+          "opomba": "ni podatka"
+        },
+        "a37": {
+          "v": "F",
+          "dejstva": [
+            "D064"
+          ],
+          "opomba": ""
+        },
+        "a38": {
+          "v": "T",
+          "dejstva": [
+            "D053"
+          ],
+          "opomba": ""
+        },
+        "a41": {
+          "v": "T",
+          "dejstva": [
+            "D047"
+          ],
+          "opomba": ""
+        },
+        "a42": {
+          "v": "T",
+          "dejstva": [
+            "D052"
+          ],
+          "opomba": ""
+        },
+        "a43": {
+          "v": "U",
+          "dejstva": [],
+          "opomba": "ni podatka"
+        },
+        "a44": {
+          "v": "U",
+          "dejstva": [],
+          "opomba": "ni podatka"
+        },
+        "a45": {
+          "v": "T",
+          "dejstva": [
+            "D055"
+          ],
+          "opomba": ""
+        },
+        "a46": {
+          "v": "U",
+          "dejstva": [],
+          "opomba": "ni podatka"
+        },
+        "a47": {
+          "v": "U",
+          "dejstva": [],
+          "opomba": "ni podatka"
+        },
+        "a48": {
+          "v": "U",
+          "dejstva": [],
+          "opomba": "ni podatka"
+        },
+        "a49": {
+          "v": "U",
+          "dejstva": [],
+          "opomba": "ni podatka"
+        },
+        "a50": {
+          "v": "U",
+          "dejstva": [],
+          "opomba": "ni podatka"
+        },
+        "a12": {
+          "v": "U",
+          "dejstva": [],
+          "opomba": "ni podatka"
+        },
+        "a39": {
+          "v": "U",
+          "dejstva": [],
+          "opomba": "ni podatka"
+        },
+        "a40": {
+          "v": "U",
+          "dejstva": [],
+          "opomba": "ni podatka"
+        },
+        "a01": {
+          "v": "T",
+          "dejstva": [
+            "D065"
+          ],
+          "opomba": ""
+        },
+        "a02": {
+          "v": "U",
+          "dejstva": [],
+          "opomba": "ni podatka"
+        },
+        "a03": {
+          "v": "U",
+          "dejstva": [],
+          "opomba": "ni podatka"
+        },
+        "a04": {
+          "v": "F",
+          "dejstva": [
+            "D066"
+          ],
+          "opomba": ""
+        },
+        "a05": {
+          "v": "U",
+          "dejstva": [],
+          "opomba": "ni podatka"
+        },
+        "a06": {
+          "v": "U",
+          "dejstva": [],
+          "opomba": "ni podatka"
+        },
+        "a07": {
+          "v": "U",
+          "dejstva": [],
+          "opomba": "ni podatka"
+        },
+        "a08": {
+          "v": "U",
+          "dejstva": [],
+          "opomba": "ni podatka"
+        }
+      }
+    },
+    "K5": {
+      "S": {
+        "a09": {
+          "v": "T",
+          "dejstva": [
+            "D071"
+          ],
+          "opomba": ""
+        },
+        "a10": {
+          "v": "U",
+          "dejstva": [],
+          "opomba": "ni podatka"
+        },
+        "a11": {
+          "v": "U",
+          "dejstva": [],
+          "opomba": "ni podatka"
+        },
+        "a13": {
+          "v": "U",
+          "dejstva": [],
+          "opomba": "ni podatka"
+        },
+        "a14": {
+          "v": "U",
+          "dejstva": [],
+          "opomba": "ni podatka"
+        },
+        "a15": {
+          "v": "T",
+          "dejstva": [
+            "D070"
+          ],
+          "opomba": ""
+        },
+        "a16": {
+          "v": "T",
+          "dejstva": [
+            "D073"
+          ],
+          "opomba": ""
+        },
+        "a17": {
+          "v": "U",
+          "dejstva": [],
+          "opomba": "ni podatka"
+        },
+        "a18": {
+          "v": "U",
+          "dejstva": [],
+          "opomba": "ni podatka"
+        },
+        "a19": {
+          "v": "T",
+          "dejstva": [
+            "D072"
+          ],
+          "opomba": ""
+        },
+        "a20": {
+          "v": "T",
+          "dejstva": [
+            "D074"
+          ],
+          "opomba": ""
+        },
+        "a21": {
+          "v": "U",
+          "dejstva": [],
+          "opomba": "ni podatka"
+        },
+        "a22": {
+          "v": "U",
+          "dejstva": [],
+          "opomba": "ni podatka"
+        },
+        "a23": {
+          "v": "U",
+          "dejstva": [],
+          "opomba": "ni podatka"
+        },
+        "a24": {
+          "v": "U",
+          "dejstva": [],
+          "opomba": "ni podatka"
+        },
+        "a25": {
+          "v": "U",
+          "dejstva": [],
+          "opomba": "ni podatka"
+        },
+        "a26": {
+          "v": "U",
+          "dejstva": [],
+          "opomba": "ni podatka"
+        },
+        "a27": {
+          "v": "U",
+          "dejstva": [],
+          "opomba": "ni podatka"
+        },
+        "a28": {
+          "v": "U",
+          "dejstva": [],
+          "opomba": "ni podatka"
+        },
+        "a29": {
+          "v": "U",
+          "dejstva": [],
+          "opomba": "ni podatka"
+        },
+        "a30": {
+          "v": "U",
+          "dejstva": [],
+          "opomba": "ni podatka"
+        },
+        "a31": {
+          "v": "U",
+          "dejstva": [],
+          "opomba": "ni podatka"
+        },
+        "a32": {
+          "v": "U",
+          "dejstva": [],
+          "opomba": "ni podatka"
+        },
+        "a33": {
+          "v": "U",
+          "dejstva": [],
+          "opomba": "ni podatka"
+        },
+        "a34": {
+          "v": "U",
+          "dejstva": [],
+          "opomba": "ni podatka"
+        },
+        "a35": {
+          "v": "U",
+          "dejstva": [
+            "D075"
+          ],
+          "opomba": ""
+        },
+        "a36": {
+          "v": "U",
+          "dejstva": [],
+          "opomba": "ni podatka"
+        },
+        "a37": {
+          "v": "U",
+          "dejstva": [],
+          "opomba": "ni podatka"
+        },
+        "a38": {
+          "v": "U",
+          "dejstva": [],
+          "opomba": "ni podatka"
+        },
+        "a41": {
+          "v": "F",
+          "dejstva": [
+            "D067"
+          ],
+          "opomba": ""
+        },
+        "a42": {
+          "v": "U",
+          "dejstva": [],
+          "opomba": "ni podatka"
+        },
+        "a43": {
+          "v": "T",
+          "dejstva": [
+            "D068"
+          ],
+          "opomba": ""
+        },
+        "a44": {
+          "v": "U",
+          "dejstva": [],
+          "opomba": "ni podatka"
+        },
+        "a45": {
+          "v": "U",
+          "dejstva": [],
+          "opomba": "ni podatka"
+        },
+        "a46": {
+          "v": "U",
+          "dejstva": [],
+          "opomba": "ni podatka"
+        },
+        "a47": {
+          "v": "U",
+          "dejstva": [],
+          "opomba": "ni podatka"
+        },
+        "a48": {
+          "v": "U",
+          "dejstva": [],
+          "opomba": "ni podatka"
+        },
+        "a49": {
+          "v": "U",
+          "dejstva": [],
+          "opomba": "ni podatka"
+        },
+        "a50": {
+          "v": "U",
+          "dejstva": [],
+          "opomba": "ni podatka"
+        },
+        "a12": {
+          "v": "U",
+          "dejstva": [],
+          "opomba": "ni podatka"
+        },
+        "a39": {
+          "v": "U",
+          "dejstva": [],
+          "opomba": "ni podatka"
+        },
+        "a40": {
+          "v": "U",
+          "dejstva": [],
+          "opomba": "ni podatka"
+        },
+        "a01": {
+          "v": "U",
+          "dejstva": [],
+          "opomba": "ni podatka"
+        },
+        "a02": {
+          "v": "U",
+          "dejstva": [],
+          "opomba": "ni podatka"
+        },
+        "a03": {
+          "v": "U",
+          "dejstva": [],
+          "opomba": "ni podatka"
+        },
+        "a04": {
+          "v": "U",
+          "dejstva": [],
+          "opomba": "ni podatka"
+        },
+        "a05": {
+          "v": "U",
+          "dejstva": [],
+          "opomba": "ni podatka"
+        },
+        "a06": {
+          "v": "U",
+          "dejstva": [],
+          "opomba": "ni podatka"
+        },
+        "a07": {
+          "v": "U",
+          "dejstva": [],
+          "opomba": "ni podatka"
+        },
+        "a08": {
+          "v": "U",
+          "dejstva": [],
+          "opomba": "ni podatka"
+        }
+      },
+      "B": {
+        "a09": {
+          "v": "T",
+          "dejstva": [
+            "D071"
+          ],
+          "opomba": ""
+        },
+        "a10": {
+          "v": "U",
+          "dejstva": [],
+          "opomba": "ni podatka"
+        },
+        "a11": {
+          "v": "U",
+          "dejstva": [],
+          "opomba": "ni podatka"
+        },
+        "a13": {
+          "v": "U",
+          "dejstva": [],
+          "opomba": "ni podatka"
+        },
+        "a14": {
+          "v": "U",
+          "dejstva": [],
+          "opomba": "ni podatka"
+        },
+        "a15": {
+          "v": "T",
+          "dejstva": [
+            "D070"
+          ],
+          "opomba": ""
+        },
+        "a16": {
+          "v": "T",
+          "dejstva": [
+            "D073"
+          ],
+          "opomba": ""
+        },
+        "a17": {
+          "v": "U",
+          "dejstva": [],
+          "opomba": "ni podatka"
+        },
+        "a18": {
+          "v": "U",
+          "dejstva": [],
+          "opomba": "ni podatka"
+        },
+        "a19": {
+          "v": "T",
+          "dejstva": [
+            "D072"
+          ],
+          "opomba": ""
+        },
+        "a20": {
+          "v": "T",
+          "dejstva": [
+            "D074"
+          ],
+          "opomba": ""
+        },
+        "a21": {
+          "v": "U",
+          "dejstva": [],
+          "opomba": "ni podatka"
+        },
+        "a22": {
+          "v": "U",
+          "dejstva": [],
+          "opomba": "ni podatka"
+        },
+        "a23": {
+          "v": "U",
+          "dejstva": [],
+          "opomba": "ni podatka"
+        },
+        "a24": {
+          "v": "U",
+          "dejstva": [],
+          "opomba": "ni podatka"
+        },
+        "a25": {
+          "v": "U",
+          "dejstva": [],
+          "opomba": "ni podatka"
+        },
+        "a26": {
+          "v": "U",
+          "dejstva": [],
+          "opomba": "ni podatka"
+        },
+        "a27": {
+          "v": "U",
+          "dejstva": [],
+          "opomba": "ni podatka"
+        },
+        "a28": {
+          "v": "U",
+          "dejstva": [],
+          "opomba": "ni podatka"
+        },
+        "a29": {
+          "v": "U",
+          "dejstva": [],
+          "opomba": "ni podatka"
+        },
+        "a30": {
+          "v": "U",
+          "dejstva": [],
+          "opomba": "ni podatka"
+        },
+        "a31": {
+          "v": "U",
+          "dejstva": [],
+          "opomba": "ni podatka"
+        },
+        "a32": {
+          "v": "U",
+          "dejstva": [],
+          "opomba": "ni podatka"
+        },
+        "a33": {
+          "v": "U",
+          "dejstva": [],
+          "opomba": "ni podatka"
+        },
+        "a34": {
+          "v": "U",
+          "dejstva": [],
+          "opomba": "ni podatka"
+        },
+        "a35": {
+          "v": "U",
+          "dejstva": [
+            "D075"
+          ],
+          "opomba": ""
+        },
+        "a36": {
+          "v": "U",
+          "dejstva": [],
+          "opomba": "ni podatka"
+        },
+        "a37": {
+          "v": "F",
+          "dejstva": [
+            "D076"
+          ],
+          "opomba": ""
+        },
+        "a38": {
+          "v": "U",
+          "dejstva": [],
+          "opomba": "ni podatka"
+        },
+        "a41": {
+          "v": "F",
+          "dejstva": [
+            "D067"
+          ],
+          "opomba": ""
+        },
+        "a42": {
+          "v": "U",
+          "dejstva": [],
+          "opomba": "ni podatka"
+        },
+        "a43": {
+          "v": "T",
+          "dejstva": [
+            "D068"
+          ],
+          "opomba": ""
+        },
+        "a44": {
+          "v": "T",
+          "dejstva": [
+            "D069"
+          ],
+          "opomba": ""
+        },
+        "a45": {
+          "v": "U",
+          "dejstva": [],
+          "opomba": "ni podatka"
+        },
+        "a46": {
+          "v": "U",
+          "dejstva": [],
+          "opomba": "ni podatka"
+        },
+        "a47": {
+          "v": "U",
+          "dejstva": [],
+          "opomba": "ni podatka"
+        },
+        "a48": {
+          "v": "U",
+          "dejstva": [],
+          "opomba": "ni podatka"
+        },
+        "a49": {
+          "v": "U",
+          "dejstva": [],
+          "opomba": "ni podatka"
+        },
+        "a50": {
+          "v": "U",
+          "dejstva": [],
+          "opomba": "ni podatka"
+        },
+        "a12": {
+          "v": "U",
+          "dejstva": [],
+          "opomba": "ni podatka"
+        },
+        "a39": {
+          "v": "U",
+          "dejstva": [],
+          "opomba": "ni podatka"
+        },
+        "a40": {
+          "v": "U",
+          "dejstva": [],
+          "opomba": "ni podatka"
+        },
+        "a01": {
+          "v": "F",
+          "dejstva": [
+            "D077"
+          ],
+          "opomba": ""
+        },
+        "a02": {
+          "v": "U",
+          "dejstva": [],
+          "opomba": "ni podatka"
+        },
+        "a03": {
+          "v": "U",
+          "dejstva": [],
+          "opomba": "ni podatka"
+        },
+        "a04": {
+          "v": "U",
+          "dejstva": [],
+          "opomba": "ni podatka"
+        },
+        "a05": {
+          "v": "U",
+          "dejstva": [],
+          "opomba": "ni podatka"
+        },
+        "a06": {
+          "v": "U",
+          "dejstva": [],
+          "opomba": "ni podatka"
+        },
+        "a07": {
+          "v": "U",
+          "dejstva": [],
+          "opomba": "ni podatka"
+        },
+        "a08": {
+          "v": "U",
+          "dejstva": [],
+          "opomba": "ni podatka"
+        }
+      }
+    }
+  }
+}

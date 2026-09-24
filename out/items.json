@@ -1,0 +1,204 @@
+{
+  "meta": "Job Req Id: 26984690, Senior , AI Engineer, Banking Technology, Location(s): Jersey City, New Jersey, United States, Job Type: Hybrid, Posted: Sept. 4, 2026, Discover your future at Citi, Working at Citi is far more than just a job. A career with us means joining a team of approximately 219,000 dedicated people from around the globe. At Citi, you'll have the opportunity to grow your career, give back to your community and make a real impact. Job Overview",
+  "postavke": [
+    {
+      "id": "I01",
+      "oznaka": "Role Overview",
+      "razdelek": "K",
+      "obveznost_oznake": "K",
+      "besedilo": "Citi's Banking Technology organization is seeking a highly hands-on Senior AI Engineer to design, build, and deploy cutting-edge AI solutions for Investment, Corporate, and Commercial Banking. This role focuses on implementing scalable, agentic AI frameworks and generative AI solutions within small, agile squads. The successful candidate will operate with an AI-first mindset, emphasizing rapid prototyping, MVP-driven development, and iterative delivery of production-grade AI capabilities.",
+      "stavki": [
+        "Citi's Banking Technology organization is seeking a highly hands-on Senior AI Engineer to design, build, and deploy cutting-edge AI solutions for Investment, Corporate, and Commercial Banking.",
+        "This role focuses on implementing scalable, agentic AI frameworks and generative AI solutions within small, agile squads.",
+        "The successful candidate will operate with an AI-first mindset, emphasizing rapid prototyping, MVP-driven development, and iterative delivery of production-grade AI capabilities."
+      ]
+    },
+    {
+      "id": "I02",
+      "oznaka": "AI Solution Development",
+      "razdelek": "P",
+      "obveznost_oznake": "P",
+      "besedilo": "Design, implement, and deploy scalable agentic AI frameworks and generative AI solutions for critical business use cases, ensuring robustness, performance, security, and reliability.",
+      "stavki": [
+        "Design, implement, and deploy scalable agentic AI frameworks and generative AI solutions for critical business use cases, ensuring robustness, performance, security, and reliability."
+      ]
+    },
+    {
+      "id": "I03",
+      "oznaka": "Agentic Systems",
+      "razdelek": "P",
+      "obveznost_oznake": "P",
+      "besedilo": "Develop and integrate agentic AI systems leveraging multiple model providers and platforms (e.g., OpenAI, Anthropic, Google APIs).",
+      "stavki": [
+        "Develop and integrate agentic AI systems leveraging multiple model providers and platforms (e.g., OpenAI, Anthropic, Google APIs)."
+      ]
+    },
+    {
+      "id": "I04",
+      "oznaka": "Full-Stack AI Engineering",
+      "razdelek": "P",
+      "obveznost_oznake": "P",
+      "besedilo": "Build full-stack applications integrating LLM-driven workflows and AI coding tools (e.g., Devin, GitHub Copilot).",
+      "stavki": [
+        "Build full-stack applications integrating LLM-driven workflows and AI coding tools (e.g., Devin, GitHub Copilot)."
+      ]
+    },
+    {
+      "id": "I05",
+      "oznaka": "Iterative Delivery",
+      "razdelek": "P",
+      "obveznost_oznake": "P",
+      "besedilo": "Drive an MVP-first, rapid-iteration approach with continuous experimentation and improvement.",
+      "stavki": [
+        "Drive an MVP-first, rapid-iteration approach with continuous experimentation and improvement."
+      ]
+    },
+    {
+      "id": "I06",
+      "oznaka": "Evaluation & Optimization",
+      "razdelek": "P",
+      "obveznost_oznake": "P",
+      "besedilo": "Define and implement metrics, evaluation strategies, and feedback loops to continuously improve AI system performance and behavior.",
+      "stavki": [
+        "Define and implement metrics, evaluation strategies, and feedback loops to continuously improve AI system performance and behavior."
+      ]
+    },
+    {
+      "id": "I07",
+      "oznaka": "Emerging Technologies",
+      "razdelek": "P",
+      "obveznost_oznake": "P",
+      "besedilo": "Research, prototype, and integrate advances in agent-based, autonomous, and generative AI technologies.",
+      "stavki": [
+        "Research, prototype, and integrate advances in agent-based, autonomous, and generative AI technologies."
+      ]
+    },
+    {
+      "id": "I08",
+      "oznaka": "Technical Collaboration",
+      "razdelek": "P",
+      "obveznost_oznake": "P",
+      "besedilo": "Contribute hands-on within cross-functional teams and provide technical guidance and mentorship to junior engineers.",
+      "stavki": [
+        "Contribute hands-on within cross-functional teams and provide technical guidance and mentorship to junior engineers."
+      ]
+    },
+    {
+      "id": "I09",
+      "oznaka": "Domain Alignment",
+      "razdelek": "P",
+      "obveznost_oznake": "P",
+      "besedilo": "Ensure AI solutions are well-aligned to banking and financial services requirements, constraints, and business outcomes.",
+      "stavki": [
+        "Ensure AI solutions are well-aligned to banking and financial services requirements, constraints, and business outcomes."
+      ]
+    },
+    {
+      "id": "I10",
+      "oznaka": "Programming",
+      "razdelek": "M",
+      "obveznost_oznake": "M",
+      "besedilo": "Strong proficiency in Python and/or Java (Spring Boot); working knowledge of JavaScript/TypeScript (Angular, Node.js). Full-stack experience is a plus.",
+      "stavki": [
+        "Strong proficiency in Python and/or Java (Spring Boot); working knowledge of JavaScript/TypeScript (Angular, Node.js).",
+        "Full-stack experience is a plus."
+      ]
+    },
+    {
+      "id": "I11",
+      "oznaka": "AI/ML Expertise",
+      "razdelek": "M",
+      "obveznost_oznake": "M",
+      "besedilo": "Solid understanding of core AI concepts such as knowledge representation, planning, and multi-agent systems. Hands-on experience with LLMs, RAG, prompt engineering, MCPs, and agent frameworks (e.g., Google ADK). Practical experience with ML frameworks and libraries (TensorFlow, PyTorch, Scikit-learn, NumPy, Pandas). Familiarity with AI coding tools such as Devin, Claude Code, GitHub Copilot, and Antigravity.",
+      "stavki": [
+        "Solid understanding of core AI concepts such as knowledge representation, planning, and multi-agent systems.",
+        "Hands-on experience with LLMs, RAG, prompt engineering, MCPs, and agent frameworks (e.g., Google ADK).",
+        "Practical experience with ML frameworks and libraries (TensorFlow, PyTorch, Scikit-learn, NumPy, Pandas).",
+        "Familiarity with AI coding tools such as Devin, Claude Code, GitHub Copilot, and Antigravity."
+      ]
+    },
+    {
+      "id": "I12",
+      "oznaka": "Software Engineering",
+      "razdelek": "M",
+      "obveznost_oznake": "M",
+      "besedilo": "Strong grounding in modern engineering practices including Git, CI/CD, testing, code reviews, agile delivery, application resiliency, and security.",
+      "stavki": [
+        "Strong grounding in modern engineering practices including Git, CI/CD, testing, code reviews, agile delivery, application resiliency, and security."
+      ]
+    },
+    {
+      "id": "I13",
+      "oznaka": "Architecture",
+      "razdelek": "M",
+      "obveznost_oznake": "M",
+      "besedilo": "Experience designing API-first, microservices-based and event-driven architectures, including data engineering patterns for AI systems.",
+      "stavki": [
+        "Experience designing API-first, microservices-based and event-driven architectures, including data engineering patterns for AI systems."
+      ]
+    },
+    {
+      "id": "I14",
+      "oznaka": "Platforms",
+      "razdelek": "M",
+      "obveznost_oznake": "M",
+      "besedilo": "Hands-on experience with Docker, Kubernetes, and OpenShift.",
+      "stavki": [
+        "Hands-on experience with Docker, Kubernetes, and OpenShift."
+      ]
+    },
+    {
+      "id": "I15",
+      "oznaka": "Problem Solving & Communication",
+      "razdelek": "M",
+      "obveznost_oznake": "M",
+      "besedilo": "Strong analytical skills with the ability to clearly communicate complex technical concepts.",
+      "stavki": [
+        "Strong analytical skills with the ability to clearly communicate complex technical concepts."
+      ]
+    },
+    {
+      "id": "I16",
+      "oznaka": "Domain Knowledge",
+      "razdelek": "M",
+      "obveznost_oznake": "M",
+      "besedilo": "Solid understanding of banking/financial services and regulated environments.",
+      "stavki": [
+        "Solid understanding of banking/financial services and regulated environments."
+      ]
+    },
+    {
+      "id": "I17",
+      "oznaka": "Nice to Have",
+      "razdelek": "M",
+      "obveznost_oznake": "N",
+      "besedilo": "Experience in data science (statistical modeling, experimentation) and interest in mentoring junior AI engineers.",
+      "stavki": [
+        "Experience in data science (statistical modeling, experimentation) and interest in mentoring junior AI engineers."
+      ]
+    },
+    {
+      "id": "I18",
+      "oznaka": "Experience",
+      "razdelek": "M",
+      "obveznost_oznake": "M",
+      "besedilo": "6–10 years of progressive software engineering experience with a strong hands-on coding background. 2+ years focused on AI software development, LLM-based solutions, agentic systems, and/or machine learning. Demonstrated experience delivering enterprise-scale AI capabilities into production.",
+      "stavki": [
+        "6–10 years of progressive software engineering experience with a strong hands-on coding background.",
+        "2+ years focused on AI software development, LLM-based solutions, agentic systems, and/or machine learning.",
+        "Demonstrated experience delivering enterprise-scale AI capabilities into production."
+      ]
+    },
+    {
+      "id": "I19",
+      "oznaka": "Education",
+      "razdelek": "M",
+      "obveznost_oznake": "M",
+      "besedilo": "Bachelor's or Master's degree in Computer Science, AI, Robotics, or a related quantitative discipline.",
+      "stavki": [
+        "Bachelor's or Master's degree in Computer Science, AI, Robotics, or a related quantitative discipline."
+      ]
+    }
+  ],
+  "vir": "JobReqId26984690.pdf"
+}

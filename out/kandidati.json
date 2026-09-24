@@ -1,0 +1,56 @@
+{
+  "vir": "Prosnje_kandidatov.pdf",
+  "sha256": "ca92d8af99e3de7dbd650b15d4eaa9aa0f9d75c4f601dbfb6104321ce81c77e9",
+  "kandidati": [
+    {
+      "id": "K1",
+      "ime": "Peter",
+      "naziv": null,
+      "strani": [
+        1,
+        1
+      ],
+      "besedilo": "👤 Kandidat 1: Peter \"Spoštovani, prijavljam se na delovno mesto Senior AI Engineer v vaši bančni tehnološki ekipi. Zadnjih 8 let sem zaposlen v mednarodni banki, kjer sem zadnji dve leti vodil implementacijo generativnih modelov za avtomatizacijo zalednih procesov in analizo kreditnih tveganj. Moje izkušnje se popolnoma ujemajo z vašimi zahtevami za regulirana okolja in agilno MVP-dostavo. Globoko razumem pomen spoštovanja strogih bančnih regulatornih okvirov in varnostnih standardov, kot so tisti, ki jih zahtevata Citi in širši finančni sektor. V svojem dosedanjem delu sem se strogo držal navodil poslovnih analitikov in finančnih usmerjevalcev, saj verjamem, da morajo tehnične rešitve brezpogojno slediti viziji poslovnega segmenta. Tehnično sem visoko usposobljen v jeziku Java (Spring Boot) in Python, vsakodnevno pa uporabljam Docker, Kubernetes ter orodja, kot sta GitHub Copilot in Devin, za pospešitev kodiranja znotraj naših agilnih squadov. Moja prednost je, da ne izgubljam časa z redefiniranjem obstoječih sistemov ali gradnjo lastnih internih ogrodij, temveč se takoj osredotočim na integracijo zunanjih modelov (OpenAI, Anthropic) prek obstoječih API-jev, da dosežemo hitre poslovne rezultate. Verjamem, da lahko s svojo poslušnostjo, disciplino in poznavanjem bančnega ekosistema takoj prispevam k realizaciji vaših ciljev.\""
+    },
+    {
+      "id": "K2",
+      "ime": "Dr. Ksenija",
+      "naziv": "Dr.",
+      "strani": [
+        1,
+        1
+      ],
+      "besedilo": "👤 Kandidat 2: Dr. Ksenija \"Cenjeni zaposlitveni tim, s ponosom oddajam svojo vlogo za položaj Senior AI Engineer. Moja kariera ne temelji na slepem lepljenju zunanjih API-jev, temveč na globokem razumevanju simbolne umetne inteligence, nevronskih mrež in znanja o zanesljivosti podatkovnih baz. Čeprav nimam neposrednih izkušenj v korporativnem bančništvu, sem zadnjih 6 let vodila razvoj kritičnih AI sistemov v akademskem in raziskovalnem okolju, kjer napake pomenijo izgubo podatkovne integritete. Moje ključno stališče je, da se zanesljivih, produkcijskih AI aplikacij ne da razvijati 'bliskovito' brez ustreznih temeljev. Preden lahko ekipa začne učinkovito izpolnjevati specifične zahteve finančnih uslužbencev, moram kot senior za svoj tim razviti in vzpostaviti strogo, deterministično razvojno okolje in verifikacijske logične filtre, ki preprečujejo halucinacije LLM modelov. Moje tehnično znanje obsega Python, PyTorch in napredne agentne sisteme (MCP, RAG), obvladam pa tudi celoten spektrum vsebnikov (Docker, OpenShift). Moja prioriteta je vzpostavitev 'Ground Truth' sistemov preverjanja. Če banka išče nekoga, ki bo zgolj pasivno izvajal ad-hoc ukaze brez vprašanj o stabilnosti podatkov, potem nisem prava izbira; če pa iščete arhitekta, ki bo ekipi zgradil orodja za dolgoročno varen in zanesljiv razvoj, so moje kompetence neprecenljive.\""
+    },
+    {
+      "id": "K3",
+      "ime": "Liam",
+      "naziv": null,
+      "strani": [
+        1,
+        2
+      ],
+      "besedilo": "👤 Kandidat 3: Liam \"Živijo! Sem Liam, full-stack AI navdušenec, in vaša pozicija za Senior AI Engineerja v Jersey Cityju je pisana meni na kožo. Imam dobrih 6 let izkušenj s programiranjem, od tega zadnja 3 leta delam izključno na agentnih AI ogrodjih, prompt inženiringu in integraciji večmodelnih platform (Claude, GPT-4, Google APIs). Sem tipičen produktni inženir z 'AI-first' mentaliteto – obožujem rapidno prototipiranje, MVP-je in iterativno dostavo. Če poslovni del banke potrebuje delujoč koncept do naslednjega tedna, ga bom dostavil. Moje glavno orožje so AI coding pomočniki (Devin, Copilot, Claude Code), s katerimi dosegam 3-kratno hitrost običajnega programerja. Odlično se znajdem v JavaScript/TypeScript (Node.js/Angular) in Pythonu, sistemi, kot sta Docker in Kubernetes, pa so zame standardni del CI/CD cevovoda. Priznam, da se ne poglabljam rad v dolgotrajno analizo podatkovnih baz ali gradnjo kompleksnih internih infrastruktur, saj trg napreduje prehitro, da bi izgubljali čas z gradnjo nečesa, kar že obstaja v obliki knjižnic na GitHubu. Nimam bančnih izkušenj, a se izjemno hitro učim in prilagajam dinamiki agilnega squada.\""
+    },
+    {
+      "id": "K4",
+      "ime": "Marko",
+      "naziv": null,
+      "strani": [
+        2,
+        2
+      ],
+      "besedilo": "👤 Kandidat 4: Marko \"Spoštovani, pošiljam svojo prijavo za mesto Senior AI Engineer. Prinašam 9 let progresivnih programerskih izkušenj v jeziku Java (Spring Boot) in Python, pri čemer sem zadnja leta preživel v visoko regulirani obrambni industriji, kjer smo razvijali avtonomne in multi-agentne sisteme. Zavedam se, da nimam izkušenj neposredno v bančništvu, vendar je obrambni sektor v smislu varnosti, CI/CD praks, aplikacijske odpornosti in strogih regulatornih omejitev popolnoma enakovreden – če ne celo strožji – finančnemu okolju. Moja največja vrednost za vaš tim je sposobnost premostitve kaotičnega nevronskega izhoda v stroge, preverljive sistemske logike. Preden začnemo brezglavo hiteti v produkcijo z MVP rešitvami za bančne uslužbence, je moja prva naloga vzpostavitev robustnega infrastrukturnega ogrodja in orodij, ki bodo mojemu timu omogočila varno delo s podatki brez tveganja za uhajanje informacij. Sem strokovnjak za API-first in dogodkovno vodene arhitekture ter Docker/Kubernetes platforme. Delujem znotraj agilnih timov, vendar vedno z distanco zdravega razuma do zahtev netehničnega osebja. Moja obrambna referenca deluje kot garant za absolutno stabilnost vaših bodočih finančnih AI agentov.\""
+    },
+    {
+      "id": "K5",
+      "ime": "Tjaša",
+      "naziv": null,
+      "strani": [
+        2,
+        2
+      ],
+      "besedilo": "👤 Kandidat 5: Tjaša \"Pozdravljeni! Sem Tjaša in se prijavljam na razpisano delovno mesto. Čeprav formalno dosegam 4 leta izkušenj na področju programske opreme (kar je manj od navedenih 6–10 let), so bila moja zadnja 2 leta v celoti osredotočena na napredne generativne AI rešitve in RAG sisteme. Moja prednost je izjemna kreativnost in sposobnost razumevanja kompleksnih problemov, ki jih tehnologija sploh rešuje. Razumem, da banka išče izkušene inženirje, a moj profil prinaša svežo energijo in sposobnost lateralnega razmišljanja, ki ga starejši kadri včasih izgubijo. Odlično obvladam Python, knjižnice NumPy/Pandas, strojno učenje (Scikit-learn) ter prompt inženiring. Delo v agilnih skupinah mi je naravno, prav tako uporaba sodobnih AI orodij (Copilot). Nimam bančnega ozadja in ne težim k dolgotrajni gradnji lastnih zaprtih infrastruktur, saj verjamem v agilnost in odprtokodne rešitve. Moja prijava predstavlja stavo na prihodnost, visok kognitivni potencial in pripravljenost na mentorstvo s strani izkušenejših sodelavcev v vašem Jersey City ekosistemu.\""
+    }
+  ]
+}

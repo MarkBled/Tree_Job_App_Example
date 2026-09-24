@@ -1,0 +1,14 @@
+{
+  "pogon": "TreeOfKnowledge propMinimization 1.0.0",
+  "zip": "AllSourceCode4UPloadToAI-TreeOfKnowledge-1.0.0.zip",
+  "zip_sha256": "2062b782edbd4d5697ae53a09c210b481296089ca353ae6fc520c1b49fe3f4d1",
+  "java": "openjdk version \"21.0.10\" 2026-01-20",
+  "prevedeno": "javac (privzeta izdaja JDK 21); --release 11 ni mogoč: common/UIStrings.java uporablja text blocks (Java 15+)",
+  "harness": "verify/HarnessProof.java",
+  "harness_sha256": "704cdf556ce9e3dd9fbffb8a2333fc6b96468a06e4b46c1b629fee2491136986",
+  "zagnano": "oblačno delovno okolje Claude, 2026-09-24",
+  "ugotovljene_napake_pogona": [
+    "MinimalneNormalneForme: preverja niz 'tautology;)!)', PrimeImplicants pa vrača 'tautologija;)!)' → pri tavtologijah ClassCastException (preverjeno na A⇒A, A⋁¬A, (A⋀B)⇒(A⋁B)). Zato so vsi dokazi zapisani kot preverjanje protislovja.",
+    "README navaja Java 8+, common/UIStrings.java pa zahteva Java 15+ (text blocks); na računalniku z Java 11 se pogon ne prevede."
+  ]
+}

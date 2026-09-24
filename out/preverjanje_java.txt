@@ -1,0 +1,60 @@
+Preverjanje formul z izvirnim parserjem propMinimization (TreeOfKnowledge 1.0.0), 2026-09-24
+Vse formule parsirane v celoti; primarni implikanti pogona se ujemajo z minimalno DNF iz export_tree.py (19/19).
+
+OK	n01	A⋀B⋀C	celotna=true	var=[A, B, C]
+[[A, B, C]]
+MIN	n01	DISJUNCTIVE  Normal Forms (DNFs) with 3 literals: | ( A⋀B⋀C) |  | CONJUCTIVE Normal Forms (CNFs) with 3 literals: | ( A) ⋀ ( B) ⋀ ( C) |  |  | MINIMAL NORMAL FORMS : |  | ( A⋀B⋀C) | -------------------------------------------------------------------------------------- | 
+OK	n22	A⋁B⋁C	celotna=true	var=[A, B, C]
+[[A], [B], [C]]
+MIN	n22	DISJUNCTIVE  Normal Forms (DNFs) with 3 literals: | ( A) ⋁ ( B) ⋁ ( C) |  | CONJUCTIVE Normal Forms (CNFs) with 3 literals: | ( A⋁B⋁C) |  |  | MINIMAL NORMAL FORMS : |  | ( A⋁B⋁C) | -------------------------------------------------------------------------------------- | 
+OK	n23	A⋁B	celotna=true	var=[A, B]
+[[A], [B]]
+MIN	n23	DISJUNCTIVE  Normal Forms (DNFs) with 2 literals: | ( A) ⋁ ( B) |  | CONJUCTIVE Normal Forms (CNFs) with 2 literals: | ( A⋁B) |  |  | MINIMAL NORMAL FORMS : |  | ( A⋁B) | -------------------------------------------------------------------------------------- | 
+OK	n02	A⋀B⋀C	celotna=true	var=[A, B, C]
+[[A, B, C]]
+MIN	n02	DISJUNCTIVE  Normal Forms (DNFs) with 3 literals: | ( A⋀B⋀C) |  | CONJUCTIVE Normal Forms (CNFs) with 3 literals: | ( A) ⋀ ( B) ⋀ ( C) |  |  | MINIMAL NORMAL FORMS : |  | ( A⋀B⋀C) | -------------------------------------------------------------------------------------- | 
+OK	n12	A⋀B⋀C⋀D	celotna=true	var=[A, B, C, D]
+[[A, B, C, D]]
+MIN	n12	DISJUNCTIVE  Normal Forms (DNFs) with 4 literals: | ( A⋀B⋀C⋀D) |  | CONJUCTIVE Normal Forms (CNFs) with 4 literals: | ( A) ⋀ ( B) ⋀ ( C) ⋀ ( D) |  |  | MINIMAL NORMAL FORMS : |  | ( A⋀B⋀C⋀D) | -------------------------------------------------------------------------------------- | 
+OK	n16	A⋀B⋀C⋀D	celotna=true	var=[A, B, C, D]
+[[A, B, C, D]]
+MIN	n16	DISJUNCTIVE  Normal Forms (DNFs) with 4 literals: | ( A⋀B⋀C⋀D) |  | CONJUCTIVE Normal Forms (CNFs) with 4 literals: | ( A) ⋀ ( B) ⋀ ( C) ⋀ ( D) |  |  | MINIMAL NORMAL FORMS : |  | ( A⋀B⋀C⋀D) | -------------------------------------------------------------------------------------- | 
+OK	n24	A⋁B⋁C⋁D	celotna=true	var=[A, B, C, D]
+[[A], [B], [C], [D]]
+MIN	n24	DISJUNCTIVE  Normal Forms (DNFs) with 4 literals: | ( A) ⋁ ( B) ⋁ ( C) ⋁ ( D) |  | CONJUCTIVE Normal Forms (CNFs) with 4 literals: | ( A⋁B⋁C⋁D) |  |  | MINIMAL NORMAL FORMS : |  | ( A⋁B⋁C⋁D) | -------------------------------------------------------------------------------------- | 
+OK	n25	A⋁B⋁C⋁D	celotna=true	var=[A, B, C, D]
+[[A], [B], [C], [D]]
+MIN	n25	DISJUNCTIVE  Normal Forms (DNFs) with 4 literals: | ( A) ⋁ ( B) ⋁ ( C) ⋁ ( D) |  | CONJUCTIVE Normal Forms (CNFs) with 4 literals: | ( A⋁B⋁C⋁D) |  |  | MINIMAL NORMAL FORMS : |  | ( A⋁B⋁C⋁D) | -------------------------------------------------------------------------------------- | 
+OK	n03	(A⋁B)⋀C	celotna=true	var=[A, B, C]
+[[A, C], [B, C]]
+MIN	n03	MINIMAL NORMAL FORMS : |  | ( A⋁B) ⋀ ( C) | -------------------------------------------------------------------------------------- | 
+OK	n05	A⋀B⋀C⋀D	celotna=true	var=[A, B, C, D]
+[[A, B, C, D]]
+MIN	n05	DISJUNCTIVE  Normal Forms (DNFs) with 4 literals: | ( A⋀B⋀C⋀D) |  | CONJUCTIVE Normal Forms (CNFs) with 4 literals: | ( A) ⋀ ( B) ⋀ ( C) ⋀ ( D) |  |  | MINIMAL NORMAL FORMS : |  | ( A⋀B⋀C⋀D) | -------------------------------------------------------------------------------------- | 
+OK	n09	A⋀B⋀C⋀D	celotna=true	var=[A, B, C, D]
+[[A, B, C, D]]
+MIN	n09	DISJUNCTIVE  Normal Forms (DNFs) with 4 literals: | ( A⋀B⋀C⋀D) |  | CONJUCTIVE Normal Forms (CNFs) with 4 literals: | ( A) ⋀ ( B) ⋀ ( C) ⋀ ( D) |  |  | MINIMAL NORMAL FORMS : |  | ( A⋀B⋀C⋀D) | -------------------------------------------------------------------------------------- | 
+OK	n13	A⋀B⋀C⋀D	celotna=true	var=[A, B, C, D]
+[[A, B, C, D]]
+MIN	n13	DISJUNCTIVE  Normal Forms (DNFs) with 4 literals: | ( A⋀B⋀C⋀D) |  | CONJUCTIVE Normal Forms (CNFs) with 4 literals: | ( A) ⋀ ( B) ⋀ ( C) ⋀ ( D) |  |  | MINIMAL NORMAL FORMS : |  | ( A⋀B⋀C⋀D) | -------------------------------------------------------------------------------------- | 
+OK	n14	A⋀B⋀C	celotna=true	var=[A, B, C]
+[[A, B, C]]
+MIN	n14	DISJUNCTIVE  Normal Forms (DNFs) with 3 literals: | ( A⋀B⋀C) |  | CONJUCTIVE Normal Forms (CNFs) with 3 literals: | ( A) ⋀ ( B) ⋀ ( C) |  |  | MINIMAL NORMAL FORMS : |  | ( A⋀B⋀C) | -------------------------------------------------------------------------------------- | 
+OK	n18	A⋀B⋀C⋀D	celotna=true	var=[A, B, C, D]
+[[A, B, C, D]]
+MIN	n18	DISJUNCTIVE  Normal Forms (DNFs) with 4 literals: | ( A⋀B⋀C⋀D) |  | CONJUCTIVE Normal Forms (CNFs) with 4 literals: | ( A) ⋀ ( B) ⋀ ( C) ⋀ ( D) |  |  | MINIMAL NORMAL FORMS : |  | ( A⋀B⋀C⋀D) | -------------------------------------------------------------------------------------- | 
+OK	n20	(A⋁B)⋀C	celotna=true	var=[A, B, C]
+[[A, C], [B, C]]
+MIN	n20	MINIMAL NORMAL FORMS : |  | ( A⋁B) ⋀ ( C) | -------------------------------------------------------------------------------------- | 
+OK	n06	A⋀B⋀C	celotna=true	var=[A, B, C]
+[[A, B, C]]
+MIN	n06	DISJUNCTIVE  Normal Forms (DNFs) with 3 literals: | ( A⋀B⋀C) |  | CONJUCTIVE Normal Forms (CNFs) with 3 literals: | ( A) ⋀ ( B) ⋀ ( C) |  |  | MINIMAL NORMAL FORMS : |  | ( A⋀B⋀C) | -------------------------------------------------------------------------------------- | 
+OK	n10	A⋀B⋀C⋀D	celotna=true	var=[A, B, C, D]
+[[A, B, C, D]]
+MIN	n10	DISJUNCTIVE  Normal Forms (DNFs) with 4 literals: | ( A⋀B⋀C⋀D) |  | CONJUCTIVE Normal Forms (CNFs) with 4 literals: | ( A) ⋀ ( B) ⋀ ( C) ⋀ ( D) |  |  | MINIMAL NORMAL FORMS : |  | ( A⋀B⋀C⋀D) | -------------------------------------------------------------------------------------- | 
+OK	n19	A⋁B⋁C⋁D	celotna=true	var=[A, B, C, D]
+[[A], [B], [C], [D]]
+MIN	n19	DISJUNCTIVE  Normal Forms (DNFs) with 4 literals: | ( A) ⋁ ( B) ⋁ ( C) ⋁ ( D) |  | CONJUCTIVE Normal Forms (CNFs) with 4 literals: | ( A⋁B⋁C⋁D) |  |  | MINIMAL NORMAL FORMS : |  | ( A⋁B⋁C⋁D) | -------------------------------------------------------------------------------------- | 
+OK	n07	A⋀B⋀C	celotna=true	var=[A, B, C]
+[[A, B, C]]
+MIN	n07	DISJUNCTIVE  Normal Forms (DNFs) with 3 literals: | ( A⋀B⋀C) |  | CONJUCTIVE Normal Forms (CNFs) with 3 literals: | ( A) ⋀ ( B) ⋀ ( C) |  |  | MINIMAL NORMAL FORMS : |  | ( A⋀B⋀C) | -------------------------------------------------------------------------------------- | 

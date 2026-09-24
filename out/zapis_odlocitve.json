@@ -1,0 +1,4259 @@
+{
+  "zapis": "Minimalni pregledljivi zapis odločitve – klasifikacija prijav",
+  "razpis": "Citi Job Req 26984690 – Senior AI Engineer, Banking Technology",
+  "ustvarjeno": "2026-09-24 19:18 UTC",
+  "viri_in_programi": [
+    {
+      "pot": "data/JobReqId26984690.pdf",
+      "sha256": "75bec96d61261a72e709c644d7c29e404d108aaf2fd79077d03ecae69e39bfff"
+    },
+    {
+      "pot": "data/Prosnje_kandidatov.pdf",
+      "sha256": "ca92d8af99e3de7dbd650b15d4eaa9aa0f9d75c4f601dbfb6104321ce81c77e9"
+    },
+    {
+      "pot": "cues.json",
+      "sha256": "6c6f462a0211c8642fad524357b685f7ceb36432bb39831cb9736df5a41e7212"
+    },
+    {
+      "pot": "cues_sl.json",
+      "sha256": "0c7e9676abfd27586cd510c93c35aa58d1c14cc24f3dd76daeb7cf851be34fd2"
+    },
+    {
+      "pot": "data/dejstva.json",
+      "sha256": "5a1be324ac7cbe67289dfa0b6feb786bd02cd7b62aadaa3fbf41d557aec426fa"
+    },
+    {
+      "pot": "segment.py",
+      "sha256": "90d37635498e05005a3f85123e784f4f06387d9eb10761605f133b2c45626169"
+    },
+    {
+      "pot": "classify.py",
+      "sha256": "f1fa3e2193623397af085318ab1e5e8b3d60c077c82c04bbe1a0183f99c025a1"
+    },
+    {
+      "pot": "build_tree.py",
+      "sha256": "8cb7526ea75e3cf5dd335a0d4e8076dcf2dce2ddd81f52b13f49abe1e69145cb"
+    },
+    {
+      "pot": "export_tree.py",
+      "sha256": "94af3538a4e70881d0ae2af347d8f3d6cc66ea7ac6ffda34768f3a6bdd142a3d"
+    },
+    {
+      "pot": "candidates.py",
+      "sha256": "1fd0b93f1b87fd7a33c595087d2bb08b790f4c6905f616be27dd75bc675b66e2"
+    },
+    {
+      "pot": "facts.py",
+      "sha256": "9fe029620fa67674997d6dfbad161b1cb9a0018ef9c7d1163ae1c4823192b6f0"
+    },
+    {
+      "pot": "decide.py",
+      "sha256": "17799bb7a644358dde72a555317a239065c263ca5abae4c2511ccc103d0b0ecc"
+    },
+    {
+      "pot": "verify_engine.py",
+      "sha256": "905e2f5d6bb9747b1962fd980f1d635ab103c134907abcf6747713846fdde19d"
+    },
+    {
+      "pot": "report.py",
+      "sha256": "51e4f270e6975002bda1613b0d1cc7951c94b84a7d32ec28256a3f6939a1e200"
+    },
+    {
+      "pot": "run_proof.py",
+      "sha256": "206cc37db27548e519a4853083988155c409fd9f0ab6b5f08f79571f1a9f7ac0"
+    },
+    {
+      "pot": "i18n_en.json",
+      "sha256": "7a99ba0f0c86cb2a2ac6c4bed7a7eee5673281fee8f55dcb165fb50b4c70f4d5"
+    },
+    {
+      "pot": "verify/HarnessProof.java",
+      "sha256": "704cdf556ce9e3dd9fbffb8a2333fc6b96468a06e4b46c1b629fee2491136986"
+    },
+    {
+      "pot": "out/tree.json",
+      "sha256": "4228db22b92f577917213de5856956f4f64b19eaa6fcf71c0b0c20e08659fed6"
+    },
+    {
+      "pot": "out/formule.json",
+      "sha256": "a71f61611595b600de5c1a98e8adf9b19fc42b8132c0090d649a35ac211128fc"
+    },
+    {
+      "pot": "out/tree_inputs.tsv",
+      "sha256": "6a808f2b91c1bfc2b30e3677578c3d0ebb0ba53296be473894a2093d4ff3c9fc"
+    },
+    {
+      "pot": "out/tree_outputs.tsv",
+      "sha256": "7e129e2529a9fa8c2773dd0be7a0ab4043c853ceccf98c93327e64a192bd8547"
+    },
+    {
+      "pot": "out/pogon_meta.json",
+      "sha256": "b439e3ddf7caaec9fb5bf90596d5988bb249b271fb90e0d175dfce2fe71001ec"
+    }
+  ],
+  "pogon": {
+    "pogon": "TreeOfKnowledge propMinimization 1.0.0",
+    "zip": "AllSourceCode4UPloadToAI-TreeOfKnowledge-1.0.0.zip",
+    "zip_sha256": "2062b782edbd4d5697ae53a09c210b481296089ca353ae6fc520c1b49fe3f4d1",
+    "java": "openjdk version \"21.0.10\" 2026-01-20",
+    "prevedeno": "javac (privzeta izdaja JDK 21); --release 11 ni mogoč: common/UIStrings.java uporablja text blocks (Java 15+)",
+    "harness": "verify/HarnessProof.java",
+    "harness_sha256": "704cdf556ce9e3dd9fbffb8a2333fc6b96468a06e4b46c1b629fee2491136986",
+    "zagnano": "oblačno delovno okolje Claude, 2026-09-24",
+    "ugotovljene_napake_pogona": [
+      "MinimalneNormalneForme: preverja niz 'tautology;)!)', PrimeImplicants pa vrača 'tautologija;)!)' → pri tavtologijah ClassCastException (preverjeno na A⇒A, A⋁¬A, (A⋀B)⇒(A⋁B)). Zato so vsi dokazi zapisani kot preverjanje protislovja.",
+      "README navaja Java 8+, common/UIStrings.java pa zahteva Java 15+ (text blocks); na računalniku z Java 11 se pogon ne prevede."
+    ]
+  },
+  "nacin_primarni": "S",
+  "nacini": {
+    "S": "Strogi način: samo dejstva vrste E (dobesedna vsebina citata ustreza atomu na ravni prevoda).",
+    "B": "Premostitveni način: E + dejstva vrste I (vsako sklicuje eno pravilo B1–B11)."
+  },
+  "politika_izbire": {
+    "P1": "Kandidat, pri katerem je koren T_M = F (dokazano ne izpolnjuje obveznih zahtev), je izločen.",
+    "P2": "Če je pri katerem kandidatu T_M = T, je izbran tisti; ob izenačenju odloča število izpolnjenih atomov v T_N, nato T_P.",
+    "P3": "Če T_M = T ni pri nikomer, TREE ne izbere nikogar kot ustreznega. Med neizločenimi se določi PREDNOSTNI kandidat za preverjanje po vrstnem redu: (1) število obveznih postavk z vrednostjo T, (2) število obveznih atomov z vrednostjo T, (3) manj obveznih atomov z vrednostjo F, (4) T_P, (5) T_N.",
+    "_opomba": "Politika NI izpeljana iz oglasa; je odločitev naročnika in jo mora odobriti človek.",
+    "privzeti_nacin": "S",
+    "_privzeti_nacin": "Primarni rezultat se poroča v strogem načinu S (samo izrecna dejstva). Način B se poroča kot alternativa z navedbo odločilnih pravil."
+  },
+  "premostitvena_pravila": {
+    "B1": {
+      "ime": "NEG-DOM",
+      "pravilo": "Izjava 'nimam izkušenj / ozadja v področju X' ⇒ ¬(razumevanje X ≥ 3).",
+      "tveganje": "Odsotnost izkušenj logično ne izključuje razumevanja; pravilo je strožje od besedila oglasa."
+    },
+    "B2": {
+      "ime": "DOM-ZAP",
+      "pravilo": "Večletna (≥ 5 let) zaposlitev v sektorju X ⇒ razumevanje X ≥ 3.",
+      "tveganje": "Zaposlitev ne dokazuje vsebine dela ali globine razumevanja."
+    },
+    "B3": {
+      "ime": "VEND",
+      "pravilo": "Delo z modeli OpenAI / Anthropic / Claude / GPT ⇒ izkušnje z LLM.",
+      "tveganje": "Svetovno znanje, ki ga besedilo ne vsebuje."
+    },
+    "B4": {
+      "ime": "GEN",
+      "pravilo": "Generativni AI modeli / rešitve ⇒ rešitve na osnovi LLM.",
+      "tveganje": "Generativni modeli niso nujno jezikovni (slika, zvok)."
+    },
+    "B5": {
+      "ime": "LET",
+      "pravilo": "≥ 5 let izkušenj v X ⇒ raven 4 v X.",
+      "tveganje": "Trajanje ni kakovost."
+    },
+    "B6": {
+      "ime": "DR",
+      "pravilo": "Naziv 'Dr.' ⇒ doktorat ⇒ izpolnjena stopnja Master's (področje neznano).",
+      "tveganje": "Naziv je lahko medicinski ali častni; področje ni navedeno."
+    },
+    "B7": {
+      "ime": "PLUR",
+      "pravilo": "'zadnja leta' (množina) ⇒ ≥ 2 leti.",
+      "tveganje": "Slovnično sklepanje o trajanju."
+    },
+    "B8": {
+      "ime": "SE",
+      "pravilo": "Vodenje razvoja (AI) sistemov oz. večletna zaposlitev s tehničnim delom ⇒ izkušnje programskega inženirstva za ves navedeni čas.",
+      "tveganje": "Vloga (raziskovalna, vodstvena) ni nujno razvojna; pri K1 je tehnično delo izrecno navedeno le za zadnji 2 leti."
+    },
+    "B9": {
+      "ime": "PRIMER",
+      "pravilo": "Izkušnja s primerom, ki ga oglas navaja pod 'such as' ⇒ razumevanje nadpojma.",
+      "tveganje": "Primer ni celoten pojem."
+    },
+    "B10": {
+      "ime": "NEG-PREF",
+      "pravilo": "Izražena nepripravljenost ali nasprotovanje nalogi ⇒ ¬naloga (velja samo za naloge P).",
+      "tveganje": "Izjava o stališču ni izjava o zmožnosti; stališče se lahko spremeni."
+    },
+    "B11": {
+      "ime": "SEKT",
+      "pravilo": "Delo v sektorju, ki izvaja prakso X ⇒ osebna praksa X na ravni 3.",
+      "tveganje": "Praksa organizacije ni osebna veščina."
+    }
+  },
+  "propozicije": [
+    {
+      "id": "a09",
+      "oznaka": "Python",
+      "drevo": "T_M",
+      "obveznost": "M",
+      "pogoj": "raven ≥ 4",
+      "signal_v_oglasu": "strong proficiency"
+    },
+    {
+      "id": "a10",
+      "oznaka": "Java (Spring Boot)",
+      "drevo": "T_M",
+      "obveznost": "M",
+      "pogoj": "raven ≥ 4",
+      "signal_v_oglasu": "strong proficiency"
+    },
+    {
+      "id": "a11",
+      "oznaka": "JavaScript/TypeScript (Angular, Node.js)",
+      "drevo": "T_M",
+      "obveznost": "M",
+      "pogoj": "raven ≥ 2",
+      "signal_v_oglasu": "working knowledge"
+    },
+    {
+      "id": "a13",
+      "oznaka": "core AI concepts",
+      "drevo": "T_M",
+      "obveznost": "M",
+      "pogoj": "raven ≥ 3",
+      "signal_v_oglasu": "solid understanding"
+    },
+    {
+      "id": "a14",
+      "oznaka": "LLMs",
+      "drevo": "T_M",
+      "obveznost": "M",
+      "pogoj": "raven ≥ 3",
+      "signal_v_oglasu": "hands-on experience"
+    },
+    {
+      "id": "a15",
+      "oznaka": "RAG",
+      "drevo": "T_M",
+      "obveznost": "M",
+      "pogoj": "raven ≥ 3",
+      "signal_v_oglasu": "hands-on experience"
+    },
+    {
+      "id": "a16",
+      "oznaka": "prompt engineering",
+      "drevo": "T_M",
+      "obveznost": "M",
+      "pogoj": "raven ≥ 3",
+      "signal_v_oglasu": "hands-on experience"
+    },
+    {
+      "id": "a17",
+      "oznaka": "MCPs",
+      "drevo": "T_M",
+      "obveznost": "M",
+      "pogoj": "raven ≥ 3",
+      "signal_v_oglasu": "hands-on experience"
+    },
+    {
+      "id": "a18",
+      "oznaka": "agent frameworks",
+      "drevo": "T_M",
+      "obveznost": "M",
+      "pogoj": "raven ≥ 3",
+      "signal_v_oglasu": "hands-on experience"
+    },
+    {
+      "id": "a19",
+      "oznaka": "ML frameworks and libraries (TensorFlow, PyTorch, Scikit-learn, NumPy, Pandas)",
+      "drevo": "T_M",
+      "obveznost": "M",
+      "pogoj": "raven ≥ 3",
+      "signal_v_oglasu": "practical experience"
+    },
+    {
+      "id": "a20",
+      "oznaka": "AI coding tools",
+      "drevo": "T_M",
+      "obveznost": "M",
+      "pogoj": "raven ≥ 1",
+      "signal_v_oglasu": "familiarity"
+    },
+    {
+      "id": "a21",
+      "oznaka": "Git",
+      "drevo": "T_M",
+      "obveznost": "M",
+      "pogoj": "raven ≥ 4",
+      "signal_v_oglasu": "strong grounding"
+    },
+    {
+      "id": "a22",
+      "oznaka": "CI/CD",
+      "drevo": "T_M",
+      "obveznost": "M",
+      "pogoj": "raven ≥ 4",
+      "signal_v_oglasu": "strong grounding"
+    },
+    {
+      "id": "a23",
+      "oznaka": "testing",
+      "drevo": "T_M",
+      "obveznost": "M",
+      "pogoj": "raven ≥ 4",
+      "signal_v_oglasu": "strong grounding"
+    },
+    {
+      "id": "a24",
+      "oznaka": "code reviews",
+      "drevo": "T_M",
+      "obveznost": "M",
+      "pogoj": "raven ≥ 4",
+      "signal_v_oglasu": "strong grounding"
+    },
+    {
+      "id": "a25",
+      "oznaka": "agile delivery",
+      "drevo": "T_M",
+      "obveznost": "M",
+      "pogoj": "raven ≥ 4",
+      "signal_v_oglasu": "strong grounding"
+    },
+    {
+      "id": "a26",
+      "oznaka": "application resiliency",
+      "drevo": "T_M",
+      "obveznost": "M",
+      "pogoj": "raven ≥ 4",
+      "signal_v_oglasu": "strong grounding"
+    },
+    {
+      "id": "a27",
+      "oznaka": "security",
+      "drevo": "T_M",
+      "obveznost": "M",
+      "pogoj": "raven ≥ 4",
+      "signal_v_oglasu": "strong grounding"
+    },
+    {
+      "id": "a28",
+      "oznaka": "API-first architectures",
+      "drevo": "T_M",
+      "obveznost": "M",
+      "pogoj": "raven ≥ 3",
+      "signal_v_oglasu": "experience"
+    },
+    {
+      "id": "a29",
+      "oznaka": "microservices-based architectures",
+      "drevo": "T_M",
+      "obveznost": "M",
+      "pogoj": "raven ≥ 3",
+      "signal_v_oglasu": "experience"
+    },
+    {
+      "id": "a30",
+      "oznaka": "event-driven architectures",
+      "drevo": "T_M",
+      "obveznost": "M",
+      "pogoj": "raven ≥ 3",
+      "signal_v_oglasu": "experience"
+    },
+    {
+      "id": "a31",
+      "oznaka": "data engineering patterns for AI systems",
+      "drevo": "T_M",
+      "obveznost": "M",
+      "pogoj": "raven ≥ 3",
+      "signal_v_oglasu": "experience"
+    },
+    {
+      "id": "a32",
+      "oznaka": "Docker",
+      "drevo": "T_M",
+      "obveznost": "M",
+      "pogoj": "raven ≥ 3",
+      "signal_v_oglasu": "hands-on experience"
+    },
+    {
+      "id": "a33",
+      "oznaka": "Kubernetes",
+      "drevo": "T_M",
+      "obveznost": "M",
+      "pogoj": "raven ≥ 3",
+      "signal_v_oglasu": "hands-on experience"
+    },
+    {
+      "id": "a34",
+      "oznaka": "OpenShift",
+      "drevo": "T_M",
+      "obveznost": "M",
+      "pogoj": "raven ≥ 3",
+      "signal_v_oglasu": "hands-on experience"
+    },
+    {
+      "id": "a35",
+      "oznaka": "Strong analytical skills",
+      "drevo": "T_M",
+      "obveznost": "M",
+      "pogoj": "raven ≥ 4",
+      "signal_v_oglasu": "strong skills"
+    },
+    {
+      "id": "a36",
+      "oznaka": "clearly communicate complex technical concepts",
+      "drevo": "T_M",
+      "obveznost": "M",
+      "pogoj": "raven ≥ 3",
+      "signal_v_oglasu": "ability"
+    },
+    {
+      "id": "a37",
+      "oznaka": "banking/financial services",
+      "drevo": "T_M",
+      "obveznost": "M",
+      "pogoj": "raven ≥ 3",
+      "signal_v_oglasu": "solid understanding"
+    },
+    {
+      "id": "a38",
+      "oznaka": "regulated environments",
+      "drevo": "T_M",
+      "obveznost": "M",
+      "pogoj": "raven ≥ 3",
+      "signal_v_oglasu": "solid understanding"
+    },
+    {
+      "id": "a41",
+      "oznaka": "≥6 let: progressive software engineering experience",
+      "drevo": "T_M",
+      "obveznost": "M",
+      "pogoj": "≥ 6 let",
+      "signal_v_oglasu": "6–10 years"
+    },
+    {
+      "id": "a42",
+      "oznaka": "strong hands-on coding background",
+      "drevo": "T_M",
+      "obveznost": "M",
+      "pogoj": "raven ≥ 4",
+      "signal_v_oglasu": "strong hands-on background"
+    },
+    {
+      "id": "a43",
+      "oznaka": "≥2 let: AI software development",
+      "drevo": "T_M",
+      "obveznost": "M",
+      "pogoj": "≥ 2 let",
+      "signal_v_oglasu": "2+ years"
+    },
+    {
+      "id": "a44",
+      "oznaka": "≥2 let: LLM-based solutions",
+      "drevo": "T_M",
+      "obveznost": "M",
+      "pogoj": "≥ 2 let",
+      "signal_v_oglasu": "2+ years"
+    },
+    {
+      "id": "a45",
+      "oznaka": "≥2 let: agentic systems",
+      "drevo": "T_M",
+      "obveznost": "M",
+      "pogoj": "≥ 2 let",
+      "signal_v_oglasu": "2+ years"
+    },
+    {
+      "id": "a46",
+      "oznaka": "≥2 let: machine learning",
+      "drevo": "T_M",
+      "obveznost": "M",
+      "pogoj": "≥ 2 let",
+      "signal_v_oglasu": "2+ years"
+    },
+    {
+      "id": "a47",
+      "oznaka": "enterprise-scale AI capabilities into production",
+      "drevo": "T_M",
+      "obveznost": "M",
+      "pogoj": "raven ≥ 4",
+      "signal_v_oglasu": "demonstrated experience"
+    },
+    {
+      "id": "a48",
+      "oznaka": "diploma: Bachelor's",
+      "drevo": "T_M",
+      "obveznost": "M",
+      "pogoj": "da/ne",
+      "signal_v_oglasu": "degree"
+    },
+    {
+      "id": "a49",
+      "oznaka": "diploma: Master's",
+      "drevo": "T_M",
+      "obveznost": "M",
+      "pogoj": "da/ne",
+      "signal_v_oglasu": "degree"
+    },
+    {
+      "id": "a50",
+      "oznaka": "področje: Computer Science / AI / Robotics / related quantitative discipline",
+      "drevo": "T_M",
+      "obveznost": "M",
+      "pogoj": "da/ne",
+      "signal_v_oglasu": "degree in"
+    },
+    {
+      "id": "a12",
+      "oznaka": "Full-stack experience",
+      "drevo": "T_N",
+      "obveznost": "N",
+      "pogoj": "raven ≥ 3",
+      "signal_v_oglasu": "experience"
+    },
+    {
+      "id": "a39",
+      "oznaka": "data science (statistical modeling, experimentation)",
+      "drevo": "T_N",
+      "obveznost": "N",
+      "pogoj": "raven ≥ 3",
+      "signal_v_oglasu": "experience"
+    },
+    {
+      "id": "a40",
+      "oznaka": "mentoring junior AI engineers",
+      "drevo": "T_N",
+      "obveznost": "N",
+      "pogoj": "raven ≥ 1",
+      "signal_v_oglasu": "interest"
+    },
+    {
+      "id": "a01",
+      "oznaka": "AI Solution Development",
+      "drevo": "T_P",
+      "obveznost": "P",
+      "pogoj": "da/ne",
+      "signal_v_oglasu": ""
+    },
+    {
+      "id": "a02",
+      "oznaka": "Agentic Systems",
+      "drevo": "T_P",
+      "obveznost": "P",
+      "pogoj": "da/ne",
+      "signal_v_oglasu": ""
+    },
+    {
+      "id": "a03",
+      "oznaka": "Full-Stack AI Engineering",
+      "drevo": "T_P",
+      "obveznost": "P",
+      "pogoj": "da/ne",
+      "signal_v_oglasu": ""
+    },
+    {
+      "id": "a04",
+      "oznaka": "Iterative Delivery",
+      "drevo": "T_P",
+      "obveznost": "P",
+      "pogoj": "da/ne",
+      "signal_v_oglasu": ""
+    },
+    {
+      "id": "a05",
+      "oznaka": "Evaluation & Optimization",
+      "drevo": "T_P",
+      "obveznost": "P",
+      "pogoj": "da/ne",
+      "signal_v_oglasu": ""
+    },
+    {
+      "id": "a06",
+      "oznaka": "Emerging Technologies",
+      "drevo": "T_P",
+      "obveznost": "P",
+      "pogoj": "da/ne",
+      "signal_v_oglasu": ""
+    },
+    {
+      "id": "a07",
+      "oznaka": "Technical Collaboration",
+      "drevo": "T_P",
+      "obveznost": "P",
+      "pogoj": "da/ne",
+      "signal_v_oglasu": ""
+    },
+    {
+      "id": "a08",
+      "oznaka": "Domain Alignment",
+      "drevo": "T_P",
+      "obveznost": "P",
+      "pogoj": "da/ne",
+      "signal_v_oglasu": ""
+    }
+  ],
+  "pravila_formule": [
+    {
+      "vozlisce": "n01",
+      "oznaka": "Obvezne zahteve",
+      "R": "A⋀B⋀C",
+      "crke": {
+        "A": "n02",
+        "B": "n12",
+        "C": "n16"
+      }
+    },
+    {
+      "vozlisce": "n22",
+      "oznaka": "Dodatno (nice to have)",
+      "R": "A⋁B⋁C",
+      "crke": {
+        "A": "a12",
+        "B": "a39",
+        "C": "a40"
+      }
+    },
+    {
+      "vozlisce": "n23",
+      "oznaka": "Naloge (pričakovano)",
+      "R": "A⋁B",
+      "crke": {
+        "A": "n24",
+        "B": "n25"
+      }
+    },
+    {
+      "vozlisce": "n02",
+      "oznaka": "Obvezne zahteve – del 1/3",
+      "R": "A⋀B⋀C",
+      "crke": {
+        "A": "n03",
+        "B": "n05",
+        "C": "n09"
+      }
+    },
+    {
+      "vozlisce": "n12",
+      "oznaka": "Obvezne zahteve – del 2/3",
+      "R": "A⋀B⋀C⋀D",
+      "crke": {
+        "A": "n13",
+        "B": "n14",
+        "C": "a35",
+        "D": "a36"
+      }
+    },
+    {
+      "vozlisce": "n16",
+      "oznaka": "Obvezne zahteve – del 3/3",
+      "R": "A⋀B⋀C⋀D",
+      "crke": {
+        "A": "a37",
+        "B": "a38",
+        "C": "n18",
+        "D": "n20"
+      }
+    },
+    {
+      "vozlisce": "n24",
+      "oznaka": "Naloge (pričakovano) – del 1/2",
+      "R": "A⋁B⋁C⋁D",
+      "crke": {
+        "A": "a01",
+        "B": "a02",
+        "C": "a03",
+        "D": "a04"
+      }
+    },
+    {
+      "vozlisce": "n25",
+      "oznaka": "Naloge (pričakovano) – del 2/2",
+      "R": "A⋁B⋁C⋁D",
+      "crke": {
+        "A": "a05",
+        "B": "a06",
+        "C": "a07",
+        "D": "a08"
+      }
+    },
+    {
+      "vozlisce": "n03",
+      "oznaka": "Programming",
+      "R": "(A⋁B)⋀C",
+      "crke": {
+        "A": "a09",
+        "B": "a10",
+        "C": "a11"
+      }
+    },
+    {
+      "vozlisce": "n05",
+      "oznaka": "AI/ML Expertise",
+      "R": "A⋀B⋀C⋀D",
+      "crke": {
+        "A": "a13",
+        "B": "n06",
+        "C": "a19",
+        "D": "a20"
+      }
+    },
+    {
+      "vozlisce": "n09",
+      "oznaka": "Software Engineering",
+      "R": "A⋀B⋀C⋀D",
+      "crke": {
+        "A": "n10",
+        "B": "a25",
+        "C": "a26",
+        "D": "a27"
+      }
+    },
+    {
+      "vozlisce": "n13",
+      "oznaka": "Architecture",
+      "R": "A⋀B⋀C⋀D",
+      "crke": {
+        "A": "a28",
+        "B": "a29",
+        "C": "a30",
+        "D": "a31"
+      }
+    },
+    {
+      "vozlisce": "n14",
+      "oznaka": "Platforms",
+      "R": "A⋀B⋀C",
+      "crke": {
+        "A": "a32",
+        "B": "a33",
+        "C": "a34"
+      }
+    },
+    {
+      "vozlisce": "n18",
+      "oznaka": "Experience",
+      "R": "A⋀B⋀C⋀D",
+      "crke": {
+        "A": "a41",
+        "B": "a42",
+        "C": "n19",
+        "D": "a47"
+      }
+    },
+    {
+      "vozlisce": "n20",
+      "oznaka": "Education",
+      "R": "(A⋁B)⋀C",
+      "crke": {
+        "A": "a48",
+        "B": "a49",
+        "C": "a50"
+      }
+    },
+    {
+      "vozlisce": "n06",
+      "oznaka": "LLMs, RAG, prompt engineering, MCPs, and agent frameworks",
+      "R": "A⋀B⋀C",
+      "crke": {
+        "A": "n07",
+        "B": "a17",
+        "C": "a18"
+      }
+    },
+    {
+      "vozlisce": "n10",
+      "oznaka": "Software Engineering – del 1/2",
+      "R": "A⋀B⋀C⋀D",
+      "crke": {
+        "A": "a21",
+        "B": "a22",
+        "C": "a23",
+        "D": "a24"
+      }
+    },
+    {
+      "vozlisce": "n19",
+      "oznaka": "2+ years focused on AI software development, LLM-based solutions, agentic systems, and/or machine learning",
+      "R": "A⋁B⋁C⋁D",
+      "crke": {
+        "A": "a43",
+        "B": "a44",
+        "C": "a45",
+        "D": "a46"
+      }
+    },
+    {
+      "vozlisce": "n07",
+      "oznaka": "LLMs, RAG, prompt engineering, MCPs, and agent frameworks – del 1/2",
+      "R": "A⋀B⋀C",
+      "crke": {
+        "A": "a14",
+        "B": "a15",
+        "C": "a16"
+      }
+    }
+  ],
+  "dejstva": [
+    {
+      "idx": "D001",
+      "k": "K1",
+      "atom": "a09",
+      "citat": "visoko usposobljen v jeziku Java (Spring Boot) in Python",
+      "signal": "visoko usposobljen",
+      "vrsta": "E",
+      "pravilo": null,
+      "leta": null,
+      "kvantifikator": null,
+      "raven": null,
+      "vrednost_dejstva": "T",
+      "razlaga": "raven 4 ≥ zahtevana 4"
+    },
+    {
+      "idx": "D002",
+      "k": "K1",
+      "atom": "a10",
+      "citat": "visoko usposobljen v jeziku Java (Spring Boot) in Python",
+      "signal": "visoko usposobljen",
+      "vrsta": "E",
+      "pravilo": null,
+      "leta": null,
+      "kvantifikator": null,
+      "raven": null,
+      "vrednost_dejstva": "T",
+      "razlaga": "raven 4 ≥ zahtevana 4"
+    },
+    {
+      "idx": "D003",
+      "k": "K1",
+      "atom": "a32",
+      "citat": "vsakodnevno pa uporabljam Docker, Kubernetes",
+      "signal": "uporabljam",
+      "vrsta": "E",
+      "pravilo": null,
+      "leta": null,
+      "kvantifikator": null,
+      "raven": null,
+      "vrednost_dejstva": "T",
+      "razlaga": "raven 3 ≥ zahtevana 3"
+    },
+    {
+      "idx": "D004",
+      "k": "K1",
+      "atom": "a33",
+      "citat": "vsakodnevno pa uporabljam Docker, Kubernetes",
+      "signal": "uporabljam",
+      "vrsta": "E",
+      "pravilo": null,
+      "leta": null,
+      "kvantifikator": null,
+      "raven": null,
+      "vrednost_dejstva": "T",
+      "razlaga": "raven 3 ≥ zahtevana 3"
+    },
+    {
+      "idx": "D005",
+      "k": "K1",
+      "atom": "a20",
+      "citat": "uporabljam Docker, Kubernetes ter orodja, kot sta GitHub Copilot in Devin, za pospešitev kodiranja",
+      "signal": "uporabljam",
+      "vrsta": "E",
+      "pravilo": null,
+      "leta": null,
+      "kvantifikator": null,
+      "raven": null,
+      "vrednost_dejstva": "T",
+      "razlaga": "raven 3 ≥ zahtevana 1"
+    },
+    {
+      "idx": "D006",
+      "k": "K1",
+      "atom": "a25",
+      "citat": "Moje izkušnje se popolnoma ujemajo z vašimi zahtevami za regulirana okolja in agilno MVP-dostavo",
+      "signal": "izkušnje",
+      "vrsta": "E",
+      "pravilo": null,
+      "leta": null,
+      "kvantifikator": null,
+      "raven": null,
+      "vrednost_dejstva": "U",
+      "razlaga": "raven 3 < zahtevana 4 (spodnja meja, ne ovrže)"
+    },
+    {
+      "idx": "D007",
+      "k": "K1",
+      "atom": "a38",
+      "citat": "Moje izkušnje se popolnoma ujemajo z vašimi zahtevami za regulirana okolja",
+      "signal": "izkušnje",
+      "vrsta": "E",
+      "pravilo": null,
+      "leta": null,
+      "kvantifikator": null,
+      "raven": null,
+      "vrednost_dejstva": "T",
+      "razlaga": "raven 3 ≥ zahtevana 3"
+    },
+    {
+      "idx": "D008",
+      "k": "K1",
+      "atom": "a37",
+      "citat": "poznavanjem bančnega ekosistema",
+      "signal": "poznavanjem",
+      "vrsta": "E",
+      "pravilo": null,
+      "leta": null,
+      "kvantifikator": null,
+      "raven": null,
+      "vrednost_dejstva": "U",
+      "razlaga": "raven 2 < zahtevana 3 (spodnja meja, ne ovrže)"
+    },
+    {
+      "idx": "D009",
+      "k": "K1",
+      "atom": "a37",
+      "citat": "Zadnjih 8 let sem zaposlen v mednarodni banki",
+      "signal": null,
+      "vrsta": "I",
+      "pravilo": "B2",
+      "leta": null,
+      "kvantifikator": null,
+      "raven": 3,
+      "vrednost_dejstva": "T",
+      "razlaga": "raven 3 ≥ zahtevana 3"
+    },
+    {
+      "idx": "D010",
+      "k": "K1",
+      "atom": "a43",
+      "citat": "zadnji dve leti vodil implementacijo generativnih modelov",
+      "signal": null,
+      "vrsta": "E",
+      "pravilo": null,
+      "leta": 2,
+      "kvantifikator": "≥",
+      "raven": null,
+      "vrednost_dejstva": "T",
+      "razlaga": "≥2 let ≥ prag 2"
+    },
+    {
+      "idx": "D011",
+      "k": "K1",
+      "atom": "a44",
+      "citat": "zadnji dve leti vodil implementacijo generativnih modelov",
+      "signal": null,
+      "vrsta": "I",
+      "pravilo": "B4",
+      "leta": 2,
+      "kvantifikator": "≥",
+      "raven": null,
+      "vrednost_dejstva": "T",
+      "razlaga": "≥2 let ≥ prag 2"
+    },
+    {
+      "idx": "D012",
+      "k": "K1",
+      "atom": "a14",
+      "citat": "integracijo zunanjih modelov (OpenAI, Anthropic) prek obstoječih API-jev",
+      "signal": null,
+      "vrsta": "I",
+      "pravilo": "B3",
+      "leta": null,
+      "kvantifikator": null,
+      "raven": 3,
+      "vrednost_dejstva": "T",
+      "razlaga": "raven 3 ≥ zahtevana 3"
+    },
+    {
+      "idx": "D013",
+      "k": "K1",
+      "atom": "a41",
+      "citat": "Zadnjih 8 let sem zaposlen v mednarodni banki",
+      "signal": null,
+      "vrsta": "I",
+      "pravilo": "B8",
+      "leta": 8,
+      "kvantifikator": "≥",
+      "raven": null,
+      "vrednost_dejstva": "T",
+      "razlaga": "≥8 let ≥ prag 6"
+    },
+    {
+      "idx": "D014",
+      "k": "K1",
+      "atom": "a04",
+      "citat": "agilno MVP-dostavo",
+      "signal": null,
+      "vrsta": "E",
+      "pravilo": null,
+      "leta": null,
+      "kvantifikator": null,
+      "raven": null,
+      "vrednost_dejstva": "T",
+      "razlaga": "izrecna trditev"
+    },
+    {
+      "idx": "D015",
+      "k": "K1",
+      "atom": "a08",
+      "citat": "tehnične rešitve brezpogojno slediti viziji poslovnega segmenta",
+      "signal": null,
+      "vrsta": "E",
+      "pravilo": null,
+      "leta": null,
+      "kvantifikator": null,
+      "raven": null,
+      "vrednost_dejstva": "T",
+      "razlaga": "izrecna trditev"
+    },
+    {
+      "idx": "D016",
+      "k": "K1",
+      "atom": "a01",
+      "citat": "ne izgubljam časa z redefiniranjem obstoječih sistemov ali gradnjo lastnih internih ogrodij",
+      "signal": null,
+      "vrsta": "I",
+      "pravilo": "B10",
+      "leta": null,
+      "kvantifikator": null,
+      "raven": null,
+      "vrednost_dejstva": "F",
+      "razlaga": "izrecna negacija"
+    },
+    {
+      "idx": "D017",
+      "k": "K2",
+      "atom": "a13",
+      "citat": "globokem razumevanju simbolne umetne inteligence, nevronskih mrež",
+      "signal": "globokem razumevanju",
+      "vrsta": "E",
+      "pravilo": null,
+      "leta": null,
+      "kvantifikator": null,
+      "raven": null,
+      "vrednost_dejstva": "T",
+      "razlaga": "raven 3 ≥ zahtevana 3"
+    },
+    {
+      "idx": "D018",
+      "k": "K2",
+      "atom": "a09",
+      "citat": "Moje tehnično znanje obsega Python, PyTorch",
+      "signal": "znanje obsega",
+      "vrsta": "E",
+      "pravilo": null,
+      "leta": null,
+      "kvantifikator": null,
+      "raven": null,
+      "vrednost_dejstva": "U",
+      "razlaga": "raven 2 < zahtevana 4 (spodnja meja, ne ovrže)"
+    },
+    {
+      "idx": "D019",
+      "k": "K2",
+      "atom": "a19",
+      "citat": "Moje tehnično znanje obsega Python, PyTorch",
+      "signal": "znanje obsega",
+      "vrsta": "E",
+      "pravilo": null,
+      "leta": null,
+      "kvantifikator": null,
+      "raven": null,
+      "vrednost_dejstva": "U",
+      "razlaga": "raven 2 < zahtevana 3 (spodnja meja, ne ovrže)"
+    },
+    {
+      "idx": "D020",
+      "k": "K2",
+      "atom": "a17",
+      "citat": "znanje obsega Python, PyTorch in napredne agentne sisteme (MCP, RAG)",
+      "signal": "znanje obsega",
+      "vrsta": "E",
+      "pravilo": null,
+      "leta": null,
+      "kvantifikator": null,
+      "raven": null,
+      "vrednost_dejstva": "U",
+      "razlaga": "raven 2 < zahtevana 3 (spodnja meja, ne ovrže)"
+    },
+    {
+      "idx": "D021",
+      "k": "K2",
+      "atom": "a15",
+      "citat": "znanje obsega Python, PyTorch in napredne agentne sisteme (MCP, RAG)",
+      "signal": "znanje obsega",
+      "vrsta": "E",
+      "pravilo": null,
+      "leta": null,
+      "kvantifikator": null,
+      "raven": null,
+      "vrednost_dejstva": "U",
+      "razlaga": "raven 2 < zahtevana 3 (spodnja meja, ne ovrže)"
+    },
+    {
+      "idx": "D022",
+      "k": "K2",
+      "atom": "a32",
+      "citat": "obvladam pa tudi celoten spektrum vsebnikov (Docker, OpenShift)",
+      "signal": "obvladam",
+      "vrsta": "E",
+      "pravilo": null,
+      "leta": null,
+      "kvantifikator": null,
+      "raven": null,
+      "vrednost_dejstva": "T",
+      "razlaga": "raven 4 ≥ zahtevana 3"
+    },
+    {
+      "idx": "D023",
+      "k": "K2",
+      "atom": "a34",
+      "citat": "obvladam pa tudi celoten spektrum vsebnikov (Docker, OpenShift)",
+      "signal": "obvladam",
+      "vrsta": "E",
+      "pravilo": null,
+      "leta": null,
+      "kvantifikator": null,
+      "raven": null,
+      "vrednost_dejstva": "T",
+      "razlaga": "raven 4 ≥ zahtevana 3"
+    },
+    {
+      "idx": "D024",
+      "k": "K2",
+      "atom": "a43",
+      "citat": "zadnjih 6 let vodila razvoj kritičnih AI sistemov",
+      "signal": null,
+      "vrsta": "E",
+      "pravilo": null,
+      "leta": 6,
+      "kvantifikator": "≥",
+      "raven": null,
+      "vrednost_dejstva": "T",
+      "razlaga": "≥6 let ≥ prag 2"
+    },
+    {
+      "idx": "D025",
+      "k": "K2",
+      "atom": "a41",
+      "citat": "zadnjih 6 let vodila razvoj kritičnih AI sistemov",
+      "signal": null,
+      "vrsta": "I",
+      "pravilo": "B8",
+      "leta": 6,
+      "kvantifikator": "≥",
+      "raven": null,
+      "vrednost_dejstva": "T",
+      "razlaga": "≥6 let ≥ prag 6"
+    },
+    {
+      "idx": "D026",
+      "k": "K2",
+      "atom": "a37",
+      "citat": "nimam neposrednih izkušenj v korporativnem bančništvu",
+      "signal": null,
+      "vrsta": "I",
+      "pravilo": "B1",
+      "leta": null,
+      "kvantifikator": null,
+      "raven": null,
+      "vrednost_dejstva": "F",
+      "razlaga": "izrecna negacija"
+    },
+    {
+      "idx": "D027",
+      "k": "K2",
+      "atom": "a49",
+      "citat": "Kandidat 2: Dr. Ksenija",
+      "signal": null,
+      "vrsta": "I",
+      "pravilo": "B6",
+      "leta": null,
+      "kvantifikator": null,
+      "raven": null,
+      "vrednost_dejstva": "T",
+      "razlaga": "izrecna trditev"
+    },
+    {
+      "idx": "D028",
+      "k": "K2",
+      "atom": "a05",
+      "citat": "vzpostavitev 'Ground Truth' sistemov preverjanja",
+      "signal": null,
+      "vrsta": "E",
+      "pravilo": null,
+      "leta": null,
+      "kvantifikator": null,
+      "raven": null,
+      "vrednost_dejstva": "T",
+      "razlaga": "izrecna trditev"
+    },
+    {
+      "idx": "D029",
+      "k": "K2",
+      "atom": "a04",
+      "citat": "zanesljivih, produkcijskih AI aplikacij ne da razvijati 'bliskovito' brez ustreznih temeljev",
+      "signal": null,
+      "vrsta": "I",
+      "pravilo": "B10",
+      "leta": null,
+      "kvantifikator": null,
+      "raven": null,
+      "vrednost_dejstva": "F",
+      "razlaga": "izrecna negacija"
+    },
+    {
+      "idx": "D030",
+      "k": "K3",
+      "atom": "a41",
+      "citat": "Imam dobrih 6 let izkušenj s programiranjem",
+      "signal": null,
+      "vrsta": "E",
+      "pravilo": null,
+      "leta": 6,
+      "kvantifikator": "≥",
+      "raven": null,
+      "vrednost_dejstva": "T",
+      "razlaga": "≥6 let ≥ prag 6"
+    },
+    {
+      "idx": "D031",
+      "k": "K3",
+      "atom": "a45",
+      "citat": "zadnja 3 leta delam izključno na agentnih AI ogrodjih",
+      "signal": null,
+      "vrsta": "E",
+      "pravilo": null,
+      "leta": 3,
+      "kvantifikator": "≥",
+      "raven": null,
+      "vrednost_dejstva": "T",
+      "razlaga": "≥3 let ≥ prag 2"
+    },
+    {
+      "idx": "D032",
+      "k": "K3",
+      "atom": "a18",
+      "citat": "delam izključno na agentnih AI ogrodjih",
+      "signal": "delam",
+      "vrsta": "E",
+      "pravilo": null,
+      "leta": null,
+      "kvantifikator": null,
+      "raven": null,
+      "vrednost_dejstva": "T",
+      "razlaga": "raven 3 ≥ zahtevana 3"
+    },
+    {
+      "idx": "D033",
+      "k": "K3",
+      "atom": "a16",
+      "citat": "delam izključno na agentnih AI ogrodjih, prompt inženiringu",
+      "signal": "delam",
+      "vrsta": "E",
+      "pravilo": null,
+      "leta": null,
+      "kvantifikator": null,
+      "raven": null,
+      "vrednost_dejstva": "T",
+      "razlaga": "raven 3 ≥ zahtevana 3"
+    },
+    {
+      "idx": "D034",
+      "k": "K3",
+      "atom": "a14",
+      "citat": "integraciji večmodelnih platform (Claude, GPT-4, Google APIs)",
+      "signal": null,
+      "vrsta": "I",
+      "pravilo": "B3",
+      "leta": null,
+      "kvantifikator": null,
+      "raven": 3,
+      "vrednost_dejstva": "T",
+      "razlaga": "raven 3 ≥ zahtevana 3"
+    },
+    {
+      "idx": "D035",
+      "k": "K3",
+      "atom": "a20",
+      "citat": "Moje glavno orožje so AI coding pomočniki (Devin, Copilot, Claude Code)",
+      "signal": "glavno orožje",
+      "vrsta": "E",
+      "pravilo": null,
+      "leta": null,
+      "kvantifikator": null,
+      "raven": null,
+      "vrednost_dejstva": "T",
+      "razlaga": "raven 3 ≥ zahtevana 1"
+    },
+    {
+      "idx": "D036",
+      "k": "K3",
+      "atom": "a11",
+      "citat": "Odlično se znajdem v JavaScript/TypeScript (Node.js/Angular) in Pythonu",
+      "signal": "odlično se znajdem",
+      "vrsta": "E",
+      "pravilo": null,
+      "leta": null,
+      "kvantifikator": null,
+      "raven": null,
+      "vrednost_dejstva": "T",
+      "razlaga": "raven 4 ≥ zahtevana 2"
+    },
+    {
+      "idx": "D037",
+      "k": "K3",
+      "atom": "a09",
+      "citat": "Odlično se znajdem v JavaScript/TypeScript (Node.js/Angular) in Pythonu",
+      "signal": "odlično se znajdem",
+      "vrsta": "E",
+      "pravilo": null,
+      "leta": null,
+      "kvantifikator": null,
+      "raven": null,
+      "vrednost_dejstva": "T",
+      "razlaga": "raven 4 ≥ zahtevana 4"
+    },
+    {
+      "idx": "D038",
+      "k": "K3",
+      "atom": "a32",
+      "citat": "sistemi, kot sta Docker in Kubernetes, pa so zame standardni del CI/CD cevovoda",
+      "signal": "standardni del",
+      "vrsta": "E",
+      "pravilo": null,
+      "leta": null,
+      "kvantifikator": null,
+      "raven": null,
+      "vrednost_dejstva": "T",
+      "razlaga": "raven 3 ≥ zahtevana 3"
+    },
+    {
+      "idx": "D039",
+      "k": "K3",
+      "atom": "a33",
+      "citat": "sistemi, kot sta Docker in Kubernetes, pa so zame standardni del CI/CD cevovoda",
+      "signal": "standardni del",
+      "vrsta": "E",
+      "pravilo": null,
+      "leta": null,
+      "kvantifikator": null,
+      "raven": null,
+      "vrednost_dejstva": "T",
+      "razlaga": "raven 3 ≥ zahtevana 3"
+    },
+    {
+      "idx": "D040",
+      "k": "K3",
+      "atom": "a22",
+      "citat": "standardni del CI/CD cevovoda",
+      "signal": "standardni del",
+      "vrsta": "E",
+      "pravilo": null,
+      "leta": null,
+      "kvantifikator": null,
+      "raven": null,
+      "vrednost_dejstva": "U",
+      "razlaga": "raven 3 < zahtevana 4 (spodnja meja, ne ovrže)"
+    },
+    {
+      "idx": "D041",
+      "k": "K3",
+      "atom": "a12",
+      "citat": "full-stack AI navdušenec",
+      "signal": "navdušenec",
+      "vrsta": "E",
+      "pravilo": null,
+      "leta": null,
+      "kvantifikator": null,
+      "raven": null,
+      "vrednost_dejstva": "U",
+      "razlaga": "raven 1 < zahtevana 3 (spodnja meja, ne ovrže)"
+    },
+    {
+      "idx": "D042",
+      "k": "K3",
+      "atom": "a37",
+      "citat": "Nimam bančnih izkušenj",
+      "signal": null,
+      "vrsta": "I",
+      "pravilo": "B1",
+      "leta": null,
+      "kvantifikator": null,
+      "raven": null,
+      "vrednost_dejstva": "F",
+      "razlaga": "izrecna negacija"
+    },
+    {
+      "idx": "D043",
+      "k": "K3",
+      "atom": "a02",
+      "citat": "integraciji večmodelnih platform (Claude, GPT-4, Google APIs)",
+      "signal": null,
+      "vrsta": "E",
+      "pravilo": null,
+      "leta": null,
+      "kvantifikator": null,
+      "raven": null,
+      "vrednost_dejstva": "T",
+      "razlaga": "izrecna trditev"
+    },
+    {
+      "idx": "D044",
+      "k": "K3",
+      "atom": "a03",
+      "citat": "full-stack AI navdušenec",
+      "signal": null,
+      "vrsta": "E",
+      "pravilo": null,
+      "leta": null,
+      "kvantifikator": null,
+      "raven": null,
+      "vrednost_dejstva": "T",
+      "razlaga": "izrecna trditev"
+    },
+    {
+      "idx": "D045",
+      "k": "K3",
+      "atom": "a04",
+      "citat": "obožujem rapidno prototipiranje, MVP-je in iterativno dostavo",
+      "signal": null,
+      "vrsta": "E",
+      "pravilo": null,
+      "leta": null,
+      "kvantifikator": null,
+      "raven": null,
+      "vrednost_dejstva": "T",
+      "razlaga": "izrecna trditev"
+    },
+    {
+      "idx": "D046",
+      "k": "K3",
+      "atom": "a01",
+      "citat": "se ne poglabljam rad v dolgotrajno analizo podatkovnih baz ali gradnjo kompleksnih internih infrastruktur",
+      "signal": null,
+      "vrsta": "I",
+      "pravilo": "B10",
+      "leta": null,
+      "kvantifikator": null,
+      "raven": null,
+      "vrednost_dejstva": "F",
+      "razlaga": "izrecna negacija"
+    },
+    {
+      "idx": "D047",
+      "k": "K4",
+      "atom": "a41",
+      "citat": "Prinašam 9 let progresivnih programerskih izkušenj",
+      "signal": null,
+      "vrsta": "E",
+      "pravilo": null,
+      "leta": 9,
+      "kvantifikator": "≥",
+      "raven": null,
+      "vrednost_dejstva": "T",
+      "razlaga": "≥9 let ≥ prag 6"
+    },
+    {
+      "idx": "D048",
+      "k": "K4",
+      "atom": "a09",
+      "citat": "9 let progresivnih programerskih izkušenj v jeziku Java (Spring Boot) in Python",
+      "signal": "izkušenj",
+      "vrsta": "E",
+      "pravilo": null,
+      "leta": null,
+      "kvantifikator": null,
+      "raven": null,
+      "vrednost_dejstva": "U",
+      "razlaga": "raven 3 < zahtevana 4 (spodnja meja, ne ovrže)"
+    },
+    {
+      "idx": "D049",
+      "k": "K4",
+      "atom": "a10",
+      "citat": "9 let progresivnih programerskih izkušenj v jeziku Java (Spring Boot) in Python",
+      "signal": "izkušenj",
+      "vrsta": "E",
+      "pravilo": null,
+      "leta": null,
+      "kvantifikator": null,
+      "raven": null,
+      "vrednost_dejstva": "U",
+      "razlaga": "raven 3 < zahtevana 4 (spodnja meja, ne ovrže)"
+    },
+    {
+      "idx": "D050",
+      "k": "K4",
+      "atom": "a09",
+      "citat": "9 let progresivnih programerskih izkušenj v jeziku Java (Spring Boot) in Python",
+      "signal": null,
+      "vrsta": "I",
+      "pravilo": "B5",
+      "leta": null,
+      "kvantifikator": null,
+      "raven": 4,
+      "vrednost_dejstva": "T",
+      "razlaga": "raven 4 ≥ zahtevana 4"
+    },
+    {
+      "idx": "D051",
+      "k": "K4",
+      "atom": "a10",
+      "citat": "9 let progresivnih programerskih izkušenj v jeziku Java (Spring Boot) in Python",
+      "signal": null,
+      "vrsta": "I",
+      "pravilo": "B5",
+      "leta": null,
+      "kvantifikator": null,
+      "raven": 4,
+      "vrednost_dejstva": "T",
+      "razlaga": "raven 4 ≥ zahtevana 4"
+    },
+    {
+      "idx": "D052",
+      "k": "K4",
+      "atom": "a42",
+      "citat": "9 let progresivnih programerskih izkušenj",
+      "signal": null,
+      "vrsta": "I",
+      "pravilo": "B5",
+      "leta": null,
+      "kvantifikator": null,
+      "raven": 4,
+      "vrednost_dejstva": "T",
+      "razlaga": "raven 4 ≥ zahtevana 4"
+    },
+    {
+      "idx": "D053",
+      "k": "K4",
+      "atom": "a38",
+      "citat": "zadnja leta preživel v visoko regulirani obrambni industriji",
+      "signal": "preživel",
+      "vrsta": "E",
+      "pravilo": null,
+      "leta": null,
+      "kvantifikator": null,
+      "raven": null,
+      "vrednost_dejstva": "T",
+      "razlaga": "raven 3 ≥ zahtevana 3"
+    },
+    {
+      "idx": "D054",
+      "k": "K4",
+      "atom": "a13",
+      "citat": "kjer smo razvijali avtonomne in multi-agentne sisteme",
+      "signal": null,
+      "vrsta": "I",
+      "pravilo": "B9",
+      "leta": null,
+      "kvantifikator": null,
+      "raven": 3,
+      "vrednost_dejstva": "T",
+      "razlaga": "raven 3 ≥ zahtevana 3"
+    },
+    {
+      "idx": "D055",
+      "k": "K4",
+      "atom": "a45",
+      "citat": "zadnja leta preživel v visoko regulirani obrambni industriji, kjer smo razvijali avtonomne in multi-agentne sisteme",
+      "signal": null,
+      "vrsta": "I",
+      "pravilo": "B7",
+      "leta": 2,
+      "kvantifikator": "≥",
+      "raven": null,
+      "vrednost_dejstva": "T",
+      "razlaga": "≥2 let ≥ prag 2"
+    },
+    {
+      "idx": "D056",
+      "k": "K4",
+      "atom": "a28",
+      "citat": "Sem strokovnjak za API-first in dogodkovno vodene arhitekture",
+      "signal": "strokovnjak",
+      "vrsta": "E",
+      "pravilo": null,
+      "leta": null,
+      "kvantifikator": null,
+      "raven": null,
+      "vrednost_dejstva": "T",
+      "razlaga": "raven 4 ≥ zahtevana 3"
+    },
+    {
+      "idx": "D057",
+      "k": "K4",
+      "atom": "a30",
+      "citat": "Sem strokovnjak za API-first in dogodkovno vodene arhitekture",
+      "signal": "strokovnjak",
+      "vrsta": "E",
+      "pravilo": null,
+      "leta": null,
+      "kvantifikator": null,
+      "raven": null,
+      "vrednost_dejstva": "T",
+      "razlaga": "raven 4 ≥ zahtevana 3"
+    },
+    {
+      "idx": "D058",
+      "k": "K4",
+      "atom": "a32",
+      "citat": "strokovnjak za API-first in dogodkovno vodene arhitekture ter Docker/Kubernetes platforme",
+      "signal": "strokovnjak",
+      "vrsta": "E",
+      "pravilo": null,
+      "leta": null,
+      "kvantifikator": null,
+      "raven": null,
+      "vrednost_dejstva": "T",
+      "razlaga": "raven 4 ≥ zahtevana 3"
+    },
+    {
+      "idx": "D059",
+      "k": "K4",
+      "atom": "a33",
+      "citat": "strokovnjak za API-first in dogodkovno vodene arhitekture ter Docker/Kubernetes platforme",
+      "signal": "strokovnjak",
+      "vrsta": "E",
+      "pravilo": null,
+      "leta": null,
+      "kvantifikator": null,
+      "raven": null,
+      "vrednost_dejstva": "T",
+      "razlaga": "raven 4 ≥ zahtevana 3"
+    },
+    {
+      "idx": "D060",
+      "k": "K4",
+      "atom": "a22",
+      "citat": "obrambni sektor v smislu varnosti, CI/CD praks, aplikacijske odpornosti",
+      "signal": null,
+      "vrsta": "I",
+      "pravilo": "B11",
+      "leta": null,
+      "kvantifikator": null,
+      "raven": 3,
+      "vrednost_dejstva": "U",
+      "razlaga": "raven 3 < zahtevana 4 (spodnja meja, ne ovrže)"
+    },
+    {
+      "idx": "D061",
+      "k": "K4",
+      "atom": "a26",
+      "citat": "obrambni sektor v smislu varnosti, CI/CD praks, aplikacijske odpornosti",
+      "signal": null,
+      "vrsta": "I",
+      "pravilo": "B11",
+      "leta": null,
+      "kvantifikator": null,
+      "raven": 3,
+      "vrednost_dejstva": "U",
+      "razlaga": "raven 3 < zahtevana 4 (spodnja meja, ne ovrže)"
+    },
+    {
+      "idx": "D062",
+      "k": "K4",
+      "atom": "a27",
+      "citat": "obrambni sektor v smislu varnosti, CI/CD praks, aplikacijske odpornosti",
+      "signal": null,
+      "vrsta": "I",
+      "pravilo": "B11",
+      "leta": null,
+      "kvantifikator": null,
+      "raven": 3,
+      "vrednost_dejstva": "U",
+      "razlaga": "raven 3 < zahtevana 4 (spodnja meja, ne ovrže)"
+    },
+    {
+      "idx": "D063",
+      "k": "K4",
+      "atom": "a25",
+      "citat": "Delujem znotraj agilnih timov",
+      "signal": "delujem",
+      "vrsta": "E",
+      "pravilo": null,
+      "leta": null,
+      "kvantifikator": null,
+      "raven": null,
+      "vrednost_dejstva": "U",
+      "razlaga": "raven 3 < zahtevana 4 (spodnja meja, ne ovrže)"
+    },
+    {
+      "idx": "D064",
+      "k": "K4",
+      "atom": "a37",
+      "citat": "nimam izkušenj neposredno v bančništvu",
+      "signal": null,
+      "vrsta": "I",
+      "pravilo": "B1",
+      "leta": null,
+      "kvantifikator": null,
+      "raven": null,
+      "vrednost_dejstva": "F",
+      "razlaga": "izrecna negacija"
+    },
+    {
+      "idx": "D065",
+      "k": "K4",
+      "atom": "a01",
+      "citat": "je moja prva naloga vzpostavitev robustnega infrastrukturnega ogrodja in orodij",
+      "signal": null,
+      "vrsta": "E",
+      "pravilo": null,
+      "leta": null,
+      "kvantifikator": null,
+      "raven": null,
+      "vrednost_dejstva": "T",
+      "razlaga": "izrecna trditev"
+    },
+    {
+      "idx": "D066",
+      "k": "K4",
+      "atom": "a04",
+      "citat": "Preden začnemo brezglavo hiteti v produkcijo z MVP rešitvami",
+      "signal": null,
+      "vrsta": "I",
+      "pravilo": "B10",
+      "leta": null,
+      "kvantifikator": null,
+      "raven": null,
+      "vrednost_dejstva": "F",
+      "razlaga": "izrecna negacija"
+    },
+    {
+      "idx": "D067",
+      "k": "K5",
+      "atom": "a41",
+      "citat": "formalno dosegam 4 leta izkušenj na področju programske opreme (kar je manj od navedenih 6–10 let)",
+      "signal": null,
+      "vrsta": "E",
+      "pravilo": null,
+      "leta": 4,
+      "kvantifikator": "=",
+      "raven": null,
+      "vrednost_dejstva": "F",
+      "razlaga": "natančno 4 let < prag 6"
+    },
+    {
+      "idx": "D068",
+      "k": "K5",
+      "atom": "a43",
+      "citat": "zadnja 2 leta v celoti osredotočena na napredne generativne AI rešitve in RAG sisteme",
+      "signal": null,
+      "vrsta": "E",
+      "pravilo": null,
+      "leta": 2,
+      "kvantifikator": "≥",
+      "raven": null,
+      "vrednost_dejstva": "T",
+      "razlaga": "≥2 let ≥ prag 2"
+    },
+    {
+      "idx": "D069",
+      "k": "K5",
+      "atom": "a44",
+      "citat": "zadnja 2 leta v celoti osredotočena na napredne generativne AI rešitve",
+      "signal": null,
+      "vrsta": "I",
+      "pravilo": "B4",
+      "leta": 2,
+      "kvantifikator": "≥",
+      "raven": null,
+      "vrednost_dejstva": "T",
+      "razlaga": "≥2 let ≥ prag 2"
+    },
+    {
+      "idx": "D070",
+      "k": "K5",
+      "atom": "a15",
+      "citat": "osredotočena na napredne generativne AI rešitve in RAG sisteme",
+      "signal": "osredotočena",
+      "vrsta": "E",
+      "pravilo": null,
+      "leta": null,
+      "kvantifikator": null,
+      "raven": null,
+      "vrednost_dejstva": "T",
+      "razlaga": "raven 3 ≥ zahtevana 3"
+    },
+    {
+      "idx": "D071",
+      "k": "K5",
+      "atom": "a09",
+      "citat": "Odlično obvladam Python",
+      "signal": "odlično obvladam",
+      "vrsta": "E",
+      "pravilo": null,
+      "leta": null,
+      "kvantifikator": null,
+      "raven": null,
+      "vrednost_dejstva": "T",
+      "razlaga": "raven 4 ≥ zahtevana 4"
+    },
+    {
+      "idx": "D072",
+      "k": "K5",
+      "atom": "a19",
+      "citat": "Odlično obvladam Python, knjižnice NumPy/Pandas, strojno učenje (Scikit-learn)",
+      "signal": "odlično obvladam",
+      "vrsta": "E",
+      "pravilo": null,
+      "leta": null,
+      "kvantifikator": null,
+      "raven": null,
+      "vrednost_dejstva": "T",
+      "razlaga": "raven 4 ≥ zahtevana 3"
+    },
+    {
+      "idx": "D073",
+      "k": "K5",
+      "atom": "a16",
+      "citat": "Odlično obvladam Python, knjižnice NumPy/Pandas, strojno učenje (Scikit-learn) ter prompt inženiring",
+      "signal": "odlično obvladam",
+      "vrsta": "E",
+      "pravilo": null,
+      "leta": null,
+      "kvantifikator": null,
+      "raven": null,
+      "vrednost_dejstva": "T",
+      "razlaga": "raven 4 ≥ zahtevana 3"
+    },
+    {
+      "idx": "D074",
+      "k": "K5",
+      "atom": "a20",
+      "citat": "uporaba sodobnih AI orodij (Copilot)",
+      "signal": "uporaba",
+      "vrsta": "E",
+      "pravilo": null,
+      "leta": null,
+      "kvantifikator": null,
+      "raven": null,
+      "vrednost_dejstva": "T",
+      "razlaga": "raven 3 ≥ zahtevana 1"
+    },
+    {
+      "idx": "D075",
+      "k": "K5",
+      "atom": "a35",
+      "citat": "sposobnost razumevanja kompleksnih problemov",
+      "signal": "sposobnost",
+      "vrsta": "E",
+      "pravilo": null,
+      "leta": null,
+      "kvantifikator": null,
+      "raven": null,
+      "vrednost_dejstva": "U",
+      "razlaga": "raven 3 < zahtevana 4 (spodnja meja, ne ovrže)"
+    },
+    {
+      "idx": "D076",
+      "k": "K5",
+      "atom": "a37",
+      "citat": "Nimam bančnega ozadja",
+      "signal": null,
+      "vrsta": "I",
+      "pravilo": "B1",
+      "leta": null,
+      "kvantifikator": null,
+      "raven": null,
+      "vrednost_dejstva": "F",
+      "razlaga": "izrecna negacija"
+    },
+    {
+      "idx": "D077",
+      "k": "K5",
+      "atom": "a01",
+      "citat": "ne težim k dolgotrajni gradnji lastnih zaprtih infrastruktur",
+      "signal": null,
+      "vrsta": "I",
+      "pravilo": "B10",
+      "leta": null,
+      "kvantifikator": null,
+      "raven": null,
+      "vrednost_dejstva": "F",
+      "razlaga": "izrecna negacija"
+    }
+  ],
+  "dejstva_izluscil": "Claude (claude-opus-5-5), 2026-09-24",
+  "neuporabljene_izjave": [
+    {
+      "k": "K1",
+      "citat": "s svojo poslušnostjo, disciplino",
+      "razlog": "Oglas ne vsebuje zahteve po poslušnosti; lastnost ni atom."
+    },
+    {
+      "k": "K1",
+      "citat": "sem se strogo držal navodil poslovnih analitikov",
+      "razlog": "Stališče do dela, ni atom zahtev."
+    },
+    {
+      "k": "K1",
+      "citat": "Globoko razumem pomen spoštovanja strogih bančnih regulatornih okvirov in varnostnih standardov",
+      "razlog": "Razumevanje POMENA standardov ni veščina 'security' (a27); vezava bi zahtevala novo premostitveno pravilo."
+    },
+    {
+      "k": "K2",
+      "citat": "verifikacijske logične filtre, ki preprečujejo halucinacije LLM modelov",
+      "razlog": "Namera za prihodnost, ne izkušnja."
+    },
+    {
+      "k": "K2",
+      "citat": "v akademskem in raziskovalnem okolju",
+      "razlog": "Relevantno za a47 (enterprise-scale v produkciji), ne dokazuje ga niti ne ovrže → U."
+    },
+    {
+      "k": "K3",
+      "citat": "dosegam 3-kratno hitrost običajnega programerja",
+      "razlog": "Samoocena brez merljive podlage; ni atom."
+    },
+    {
+      "k": "K3",
+      "citat": "se ne poglabljam rad v dolgotrajno analizo podatkovnih baz",
+      "razlog": "Preferenca, ne zmožnost; za a31 (data engineering patterns) ni uporabljena, ker B10 velja samo za naloge P."
+    },
+    {
+      "k": "K4",
+      "citat": "vedno z distanco zdravega razuma do zahtev netehničnega osebja",
+      "razlog": "Stališče; za a08 (Domain Alignment) dvoumno – ni uporabljeno."
+    },
+    {
+      "k": "K4",
+      "citat": "Moja obrambna referenca deluje kot garant za absolutno stabilnost",
+      "razlog": "Trditev brez preverljive vsebine."
+    },
+    {
+      "k": "K5",
+      "citat": "ki ga starejši kadri včasih izgubijo",
+      "razlog": "Posplošitev o starosti; ni atom in je ne smemo upoštevati."
+    },
+    {
+      "k": "K5",
+      "citat": "pripravljenost na mentorstvo s strani izkušenejših sodelavcev",
+      "razlog": "PAST: beseda 'mentorstvo' se ujema z a40 ('interest in mentoring junior AI engineers'), smer pa je obratna (prejemanje, ne dajanje) → ni uporabljeno."
+    }
+  ],
+  "dokazi_tree": [
+    {
+      "kljuc": "S|K1|n01",
+      "K": "",
+      "R": "A⋀B⋀C",
+      "D_vhod": "¬(A⋀B⋀C)",
+      "D_izhod": "SATISFIABLE",
+      "O_vhod": "A⋀B⋀C",
+      "O_izhod": "SATISFIABLE",
+      "vrednost": "U"
+    },
+    {
+      "kljuc": "S|K1|n22",
+      "K": "",
+      "R": "A⋁B⋁C",
+      "D_vhod": "¬(A⋁B⋁C)",
+      "D_izhod": "SATISFIABLE",
+      "O_vhod": "A⋁B⋁C",
+      "O_izhod": "SATISFIABLE",
+      "vrednost": "U"
+    },
+    {
+      "kljuc": "S|K1|n23",
+      "K": "A⋀B",
+      "R": "A⋁B",
+      "D_vhod": "(A⋀B)⋀¬(A⋁B)",
+      "D_izhod": "CONTRADICTION",
+      "O_vhod": "(A⋀B)⋀(A⋁B)",
+      "O_izhod": "SATISFIABLE",
+      "vrednost": "T"
+    },
+    {
+      "kljuc": "S|K1|n02",
+      "K": "",
+      "R": "A⋀B⋀C",
+      "D_vhod": "¬(A⋀B⋀C)",
+      "D_izhod": "SATISFIABLE",
+      "O_vhod": "A⋀B⋀C",
+      "O_izhod": "SATISFIABLE",
+      "vrednost": "U"
+    },
+    {
+      "kljuc": "S|K1|n12",
+      "K": "",
+      "R": "A⋀B⋀C⋀D",
+      "D_vhod": "¬(A⋀B⋀C⋀D)",
+      "D_izhod": "SATISFIABLE",
+      "O_vhod": "A⋀B⋀C⋀D",
+      "O_izhod": "SATISFIABLE",
+      "vrednost": "U"
+    },
+    {
+      "kljuc": "S|K1|n16",
+      "K": "B",
+      "R": "A⋀B⋀C⋀D",
+      "D_vhod": "(B)⋀¬(A⋀B⋀C⋀D)",
+      "D_izhod": "SATISFIABLE",
+      "O_vhod": "(B)⋀(A⋀B⋀C⋀D)",
+      "O_izhod": "SATISFIABLE",
+      "vrednost": "U"
+    },
+    {
+      "kljuc": "S|K1|n24",
+      "K": "D",
+      "R": "A⋁B⋁C⋁D",
+      "D_vhod": "(D)⋀¬(A⋁B⋁C⋁D)",
+      "D_izhod": "CONTRADICTION",
+      "O_vhod": "(D)⋀(A⋁B⋁C⋁D)",
+      "O_izhod": "SATISFIABLE",
+      "vrednost": "T"
+    },
+    {
+      "kljuc": "S|K1|n25",
+      "K": "D",
+      "R": "A⋁B⋁C⋁D",
+      "D_vhod": "(D)⋀¬(A⋁B⋁C⋁D)",
+      "D_izhod": "CONTRADICTION",
+      "O_vhod": "(D)⋀(A⋁B⋁C⋁D)",
+      "O_izhod": "SATISFIABLE",
+      "vrednost": "T"
+    },
+    {
+      "kljuc": "S|K1|n03",
+      "K": "A⋀B",
+      "R": "(A⋁B)⋀C",
+      "D_vhod": "(A⋀B)⋀¬((A⋁B)⋀C)",
+      "D_izhod": "SATISFIABLE",
+      "O_vhod": "(A⋀B)⋀((A⋁B)⋀C)",
+      "O_izhod": "SATISFIABLE",
+      "vrednost": "U"
+    },
+    {
+      "kljuc": "S|K1|n05",
+      "K": "D",
+      "R": "A⋀B⋀C⋀D",
+      "D_vhod": "(D)⋀¬(A⋀B⋀C⋀D)",
+      "D_izhod": "SATISFIABLE",
+      "O_vhod": "(D)⋀(A⋀B⋀C⋀D)",
+      "O_izhod": "SATISFIABLE",
+      "vrednost": "U"
+    },
+    {
+      "kljuc": "S|K1|n09",
+      "K": "",
+      "R": "A⋀B⋀C⋀D",
+      "D_vhod": "¬(A⋀B⋀C⋀D)",
+      "D_izhod": "SATISFIABLE",
+      "O_vhod": "A⋀B⋀C⋀D",
+      "O_izhod": "SATISFIABLE",
+      "vrednost": "U"
+    },
+    {
+      "kljuc": "S|K1|n13",
+      "K": "",
+      "R": "A⋀B⋀C⋀D",
+      "D_vhod": "¬(A⋀B⋀C⋀D)",
+      "D_izhod": "SATISFIABLE",
+      "O_vhod": "A⋀B⋀C⋀D",
+      "O_izhod": "SATISFIABLE",
+      "vrednost": "U"
+    },
+    {
+      "kljuc": "S|K1|n14",
+      "K": "A⋀B",
+      "R": "A⋀B⋀C",
+      "D_vhod": "(A⋀B)⋀¬(A⋀B⋀C)",
+      "D_izhod": "SATISFIABLE",
+      "O_vhod": "(A⋀B)⋀(A⋀B⋀C)",
+      "O_izhod": "SATISFIABLE",
+      "vrednost": "U"
+    },
+    {
+      "kljuc": "S|K1|n18",
+      "K": "C",
+      "R": "A⋀B⋀C⋀D",
+      "D_vhod": "(C)⋀¬(A⋀B⋀C⋀D)",
+      "D_izhod": "SATISFIABLE",
+      "O_vhod": "(C)⋀(A⋀B⋀C⋀D)",
+      "O_izhod": "SATISFIABLE",
+      "vrednost": "U"
+    },
+    {
+      "kljuc": "S|K1|n20",
+      "K": "",
+      "R": "(A⋁B)⋀C",
+      "D_vhod": "¬((A⋁B)⋀C)",
+      "D_izhod": "SATISFIABLE",
+      "O_vhod": "(A⋁B)⋀C",
+      "O_izhod": "SATISFIABLE",
+      "vrednost": "U"
+    },
+    {
+      "kljuc": "S|K1|n06",
+      "K": "",
+      "R": "A⋀B⋀C",
+      "D_vhod": "¬(A⋀B⋀C)",
+      "D_izhod": "SATISFIABLE",
+      "O_vhod": "A⋀B⋀C",
+      "O_izhod": "SATISFIABLE",
+      "vrednost": "U"
+    },
+    {
+      "kljuc": "S|K1|n10",
+      "K": "",
+      "R": "A⋀B⋀C⋀D",
+      "D_vhod": "¬(A⋀B⋀C⋀D)",
+      "D_izhod": "SATISFIABLE",
+      "O_vhod": "A⋀B⋀C⋀D",
+      "O_izhod": "SATISFIABLE",
+      "vrednost": "U"
+    },
+    {
+      "kljuc": "S|K1|n19",
+      "K": "A",
+      "R": "A⋁B⋁C⋁D",
+      "D_vhod": "(A)⋀¬(A⋁B⋁C⋁D)",
+      "D_izhod": "CONTRADICTION",
+      "O_vhod": "(A)⋀(A⋁B⋁C⋁D)",
+      "O_izhod": "SATISFIABLE",
+      "vrednost": "T"
+    },
+    {
+      "kljuc": "S|K1|n07",
+      "K": "",
+      "R": "A⋀B⋀C",
+      "D_vhod": "¬(A⋀B⋀C)",
+      "D_izhod": "SATISFIABLE",
+      "O_vhod": "A⋀B⋀C",
+      "O_izhod": "SATISFIABLE",
+      "vrednost": "U"
+    },
+    {
+      "kljuc": "S|K2|n01",
+      "K": "",
+      "R": "A⋀B⋀C",
+      "D_vhod": "¬(A⋀B⋀C)",
+      "D_izhod": "SATISFIABLE",
+      "O_vhod": "A⋀B⋀C",
+      "O_izhod": "SATISFIABLE",
+      "vrednost": "U"
+    },
+    {
+      "kljuc": "S|K2|n22",
+      "K": "",
+      "R": "A⋁B⋁C",
+      "D_vhod": "¬(A⋁B⋁C)",
+      "D_izhod": "SATISFIABLE",
+      "O_vhod": "A⋁B⋁C",
+      "O_izhod": "SATISFIABLE",
+      "vrednost": "U"
+    },
+    {
+      "kljuc": "S|K2|n23",
+      "K": "B",
+      "R": "A⋁B",
+      "D_vhod": "(B)⋀¬(A⋁B)",
+      "D_izhod": "CONTRADICTION",
+      "O_vhod": "(B)⋀(A⋁B)",
+      "O_izhod": "SATISFIABLE",
+      "vrednost": "T"
+    },
+    {
+      "kljuc": "S|K2|n02",
+      "K": "",
+      "R": "A⋀B⋀C",
+      "D_vhod": "¬(A⋀B⋀C)",
+      "D_izhod": "SATISFIABLE",
+      "O_vhod": "A⋀B⋀C",
+      "O_izhod": "SATISFIABLE",
+      "vrednost": "U"
+    },
+    {
+      "kljuc": "S|K2|n12",
+      "K": "",
+      "R": "A⋀B⋀C⋀D",
+      "D_vhod": "¬(A⋀B⋀C⋀D)",
+      "D_izhod": "SATISFIABLE",
+      "O_vhod": "A⋀B⋀C⋀D",
+      "O_izhod": "SATISFIABLE",
+      "vrednost": "U"
+    },
+    {
+      "kljuc": "S|K2|n16",
+      "K": "",
+      "R": "A⋀B⋀C⋀D",
+      "D_vhod": "¬(A⋀B⋀C⋀D)",
+      "D_izhod": "SATISFIABLE",
+      "O_vhod": "A⋀B⋀C⋀D",
+      "O_izhod": "SATISFIABLE",
+      "vrednost": "U"
+    },
+    {
+      "kljuc": "S|K2|n24",
+      "K": "",
+      "R": "A⋁B⋁C⋁D",
+      "D_vhod": "¬(A⋁B⋁C⋁D)",
+      "D_izhod": "SATISFIABLE",
+      "O_vhod": "A⋁B⋁C⋁D",
+      "O_izhod": "SATISFIABLE",
+      "vrednost": "U"
+    },
+    {
+      "kljuc": "S|K2|n25",
+      "K": "A",
+      "R": "A⋁B⋁C⋁D",
+      "D_vhod": "(A)⋀¬(A⋁B⋁C⋁D)",
+      "D_izhod": "CONTRADICTION",
+      "O_vhod": "(A)⋀(A⋁B⋁C⋁D)",
+      "O_izhod": "SATISFIABLE",
+      "vrednost": "T"
+    },
+    {
+      "kljuc": "S|K2|n03",
+      "K": "",
+      "R": "(A⋁B)⋀C",
+      "D_vhod": "¬((A⋁B)⋀C)",
+      "D_izhod": "SATISFIABLE",
+      "O_vhod": "(A⋁B)⋀C",
+      "O_izhod": "SATISFIABLE",
+      "vrednost": "U"
+    },
+    {
+      "kljuc": "S|K2|n05",
+      "K": "A",
+      "R": "A⋀B⋀C⋀D",
+      "D_vhod": "(A)⋀¬(A⋀B⋀C⋀D)",
+      "D_izhod": "SATISFIABLE",
+      "O_vhod": "(A)⋀(A⋀B⋀C⋀D)",
+      "O_izhod": "SATISFIABLE",
+      "vrednost": "U"
+    },
+    {
+      "kljuc": "S|K2|n09",
+      "K": "",
+      "R": "A⋀B⋀C⋀D",
+      "D_vhod": "¬(A⋀B⋀C⋀D)",
+      "D_izhod": "SATISFIABLE",
+      "O_vhod": "A⋀B⋀C⋀D",
+      "O_izhod": "SATISFIABLE",
+      "vrednost": "U"
+    },
+    {
+      "kljuc": "S|K2|n13",
+      "K": "",
+      "R": "A⋀B⋀C⋀D",
+      "D_vhod": "¬(A⋀B⋀C⋀D)",
+      "D_izhod": "SATISFIABLE",
+      "O_vhod": "A⋀B⋀C⋀D",
+      "O_izhod": "SATISFIABLE",
+      "vrednost": "U"
+    },
+    {
+      "kljuc": "S|K2|n14",
+      "K": "A⋀C",
+      "R": "A⋀B⋀C",
+      "D_vhod": "(A⋀C)⋀¬(A⋀B⋀C)",
+      "D_izhod": "SATISFIABLE",
+      "O_vhod": "(A⋀C)⋀(A⋀B⋀C)",
+      "O_izhod": "SATISFIABLE",
+      "vrednost": "U"
+    },
+    {
+      "kljuc": "S|K2|n18",
+      "K": "C",
+      "R": "A⋀B⋀C⋀D",
+      "D_vhod": "(C)⋀¬(A⋀B⋀C⋀D)",
+      "D_izhod": "SATISFIABLE",
+      "O_vhod": "(C)⋀(A⋀B⋀C⋀D)",
+      "O_izhod": "SATISFIABLE",
+      "vrednost": "U"
+    },
+    {
+      "kljuc": "S|K2|n20",
+      "K": "",
+      "R": "(A⋁B)⋀C",
+      "D_vhod": "¬((A⋁B)⋀C)",
+      "D_izhod": "SATISFIABLE",
+      "O_vhod": "(A⋁B)⋀C",
+      "O_izhod": "SATISFIABLE",
+      "vrednost": "U"
+    },
+    {
+      "kljuc": "S|K2|n06",
+      "K": "",
+      "R": "A⋀B⋀C",
+      "D_vhod": "¬(A⋀B⋀C)",
+      "D_izhod": "SATISFIABLE",
+      "O_vhod": "A⋀B⋀C",
+      "O_izhod": "SATISFIABLE",
+      "vrednost": "U"
+    },
+    {
+      "kljuc": "S|K2|n10",
+      "K": "",
+      "R": "A⋀B⋀C⋀D",
+      "D_vhod": "¬(A⋀B⋀C⋀D)",
+      "D_izhod": "SATISFIABLE",
+      "O_vhod": "A⋀B⋀C⋀D",
+      "O_izhod": "SATISFIABLE",
+      "vrednost": "U"
+    },
+    {
+      "kljuc": "S|K2|n19",
+      "K": "A",
+      "R": "A⋁B⋁C⋁D",
+      "D_vhod": "(A)⋀¬(A⋁B⋁C⋁D)",
+      "D_izhod": "CONTRADICTION",
+      "O_vhod": "(A)⋀(A⋁B⋁C⋁D)",
+      "O_izhod": "SATISFIABLE",
+      "vrednost": "T"
+    },
+    {
+      "kljuc": "S|K2|n07",
+      "K": "",
+      "R": "A⋀B⋀C",
+      "D_vhod": "¬(A⋀B⋀C)",
+      "D_izhod": "SATISFIABLE",
+      "O_vhod": "A⋀B⋀C",
+      "O_izhod": "SATISFIABLE",
+      "vrednost": "U"
+    },
+    {
+      "kljuc": "S|K3|n01",
+      "K": "",
+      "R": "A⋀B⋀C",
+      "D_vhod": "¬(A⋀B⋀C)",
+      "D_izhod": "SATISFIABLE",
+      "O_vhod": "A⋀B⋀C",
+      "O_izhod": "SATISFIABLE",
+      "vrednost": "U"
+    },
+    {
+      "kljuc": "S|K3|n22",
+      "K": "",
+      "R": "A⋁B⋁C",
+      "D_vhod": "¬(A⋁B⋁C)",
+      "D_izhod": "SATISFIABLE",
+      "O_vhod": "A⋁B⋁C",
+      "O_izhod": "SATISFIABLE",
+      "vrednost": "U"
+    },
+    {
+      "kljuc": "S|K3|n23",
+      "K": "A",
+      "R": "A⋁B",
+      "D_vhod": "(A)⋀¬(A⋁B)",
+      "D_izhod": "CONTRADICTION",
+      "O_vhod": "(A)⋀(A⋁B)",
+      "O_izhod": "SATISFIABLE",
+      "vrednost": "T"
+    },
+    {
+      "kljuc": "S|K3|n02",
+      "K": "A",
+      "R": "A⋀B⋀C",
+      "D_vhod": "(A)⋀¬(A⋀B⋀C)",
+      "D_izhod": "SATISFIABLE",
+      "O_vhod": "(A)⋀(A⋀B⋀C)",
+      "O_izhod": "SATISFIABLE",
+      "vrednost": "U"
+    },
+    {
+      "kljuc": "S|K3|n12",
+      "K": "",
+      "R": "A⋀B⋀C⋀D",
+      "D_vhod": "¬(A⋀B⋀C⋀D)",
+      "D_izhod": "SATISFIABLE",
+      "O_vhod": "A⋀B⋀C⋀D",
+      "O_izhod": "SATISFIABLE",
+      "vrednost": "U"
+    },
+    {
+      "kljuc": "S|K3|n16",
+      "K": "",
+      "R": "A⋀B⋀C⋀D",
+      "D_vhod": "¬(A⋀B⋀C⋀D)",
+      "D_izhod": "SATISFIABLE",
+      "O_vhod": "A⋀B⋀C⋀D",
+      "O_izhod": "SATISFIABLE",
+      "vrednost": "U"
+    },
+    {
+      "kljuc": "S|K3|n24",
+      "K": "B⋀C⋀D",
+      "R": "A⋁B⋁C⋁D",
+      "D_vhod": "(B⋀C⋀D)⋀¬(A⋁B⋁C⋁D)",
+      "D_izhod": "CONTRADICTION",
+      "O_vhod": "(B⋀C⋀D)⋀(A⋁B⋁C⋁D)",
+      "O_izhod": "SATISFIABLE",
+      "vrednost": "T"
+    },
+    {
+      "kljuc": "S|K3|n25",
+      "K": "",
+      "R": "A⋁B⋁C⋁D",
+      "D_vhod": "¬(A⋁B⋁C⋁D)",
+      "D_izhod": "SATISFIABLE",
+      "O_vhod": "A⋁B⋁C⋁D",
+      "O_izhod": "SATISFIABLE",
+      "vrednost": "U"
+    },
+    {
+      "kljuc": "S|K3|n03",
+      "K": "A⋀C",
+      "R": "(A⋁B)⋀C",
+      "D_vhod": "(A⋀C)⋀¬((A⋁B)⋀C)",
+      "D_izhod": "CONTRADICTION",
+      "O_vhod": "(A⋀C)⋀((A⋁B)⋀C)",
+      "O_izhod": "SATISFIABLE",
+      "vrednost": "T"
+    },
+    {
+      "kljuc": "S|K3|n05",
+      "K": "D",
+      "R": "A⋀B⋀C⋀D",
+      "D_vhod": "(D)⋀¬(A⋀B⋀C⋀D)",
+      "D_izhod": "SATISFIABLE",
+      "O_vhod": "(D)⋀(A⋀B⋀C⋀D)",
+      "O_izhod": "SATISFIABLE",
+      "vrednost": "U"
+    },
+    {
+      "kljuc": "S|K3|n09",
+      "K": "",
+      "R": "A⋀B⋀C⋀D",
+      "D_vhod": "¬(A⋀B⋀C⋀D)",
+      "D_izhod": "SATISFIABLE",
+      "O_vhod": "A⋀B⋀C⋀D",
+      "O_izhod": "SATISFIABLE",
+      "vrednost": "U"
+    },
+    {
+      "kljuc": "S|K3|n13",
+      "K": "",
+      "R": "A⋀B⋀C⋀D",
+      "D_vhod": "¬(A⋀B⋀C⋀D)",
+      "D_izhod": "SATISFIABLE",
+      "O_vhod": "A⋀B⋀C⋀D",
+      "O_izhod": "SATISFIABLE",
+      "vrednost": "U"
+    },
+    {
+      "kljuc": "S|K3|n14",
+      "K": "A⋀B",
+      "R": "A⋀B⋀C",
+      "D_vhod": "(A⋀B)⋀¬(A⋀B⋀C)",
+      "D_izhod": "SATISFIABLE",
+      "O_vhod": "(A⋀B)⋀(A⋀B⋀C)",
+      "O_izhod": "SATISFIABLE",
+      "vrednost": "U"
+    },
+    {
+      "kljuc": "S|K3|n18",
+      "K": "A⋀C",
+      "R": "A⋀B⋀C⋀D",
+      "D_vhod": "(A⋀C)⋀¬(A⋀B⋀C⋀D)",
+      "D_izhod": "SATISFIABLE",
+      "O_vhod": "(A⋀C)⋀(A⋀B⋀C⋀D)",
+      "O_izhod": "SATISFIABLE",
+      "vrednost": "U"
+    },
+    {
+      "kljuc": "S|K3|n20",
+      "K": "",
+      "R": "(A⋁B)⋀C",
+      "D_vhod": "¬((A⋁B)⋀C)",
+      "D_izhod": "SATISFIABLE",
+      "O_vhod": "(A⋁B)⋀C",
+      "O_izhod": "SATISFIABLE",
+      "vrednost": "U"
+    },
+    {
+      "kljuc": "S|K3|n06",
+      "K": "C",
+      "R": "A⋀B⋀C",
+      "D_vhod": "(C)⋀¬(A⋀B⋀C)",
+      "D_izhod": "SATISFIABLE",
+      "O_vhod": "(C)⋀(A⋀B⋀C)",
+      "O_izhod": "SATISFIABLE",
+      "vrednost": "U"
+    },
+    {
+      "kljuc": "S|K3|n10",
+      "K": "",
+      "R": "A⋀B⋀C⋀D",
+      "D_vhod": "¬(A⋀B⋀C⋀D)",
+      "D_izhod": "SATISFIABLE",
+      "O_vhod": "A⋀B⋀C⋀D",
+      "O_izhod": "SATISFIABLE",
+      "vrednost": "U"
+    },
+    {
+      "kljuc": "S|K3|n19",
+      "K": "C",
+      "R": "A⋁B⋁C⋁D",
+      "D_vhod": "(C)⋀¬(A⋁B⋁C⋁D)",
+      "D_izhod": "CONTRADICTION",
+      "O_vhod": "(C)⋀(A⋁B⋁C⋁D)",
+      "O_izhod": "SATISFIABLE",
+      "vrednost": "T"
+    },
+    {
+      "kljuc": "S|K3|n07",
+      "K": "C",
+      "R": "A⋀B⋀C",
+      "D_vhod": "(C)⋀¬(A⋀B⋀C)",
+      "D_izhod": "SATISFIABLE",
+      "O_vhod": "(C)⋀(A⋀B⋀C)",
+      "O_izhod": "SATISFIABLE",
+      "vrednost": "U"
+    },
+    {
+      "kljuc": "S|K4|n01",
+      "K": "",
+      "R": "A⋀B⋀C",
+      "D_vhod": "¬(A⋀B⋀C)",
+      "D_izhod": "SATISFIABLE",
+      "O_vhod": "A⋀B⋀C",
+      "O_izhod": "SATISFIABLE",
+      "vrednost": "U"
+    },
+    {
+      "kljuc": "S|K4|n22",
+      "K": "",
+      "R": "A⋁B⋁C",
+      "D_vhod": "¬(A⋁B⋁C)",
+      "D_izhod": "SATISFIABLE",
+      "O_vhod": "A⋁B⋁C",
+      "O_izhod": "SATISFIABLE",
+      "vrednost": "U"
+    },
+    {
+      "kljuc": "S|K4|n23",
+      "K": "A",
+      "R": "A⋁B",
+      "D_vhod": "(A)⋀¬(A⋁B)",
+      "D_izhod": "CONTRADICTION",
+      "O_vhod": "(A)⋀(A⋁B)",
+      "O_izhod": "SATISFIABLE",
+      "vrednost": "T"
+    },
+    {
+      "kljuc": "S|K4|n02",
+      "K": "",
+      "R": "A⋀B⋀C",
+      "D_vhod": "¬(A⋀B⋀C)",
+      "D_izhod": "SATISFIABLE",
+      "O_vhod": "A⋀B⋀C",
+      "O_izhod": "SATISFIABLE",
+      "vrednost": "U"
+    },
+    {
+      "kljuc": "S|K4|n12",
+      "K": "",
+      "R": "A⋀B⋀C⋀D",
+      "D_vhod": "¬(A⋀B⋀C⋀D)",
+      "D_izhod": "SATISFIABLE",
+      "O_vhod": "A⋀B⋀C⋀D",
+      "O_izhod": "SATISFIABLE",
+      "vrednost": "U"
+    },
+    {
+      "kljuc": "S|K4|n16",
+      "K": "B",
+      "R": "A⋀B⋀C⋀D",
+      "D_vhod": "(B)⋀¬(A⋀B⋀C⋀D)",
+      "D_izhod": "SATISFIABLE",
+      "O_vhod": "(B)⋀(A⋀B⋀C⋀D)",
+      "O_izhod": "SATISFIABLE",
+      "vrednost": "U"
+    },
+    {
+      "kljuc": "S|K4|n24",
+      "K": "A",
+      "R": "A⋁B⋁C⋁D",
+      "D_vhod": "(A)⋀¬(A⋁B⋁C⋁D)",
+      "D_izhod": "CONTRADICTION",
+      "O_vhod": "(A)⋀(A⋁B⋁C⋁D)",
+      "O_izhod": "SATISFIABLE",
+      "vrednost": "T"
+    },
+    {
+      "kljuc": "S|K4|n25",
+      "K": "",
+      "R": "A⋁B⋁C⋁D",
+      "D_vhod": "¬(A⋁B⋁C⋁D)",
+      "D_izhod": "SATISFIABLE",
+      "O_vhod": "A⋁B⋁C⋁D",
+      "O_izhod": "SATISFIABLE",
+      "vrednost": "U"
+    },
+    {
+      "kljuc": "S|K4|n03",
+      "K": "",
+      "R": "(A⋁B)⋀C",
+      "D_vhod": "¬((A⋁B)⋀C)",
+      "D_izhod": "SATISFIABLE",
+      "O_vhod": "(A⋁B)⋀C",
+      "O_izhod": "SATISFIABLE",
+      "vrednost": "U"
+    },
+    {
+      "kljuc": "S|K4|n05",
+      "K": "",
+      "R": "A⋀B⋀C⋀D",
+      "D_vhod": "¬(A⋀B⋀C⋀D)",
+      "D_izhod": "SATISFIABLE",
+      "O_vhod": "A⋀B⋀C⋀D",
+      "O_izhod": "SATISFIABLE",
+      "vrednost": "U"
+    },
+    {
+      "kljuc": "S|K4|n09",
+      "K": "",
+      "R": "A⋀B⋀C⋀D",
+      "D_vhod": "¬(A⋀B⋀C⋀D)",
+      "D_izhod": "SATISFIABLE",
+      "O_vhod": "A⋀B⋀C⋀D",
+      "O_izhod": "SATISFIABLE",
+      "vrednost": "U"
+    },
+    {
+      "kljuc": "S|K4|n13",
+      "K": "A⋀C",
+      "R": "A⋀B⋀C⋀D",
+      "D_vhod": "(A⋀C)⋀¬(A⋀B⋀C⋀D)",
+      "D_izhod": "SATISFIABLE",
+      "O_vhod": "(A⋀C)⋀(A⋀B⋀C⋀D)",
+      "O_izhod": "SATISFIABLE",
+      "vrednost": "U"
+    },
+    {
+      "kljuc": "S|K4|n14",
+      "K": "A⋀B",
+      "R": "A⋀B⋀C",
+      "D_vhod": "(A⋀B)⋀¬(A⋀B⋀C)",
+      "D_izhod": "SATISFIABLE",
+      "O_vhod": "(A⋀B)⋀(A⋀B⋀C)",
+      "O_izhod": "SATISFIABLE",
+      "vrednost": "U"
+    },
+    {
+      "kljuc": "S|K4|n18",
+      "K": "A",
+      "R": "A⋀B⋀C⋀D",
+      "D_vhod": "(A)⋀¬(A⋀B⋀C⋀D)",
+      "D_izhod": "SATISFIABLE",
+      "O_vhod": "(A)⋀(A⋀B⋀C⋀D)",
+      "O_izhod": "SATISFIABLE",
+      "vrednost": "U"
+    },
+    {
+      "kljuc": "S|K4|n20",
+      "K": "",
+      "R": "(A⋁B)⋀C",
+      "D_vhod": "¬((A⋁B)⋀C)",
+      "D_izhod": "SATISFIABLE",
+      "O_vhod": "(A⋁B)⋀C",
+      "O_izhod": "SATISFIABLE",
+      "vrednost": "U"
+    },
+    {
+      "kljuc": "S|K4|n06",
+      "K": "",
+      "R": "A⋀B⋀C",
+      "D_vhod": "¬(A⋀B⋀C)",
+      "D_izhod": "SATISFIABLE",
+      "O_vhod": "A⋀B⋀C",
+      "O_izhod": "SATISFIABLE",
+      "vrednost": "U"
+    },
+    {
+      "kljuc": "S|K4|n10",
+      "K": "",
+      "R": "A⋀B⋀C⋀D",
+      "D_vhod": "¬(A⋀B⋀C⋀D)",
+      "D_izhod": "SATISFIABLE",
+      "O_vhod": "A⋀B⋀C⋀D",
+      "O_izhod": "SATISFIABLE",
+      "vrednost": "U"
+    },
+    {
+      "kljuc": "S|K4|n19",
+      "K": "",
+      "R": "A⋁B⋁C⋁D",
+      "D_vhod": "¬(A⋁B⋁C⋁D)",
+      "D_izhod": "SATISFIABLE",
+      "O_vhod": "A⋁B⋁C⋁D",
+      "O_izhod": "SATISFIABLE",
+      "vrednost": "U"
+    },
+    {
+      "kljuc": "S|K4|n07",
+      "K": "",
+      "R": "A⋀B⋀C",
+      "D_vhod": "¬(A⋀B⋀C)",
+      "D_izhod": "SATISFIABLE",
+      "O_vhod": "A⋀B⋀C",
+      "O_izhod": "SATISFIABLE",
+      "vrednost": "U"
+    },
+    {
+      "kljuc": "S|K5|n01",
+      "K": "¬C",
+      "R": "A⋀B⋀C",
+      "D_vhod": "(¬C)⋀¬(A⋀B⋀C)",
+      "D_izhod": "SATISFIABLE",
+      "O_vhod": "(¬C)⋀(A⋀B⋀C)",
+      "O_izhod": "CONTRADICTION",
+      "vrednost": "F"
+    },
+    {
+      "kljuc": "S|K5|n22",
+      "K": "",
+      "R": "A⋁B⋁C",
+      "D_vhod": "¬(A⋁B⋁C)",
+      "D_izhod": "SATISFIABLE",
+      "O_vhod": "A⋁B⋁C",
+      "O_izhod": "SATISFIABLE",
+      "vrednost": "U"
+    },
+    {
+      "kljuc": "S|K5|n23",
+      "K": "",
+      "R": "A⋁B",
+      "D_vhod": "¬(A⋁B)",
+      "D_izhod": "SATISFIABLE",
+      "O_vhod": "A⋁B",
+      "O_izhod": "SATISFIABLE",
+      "vrednost": "U"
+    },
+    {
+      "kljuc": "S|K5|n02",
+      "K": "",
+      "R": "A⋀B⋀C",
+      "D_vhod": "¬(A⋀B⋀C)",
+      "D_izhod": "SATISFIABLE",
+      "O_vhod": "A⋀B⋀C",
+      "O_izhod": "SATISFIABLE",
+      "vrednost": "U"
+    },
+    {
+      "kljuc": "S|K5|n12",
+      "K": "",
+      "R": "A⋀B⋀C⋀D",
+      "D_vhod": "¬(A⋀B⋀C⋀D)",
+      "D_izhod": "SATISFIABLE",
+      "O_vhod": "A⋀B⋀C⋀D",
+      "O_izhod": "SATISFIABLE",
+      "vrednost": "U"
+    },
+    {
+      "kljuc": "S|K5|n16",
+      "K": "¬C",
+      "R": "A⋀B⋀C⋀D",
+      "D_vhod": "(¬C)⋀¬(A⋀B⋀C⋀D)",
+      "D_izhod": "SATISFIABLE",
+      "O_vhod": "(¬C)⋀(A⋀B⋀C⋀D)",
+      "O_izhod": "CONTRADICTION",
+      "vrednost": "F"
+    },
+    {
+      "kljuc": "S|K5|n24",
+      "K": "",
+      "R": "A⋁B⋁C⋁D",
+      "D_vhod": "¬(A⋁B⋁C⋁D)",
+      "D_izhod": "SATISFIABLE",
+      "O_vhod": "A⋁B⋁C⋁D",
+      "O_izhod": "SATISFIABLE",
+      "vrednost": "U"
+    },
+    {
+      "kljuc": "S|K5|n25",
+      "K": "",
+      "R": "A⋁B⋁C⋁D",
+      "D_vhod": "¬(A⋁B⋁C⋁D)",
+      "D_izhod": "SATISFIABLE",
+      "O_vhod": "A⋁B⋁C⋁D",
+      "O_izhod": "SATISFIABLE",
+      "vrednost": "U"
+    },
+    {
+      "kljuc": "S|K5|n03",
+      "K": "A",
+      "R": "(A⋁B)⋀C",
+      "D_vhod": "(A)⋀¬((A⋁B)⋀C)",
+      "D_izhod": "SATISFIABLE",
+      "O_vhod": "(A)⋀((A⋁B)⋀C)",
+      "O_izhod": "SATISFIABLE",
+      "vrednost": "U"
+    },
+    {
+      "kljuc": "S|K5|n05",
+      "K": "C⋀D",
+      "R": "A⋀B⋀C⋀D",
+      "D_vhod": "(C⋀D)⋀¬(A⋀B⋀C⋀D)",
+      "D_izhod": "SATISFIABLE",
+      "O_vhod": "(C⋀D)⋀(A⋀B⋀C⋀D)",
+      "O_izhod": "SATISFIABLE",
+      "vrednost": "U"
+    },
+    {
+      "kljuc": "S|K5|n09",
+      "K": "",
+      "R": "A⋀B⋀C⋀D",
+      "D_vhod": "¬(A⋀B⋀C⋀D)",
+      "D_izhod": "SATISFIABLE",
+      "O_vhod": "A⋀B⋀C⋀D",
+      "O_izhod": "SATISFIABLE",
+      "vrednost": "U"
+    },
+    {
+      "kljuc": "S|K5|n13",
+      "K": "",
+      "R": "A⋀B⋀C⋀D",
+      "D_vhod": "¬(A⋀B⋀C⋀D)",
+      "D_izhod": "SATISFIABLE",
+      "O_vhod": "A⋀B⋀C⋀D",
+      "O_izhod": "SATISFIABLE",
+      "vrednost": "U"
+    },
+    {
+      "kljuc": "S|K5|n14",
+      "K": "",
+      "R": "A⋀B⋀C",
+      "D_vhod": "¬(A⋀B⋀C)",
+      "D_izhod": "SATISFIABLE",
+      "O_vhod": "A⋀B⋀C",
+      "O_izhod": "SATISFIABLE",
+      "vrednost": "U"
+    },
+    {
+      "kljuc": "S|K5|n18",
+      "K": "¬A⋀C",
+      "R": "A⋀B⋀C⋀D",
+      "D_vhod": "(¬A⋀C)⋀¬(A⋀B⋀C⋀D)",
+      "D_izhod": "SATISFIABLE",
+      "O_vhod": "(¬A⋀C)⋀(A⋀B⋀C⋀D)",
+      "O_izhod": "CONTRADICTION",
+      "vrednost": "F"
+    },
+    {
+      "kljuc": "S|K5|n20",
+      "K": "",
+      "R": "(A⋁B)⋀C",
+      "D_vhod": "¬((A⋁B)⋀C)",
+      "D_izhod": "SATISFIABLE",
+      "O_vhod": "(A⋁B)⋀C",
+      "O_izhod": "SATISFIABLE",
+      "vrednost": "U"
+    },
+    {
+      "kljuc": "S|K5|n06",
+      "K": "",
+      "R": "A⋀B⋀C",
+      "D_vhod": "¬(A⋀B⋀C)",
+      "D_izhod": "SATISFIABLE",
+      "O_vhod": "A⋀B⋀C",
+      "O_izhod": "SATISFIABLE",
+      "vrednost": "U"
+    },
+    {
+      "kljuc": "S|K5|n10",
+      "K": "",
+      "R": "A⋀B⋀C⋀D",
+      "D_vhod": "¬(A⋀B⋀C⋀D)",
+      "D_izhod": "SATISFIABLE",
+      "O_vhod": "A⋀B⋀C⋀D",
+      "O_izhod": "SATISFIABLE",
+      "vrednost": "U"
+    },
+    {
+      "kljuc": "S|K5|n19",
+      "K": "A",
+      "R": "A⋁B⋁C⋁D",
+      "D_vhod": "(A)⋀¬(A⋁B⋁C⋁D)",
+      "D_izhod": "CONTRADICTION",
+      "O_vhod": "(A)⋀(A⋁B⋁C⋁D)",
+      "O_izhod": "SATISFIABLE",
+      "vrednost": "T"
+    },
+    {
+      "kljuc": "S|K5|n07",
+      "K": "B⋀C",
+      "R": "A⋀B⋀C",
+      "D_vhod": "(B⋀C)⋀¬(A⋀B⋀C)",
+      "D_izhod": "SATISFIABLE",
+      "O_vhod": "(B⋀C)⋀(A⋀B⋀C)",
+      "O_izhod": "SATISFIABLE",
+      "vrednost": "U"
+    },
+    {
+      "kljuc": "B|K1|n01",
+      "K": "",
+      "R": "A⋀B⋀C",
+      "D_vhod": "¬(A⋀B⋀C)",
+      "D_izhod": "SATISFIABLE",
+      "O_vhod": "A⋀B⋀C",
+      "O_izhod": "SATISFIABLE",
+      "vrednost": "U"
+    },
+    {
+      "kljuc": "B|K1|n22",
+      "K": "",
+      "R": "A⋁B⋁C",
+      "D_vhod": "¬(A⋁B⋁C)",
+      "D_izhod": "SATISFIABLE",
+      "O_vhod": "A⋁B⋁C",
+      "O_izhod": "SATISFIABLE",
+      "vrednost": "U"
+    },
+    {
+      "kljuc": "B|K1|n23",
+      "K": "A⋀B",
+      "R": "A⋁B",
+      "D_vhod": "(A⋀B)⋀¬(A⋁B)",
+      "D_izhod": "CONTRADICTION",
+      "O_vhod": "(A⋀B)⋀(A⋁B)",
+      "O_izhod": "SATISFIABLE",
+      "vrednost": "T"
+    },
+    {
+      "kljuc": "B|K1|n02",
+      "K": "",
+      "R": "A⋀B⋀C",
+      "D_vhod": "¬(A⋀B⋀C)",
+      "D_izhod": "SATISFIABLE",
+      "O_vhod": "A⋀B⋀C",
+      "O_izhod": "SATISFIABLE",
+      "vrednost": "U"
+    },
+    {
+      "kljuc": "B|K1|n12",
+      "K": "",
+      "R": "A⋀B⋀C⋀D",
+      "D_vhod": "¬(A⋀B⋀C⋀D)",
+      "D_izhod": "SATISFIABLE",
+      "O_vhod": "A⋀B⋀C⋀D",
+      "O_izhod": "SATISFIABLE",
+      "vrednost": "U"
+    },
+    {
+      "kljuc": "B|K1|n16",
+      "K": "A⋀B",
+      "R": "A⋀B⋀C⋀D",
+      "D_vhod": "(A⋀B)⋀¬(A⋀B⋀C⋀D)",
+      "D_izhod": "SATISFIABLE",
+      "O_vhod": "(A⋀B)⋀(A⋀B⋀C⋀D)",
+      "O_izhod": "SATISFIABLE",
+      "vrednost": "U"
+    },
+    {
+      "kljuc": "B|K1|n24",
+      "K": "¬A⋀D",
+      "R": "A⋁B⋁C⋁D",
+      "D_vhod": "(¬A⋀D)⋀¬(A⋁B⋁C⋁D)",
+      "D_izhod": "CONTRADICTION",
+      "O_vhod": "(¬A⋀D)⋀(A⋁B⋁C⋁D)",
+      "O_izhod": "SATISFIABLE",
+      "vrednost": "T"
+    },
+    {
+      "kljuc": "B|K1|n25",
+      "K": "D",
+      "R": "A⋁B⋁C⋁D",
+      "D_vhod": "(D)⋀¬(A⋁B⋁C⋁D)",
+      "D_izhod": "CONTRADICTION",
+      "O_vhod": "(D)⋀(A⋁B⋁C⋁D)",
+      "O_izhod": "SATISFIABLE",
+      "vrednost": "T"
+    },
+    {
+      "kljuc": "B|K1|n03",
+      "K": "A⋀B",
+      "R": "(A⋁B)⋀C",
+      "D_vhod": "(A⋀B)⋀¬((A⋁B)⋀C)",
+      "D_izhod": "SATISFIABLE",
+      "O_vhod": "(A⋀B)⋀((A⋁B)⋀C)",
+      "O_izhod": "SATISFIABLE",
+      "vrednost": "U"
+    },
+    {
+      "kljuc": "B|K1|n05",
+      "K": "D",
+      "R": "A⋀B⋀C⋀D",
+      "D_vhod": "(D)⋀¬(A⋀B⋀C⋀D)",
+      "D_izhod": "SATISFIABLE",
+      "O_vhod": "(D)⋀(A⋀B⋀C⋀D)",
+      "O_izhod": "SATISFIABLE",
+      "vrednost": "U"
+    },
+    {
+      "kljuc": "B|K1|n09",
+      "K": "",
+      "R": "A⋀B⋀C⋀D",
+      "D_vhod": "¬(A⋀B⋀C⋀D)",
+      "D_izhod": "SATISFIABLE",
+      "O_vhod": "A⋀B⋀C⋀D",
+      "O_izhod": "SATISFIABLE",
+      "vrednost": "U"
+    },
+    {
+      "kljuc": "B|K1|n13",
+      "K": "",
+      "R": "A⋀B⋀C⋀D",
+      "D_vhod": "¬(A⋀B⋀C⋀D)",
+      "D_izhod": "SATISFIABLE",
+      "O_vhod": "A⋀B⋀C⋀D",
+      "O_izhod": "SATISFIABLE",
+      "vrednost": "U"
+    },
+    {
+      "kljuc": "B|K1|n14",
+      "K": "A⋀B",
+      "R": "A⋀B⋀C",
+      "D_vhod": "(A⋀B)⋀¬(A⋀B⋀C)",
+      "D_izhod": "SATISFIABLE",
+      "O_vhod": "(A⋀B)⋀(A⋀B⋀C)",
+      "O_izhod": "SATISFIABLE",
+      "vrednost": "U"
+    },
+    {
+      "kljuc": "B|K1|n18",
+      "K": "A⋀C",
+      "R": "A⋀B⋀C⋀D",
+      "D_vhod": "(A⋀C)⋀¬(A⋀B⋀C⋀D)",
+      "D_izhod": "SATISFIABLE",
+      "O_vhod": "(A⋀C)⋀(A⋀B⋀C⋀D)",
+      "O_izhod": "SATISFIABLE",
+      "vrednost": "U"
+    },
+    {
+      "kljuc": "B|K1|n20",
+      "K": "",
+      "R": "(A⋁B)⋀C",
+      "D_vhod": "¬((A⋁B)⋀C)",
+      "D_izhod": "SATISFIABLE",
+      "O_vhod": "(A⋁B)⋀C",
+      "O_izhod": "SATISFIABLE",
+      "vrednost": "U"
+    },
+    {
+      "kljuc": "B|K1|n06",
+      "K": "",
+      "R": "A⋀B⋀C",
+      "D_vhod": "¬(A⋀B⋀C)",
+      "D_izhod": "SATISFIABLE",
+      "O_vhod": "A⋀B⋀C",
+      "O_izhod": "SATISFIABLE",
+      "vrednost": "U"
+    },
+    {
+      "kljuc": "B|K1|n10",
+      "K": "",
+      "R": "A⋀B⋀C⋀D",
+      "D_vhod": "¬(A⋀B⋀C⋀D)",
+      "D_izhod": "SATISFIABLE",
+      "O_vhod": "A⋀B⋀C⋀D",
+      "O_izhod": "SATISFIABLE",
+      "vrednost": "U"
+    },
+    {
+      "kljuc": "B|K1|n19",
+      "K": "A⋀B",
+      "R": "A⋁B⋁C⋁D",
+      "D_vhod": "(A⋀B)⋀¬(A⋁B⋁C⋁D)",
+      "D_izhod": "CONTRADICTION",
+      "O_vhod": "(A⋀B)⋀(A⋁B⋁C⋁D)",
+      "O_izhod": "SATISFIABLE",
+      "vrednost": "T"
+    },
+    {
+      "kljuc": "B|K1|n07",
+      "K": "A",
+      "R": "A⋀B⋀C",
+      "D_vhod": "(A)⋀¬(A⋀B⋀C)",
+      "D_izhod": "SATISFIABLE",
+      "O_vhod": "(A)⋀(A⋀B⋀C)",
+      "O_izhod": "SATISFIABLE",
+      "vrednost": "U"
+    },
+    {
+      "kljuc": "B|K2|n01",
+      "K": "¬C",
+      "R": "A⋀B⋀C",
+      "D_vhod": "(¬C)⋀¬(A⋀B⋀C)",
+      "D_izhod": "SATISFIABLE",
+      "O_vhod": "(¬C)⋀(A⋀B⋀C)",
+      "O_izhod": "CONTRADICTION",
+      "vrednost": "F"
+    },
+    {
+      "kljuc": "B|K2|n22",
+      "K": "",
+      "R": "A⋁B⋁C",
+      "D_vhod": "¬(A⋁B⋁C)",
+      "D_izhod": "SATISFIABLE",
+      "O_vhod": "A⋁B⋁C",
+      "O_izhod": "SATISFIABLE",
+      "vrednost": "U"
+    },
+    {
+      "kljuc": "B|K2|n23",
+      "K": "B",
+      "R": "A⋁B",
+      "D_vhod": "(B)⋀¬(A⋁B)",
+      "D_izhod": "CONTRADICTION",
+      "O_vhod": "(B)⋀(A⋁B)",
+      "O_izhod": "SATISFIABLE",
+      "vrednost": "T"
+    },
+    {
+      "kljuc": "B|K2|n02",
+      "K": "",
+      "R": "A⋀B⋀C",
+      "D_vhod": "¬(A⋀B⋀C)",
+      "D_izhod": "SATISFIABLE",
+      "O_vhod": "A⋀B⋀C",
+      "O_izhod": "SATISFIABLE",
+      "vrednost": "U"
+    },
+    {
+      "kljuc": "B|K2|n12",
+      "K": "",
+      "R": "A⋀B⋀C⋀D",
+      "D_vhod": "¬(A⋀B⋀C⋀D)",
+      "D_izhod": "SATISFIABLE",
+      "O_vhod": "A⋀B⋀C⋀D",
+      "O_izhod": "SATISFIABLE",
+      "vrednost": "U"
+    },
+    {
+      "kljuc": "B|K2|n16",
+      "K": "¬A",
+      "R": "A⋀B⋀C⋀D",
+      "D_vhod": "(¬A)⋀¬(A⋀B⋀C⋀D)",
+      "D_izhod": "SATISFIABLE",
+      "O_vhod": "(¬A)⋀(A⋀B⋀C⋀D)",
+      "O_izhod": "CONTRADICTION",
+      "vrednost": "F"
+    },
+    {
+      "kljuc": "B|K2|n24",
+      "K": "¬D",
+      "R": "A⋁B⋁C⋁D",
+      "D_vhod": "(¬D)⋀¬(A⋁B⋁C⋁D)",
+      "D_izhod": "SATISFIABLE",
+      "O_vhod": "(¬D)⋀(A⋁B⋁C⋁D)",
+      "O_izhod": "SATISFIABLE",
+      "vrednost": "U"
+    },
+    {
+      "kljuc": "B|K2|n25",
+      "K": "A",
+      "R": "A⋁B⋁C⋁D",
+      "D_vhod": "(A)⋀¬(A⋁B⋁C⋁D)",
+      "D_izhod": "CONTRADICTION",
+      "O_vhod": "(A)⋀(A⋁B⋁C⋁D)",
+      "O_izhod": "SATISFIABLE",
+      "vrednost": "T"
+    },
+    {
+      "kljuc": "B|K2|n03",
+      "K": "",
+      "R": "(A⋁B)⋀C",
+      "D_vhod": "¬((A⋁B)⋀C)",
+      "D_izhod": "SATISFIABLE",
+      "O_vhod": "(A⋁B)⋀C",
+      "O_izhod": "SATISFIABLE",
+      "vrednost": "U"
+    },
+    {
+      "kljuc": "B|K2|n05",
+      "K": "A",
+      "R": "A⋀B⋀C⋀D",
+      "D_vhod": "(A)⋀¬(A⋀B⋀C⋀D)",
+      "D_izhod": "SATISFIABLE",
+      "O_vhod": "(A)⋀(A⋀B⋀C⋀D)",
+      "O_izhod": "SATISFIABLE",
+      "vrednost": "U"
+    },
+    {
+      "kljuc": "B|K2|n09",
+      "K": "",
+      "R": "A⋀B⋀C⋀D",
+      "D_vhod": "¬(A⋀B⋀C⋀D)",
+      "D_izhod": "SATISFIABLE",
+      "O_vhod": "A⋀B⋀C⋀D",
+      "O_izhod": "SATISFIABLE",
+      "vrednost": "U"
+    },
+    {
+      "kljuc": "B|K2|n13",
+      "K": "",
+      "R": "A⋀B⋀C⋀D",
+      "D_vhod": "¬(A⋀B⋀C⋀D)",
+      "D_izhod": "SATISFIABLE",
+      "O_vhod": "A⋀B⋀C⋀D",
+      "O_izhod": "SATISFIABLE",
+      "vrednost": "U"
+    },
+    {
+      "kljuc": "B|K2|n14",
+      "K": "A⋀C",
+      "R": "A⋀B⋀C",
+      "D_vhod": "(A⋀C)⋀¬(A⋀B⋀C)",
+      "D_izhod": "SATISFIABLE",
+      "O_vhod": "(A⋀C)⋀(A⋀B⋀C)",
+      "O_izhod": "SATISFIABLE",
+      "vrednost": "U"
+    },
+    {
+      "kljuc": "B|K2|n18",
+      "K": "A⋀C",
+      "R": "A⋀B⋀C⋀D",
+      "D_vhod": "(A⋀C)⋀¬(A⋀B⋀C⋀D)",
+      "D_izhod": "SATISFIABLE",
+      "O_vhod": "(A⋀C)⋀(A⋀B⋀C⋀D)",
+      "O_izhod": "SATISFIABLE",
+      "vrednost": "U"
+    },
+    {
+      "kljuc": "B|K2|n20",
+      "K": "B",
+      "R": "(A⋁B)⋀C",
+      "D_vhod": "(B)⋀¬((A⋁B)⋀C)",
+      "D_izhod": "SATISFIABLE",
+      "O_vhod": "(B)⋀((A⋁B)⋀C)",
+      "O_izhod": "SATISFIABLE",
+      "vrednost": "U"
+    },
+    {
+      "kljuc": "B|K2|n06",
+      "K": "",
+      "R": "A⋀B⋀C",
+      "D_vhod": "¬(A⋀B⋀C)",
+      "D_izhod": "SATISFIABLE",
+      "O_vhod": "A⋀B⋀C",
+      "O_izhod": "SATISFIABLE",
+      "vrednost": "U"
+    },
+    {
+      "kljuc": "B|K2|n10",
+      "K": "",
+      "R": "A⋀B⋀C⋀D",
+      "D_vhod": "¬(A⋀B⋀C⋀D)",
+      "D_izhod": "SATISFIABLE",
+      "O_vhod": "A⋀B⋀C⋀D",
+      "O_izhod": "SATISFIABLE",
+      "vrednost": "U"
+    },
+    {
+      "kljuc": "B|K2|n19",
+      "K": "A",
+      "R": "A⋁B⋁C⋁D",
+      "D_vhod": "(A)⋀¬(A⋁B⋁C⋁D)",
+      "D_izhod": "CONTRADICTION",
+      "O_vhod": "(A)⋀(A⋁B⋁C⋁D)",
+      "O_izhod": "SATISFIABLE",
+      "vrednost": "T"
+    },
+    {
+      "kljuc": "B|K2|n07",
+      "K": "",
+      "R": "A⋀B⋀C",
+      "D_vhod": "¬(A⋀B⋀C)",
+      "D_izhod": "SATISFIABLE",
+      "O_vhod": "A⋀B⋀C",
+      "O_izhod": "SATISFIABLE",
+      "vrednost": "U"
+    },
+    {
+      "kljuc": "B|K3|n01",
+      "K": "¬C",
+      "R": "A⋀B⋀C",
+      "D_vhod": "(¬C)⋀¬(A⋀B⋀C)",
+      "D_izhod": "SATISFIABLE",
+      "O_vhod": "(¬C)⋀(A⋀B⋀C)",
+      "O_izhod": "CONTRADICTION",
+      "vrednost": "F"
+    },
+    {
+      "kljuc": "B|K3|n22",
+      "K": "",
+      "R": "A⋁B⋁C",
+      "D_vhod": "¬(A⋁B⋁C)",
+      "D_izhod": "SATISFIABLE",
+      "O_vhod": "A⋁B⋁C",
+      "O_izhod": "SATISFIABLE",
+      "vrednost": "U"
+    },
+    {
+      "kljuc": "B|K3|n23",
+      "K": "A",
+      "R": "A⋁B",
+      "D_vhod": "(A)⋀¬(A⋁B)",
+      "D_izhod": "CONTRADICTION",
+      "O_vhod": "(A)⋀(A⋁B)",
+      "O_izhod": "SATISFIABLE",
+      "vrednost": "T"
+    },
+    {
+      "kljuc": "B|K3|n02",
+      "K": "A",
+      "R": "A⋀B⋀C",
+      "D_vhod": "(A)⋀¬(A⋀B⋀C)",
+      "D_izhod": "SATISFIABLE",
+      "O_vhod": "(A)⋀(A⋀B⋀C)",
+      "O_izhod": "SATISFIABLE",
+      "vrednost": "U"
+    },
+    {
+      "kljuc": "B|K3|n12",
+      "K": "",
+      "R": "A⋀B⋀C⋀D",
+      "D_vhod": "¬(A⋀B⋀C⋀D)",
+      "D_izhod": "SATISFIABLE",
+      "O_vhod": "A⋀B⋀C⋀D",
+      "O_izhod": "SATISFIABLE",
+      "vrednost": "U"
+    },
+    {
+      "kljuc": "B|K3|n16",
+      "K": "¬A",
+      "R": "A⋀B⋀C⋀D",
+      "D_vhod": "(¬A)⋀¬(A⋀B⋀C⋀D)",
+      "D_izhod": "SATISFIABLE",
+      "O_vhod": "(¬A)⋀(A⋀B⋀C⋀D)",
+      "O_izhod": "CONTRADICTION",
+      "vrednost": "F"
+    },
+    {
+      "kljuc": "B|K3|n24",
+      "K": "¬A⋀B⋀C⋀D",
+      "R": "A⋁B⋁C⋁D",
+      "D_vhod": "(¬A⋀B⋀C⋀D)⋀¬(A⋁B⋁C⋁D)",
+      "D_izhod": "CONTRADICTION",
+      "O_vhod": "(¬A⋀B⋀C⋀D)⋀(A⋁B⋁C⋁D)",
+      "O_izhod": "SATISFIABLE",
+      "vrednost": "T"
+    },
+    {
+      "kljuc": "B|K3|n25",
+      "K": "",
+      "R": "A⋁B⋁C⋁D",
+      "D_vhod": "¬(A⋁B⋁C⋁D)",
+      "D_izhod": "SATISFIABLE",
+      "O_vhod": "A⋁B⋁C⋁D",
+      "O_izhod": "SATISFIABLE",
+      "vrednost": "U"
+    },
+    {
+      "kljuc": "B|K3|n03",
+      "K": "A⋀C",
+      "R": "(A⋁B)⋀C",
+      "D_vhod": "(A⋀C)⋀¬((A⋁B)⋀C)",
+      "D_izhod": "CONTRADICTION",
+      "O_vhod": "(A⋀C)⋀((A⋁B)⋀C)",
+      "O_izhod": "SATISFIABLE",
+      "vrednost": "T"
+    },
+    {
+      "kljuc": "B|K3|n05",
+      "K": "D",
+      "R": "A⋀B⋀C⋀D",
+      "D_vhod": "(D)⋀¬(A⋀B⋀C⋀D)",
+      "D_izhod": "SATISFIABLE",
+      "O_vhod": "(D)⋀(A⋀B⋀C⋀D)",
+      "O_izhod": "SATISFIABLE",
+      "vrednost": "U"
+    },
+    {
+      "kljuc": "B|K3|n09",
+      "K": "",
+      "R": "A⋀B⋀C⋀D",
+      "D_vhod": "¬(A⋀B⋀C⋀D)",
+      "D_izhod": "SATISFIABLE",
+      "O_vhod": "A⋀B⋀C⋀D",
+      "O_izhod": "SATISFIABLE",
+      "vrednost": "U"
+    },
+    {
+      "kljuc": "B|K3|n13",
+      "K": "",
+      "R": "A⋀B⋀C⋀D",
+      "D_vhod": "¬(A⋀B⋀C⋀D)",
+      "D_izhod": "SATISFIABLE",
+      "O_vhod": "A⋀B⋀C⋀D",
+      "O_izhod": "SATISFIABLE",
+      "vrednost": "U"
+    },
+    {
+      "kljuc": "B|K3|n14",
+      "K": "A⋀B",
+      "R": "A⋀B⋀C",
+      "D_vhod": "(A⋀B)⋀¬(A⋀B⋀C)",
+      "D_izhod": "SATISFIABLE",
+      "O_vhod": "(A⋀B)⋀(A⋀B⋀C)",
+      "O_izhod": "SATISFIABLE",
+      "vrednost": "U"
+    },
+    {
+      "kljuc": "B|K3|n18",
+      "K": "A⋀C",
+      "R": "A⋀B⋀C⋀D",
+      "D_vhod": "(A⋀C)⋀¬(A⋀B⋀C⋀D)",
+      "D_izhod": "SATISFIABLE",
+      "O_vhod": "(A⋀C)⋀(A⋀B⋀C⋀D)",
+      "O_izhod": "SATISFIABLE",
+      "vrednost": "U"
+    },
+    {
+      "kljuc": "B|K3|n20",
+      "K": "",
+      "R": "(A⋁B)⋀C",
+      "D_vhod": "¬((A⋁B)⋀C)",
+      "D_izhod": "SATISFIABLE",
+      "O_vhod": "(A⋁B)⋀C",
+      "O_izhod": "SATISFIABLE",
+      "vrednost": "U"
+    },
+    {
+      "kljuc": "B|K3|n06",
+      "K": "C",
+      "R": "A⋀B⋀C",
+      "D_vhod": "(C)⋀¬(A⋀B⋀C)",
+      "D_izhod": "SATISFIABLE",
+      "O_vhod": "(C)⋀(A⋀B⋀C)",
+      "O_izhod": "SATISFIABLE",
+      "vrednost": "U"
+    },
+    {
+      "kljuc": "B|K3|n10",
+      "K": "",
+      "R": "A⋀B⋀C⋀D",
+      "D_vhod": "¬(A⋀B⋀C⋀D)",
+      "D_izhod": "SATISFIABLE",
+      "O_vhod": "A⋀B⋀C⋀D",
+      "O_izhod": "SATISFIABLE",
+      "vrednost": "U"
+    },
+    {
+      "kljuc": "B|K3|n19",
+      "K": "C",
+      "R": "A⋁B⋁C⋁D",
+      "D_vhod": "(C)⋀¬(A⋁B⋁C⋁D)",
+      "D_izhod": "CONTRADICTION",
+      "O_vhod": "(C)⋀(A⋁B⋁C⋁D)",
+      "O_izhod": "SATISFIABLE",
+      "vrednost": "T"
+    },
+    {
+      "kljuc": "B|K3|n07",
+      "K": "A⋀C",
+      "R": "A⋀B⋀C",
+      "D_vhod": "(A⋀C)⋀¬(A⋀B⋀C)",
+      "D_izhod": "SATISFIABLE",
+      "O_vhod": "(A⋀C)⋀(A⋀B⋀C)",
+      "O_izhod": "SATISFIABLE",
+      "vrednost": "U"
+    },
+    {
+      "kljuc": "B|K4|n01",
+      "K": "¬C",
+      "R": "A⋀B⋀C",
+      "D_vhod": "(¬C)⋀¬(A⋀B⋀C)",
+      "D_izhod": "SATISFIABLE",
+      "O_vhod": "(¬C)⋀(A⋀B⋀C)",
+      "O_izhod": "CONTRADICTION",
+      "vrednost": "F"
+    },
+    {
+      "kljuc": "B|K4|n22",
+      "K": "",
+      "R": "A⋁B⋁C",
+      "D_vhod": "¬(A⋁B⋁C)",
+      "D_izhod": "SATISFIABLE",
+      "O_vhod": "A⋁B⋁C",
+      "O_izhod": "SATISFIABLE",
+      "vrednost": "U"
+    },
+    {
+      "kljuc": "B|K4|n23",
+      "K": "A",
+      "R": "A⋁B",
+      "D_vhod": "(A)⋀¬(A⋁B)",
+      "D_izhod": "CONTRADICTION",
+      "O_vhod": "(A)⋀(A⋁B)",
+      "O_izhod": "SATISFIABLE",
+      "vrednost": "T"
+    },
+    {
+      "kljuc": "B|K4|n02",
+      "K": "",
+      "R": "A⋀B⋀C",
+      "D_vhod": "¬(A⋀B⋀C)",
+      "D_izhod": "SATISFIABLE",
+      "O_vhod": "A⋀B⋀C",
+      "O_izhod": "SATISFIABLE",
+      "vrednost": "U"
+    },
+    {
+      "kljuc": "B|K4|n12",
+      "K": "",
+      "R": "A⋀B⋀C⋀D",
+      "D_vhod": "¬(A⋀B⋀C⋀D)",
+      "D_izhod": "SATISFIABLE",
+      "O_vhod": "A⋀B⋀C⋀D",
+      "O_izhod": "SATISFIABLE",
+      "vrednost": "U"
+    },
+    {
+      "kljuc": "B|K4|n16",
+      "K": "¬A⋀B",
+      "R": "A⋀B⋀C⋀D",
+      "D_vhod": "(¬A⋀B)⋀¬(A⋀B⋀C⋀D)",
+      "D_izhod": "SATISFIABLE",
+      "O_vhod": "(¬A⋀B)⋀(A⋀B⋀C⋀D)",
+      "O_izhod": "CONTRADICTION",
+      "vrednost": "F"
+    },
+    {
+      "kljuc": "B|K4|n24",
+      "K": "A⋀¬D",
+      "R": "A⋁B⋁C⋁D",
+      "D_vhod": "(A⋀¬D)⋀¬(A⋁B⋁C⋁D)",
+      "D_izhod": "CONTRADICTION",
+      "O_vhod": "(A⋀¬D)⋀(A⋁B⋁C⋁D)",
+      "O_izhod": "SATISFIABLE",
+      "vrednost": "T"
+    },
+    {
+      "kljuc": "B|K4|n25",
+      "K": "",
+      "R": "A⋁B⋁C⋁D",
+      "D_vhod": "¬(A⋁B⋁C⋁D)",
+      "D_izhod": "SATISFIABLE",
+      "O_vhod": "A⋁B⋁C⋁D",
+      "O_izhod": "SATISFIABLE",
+      "vrednost": "U"
+    },
+    {
+      "kljuc": "B|K4|n03",
+      "K": "A⋀B",
+      "R": "(A⋁B)⋀C",
+      "D_vhod": "(A⋀B)⋀¬((A⋁B)⋀C)",
+      "D_izhod": "SATISFIABLE",
+      "O_vhod": "(A⋀B)⋀((A⋁B)⋀C)",
+      "O_izhod": "SATISFIABLE",
+      "vrednost": "U"
+    },
+    {
+      "kljuc": "B|K4|n05",
+      "K": "A",
+      "R": "A⋀B⋀C⋀D",
+      "D_vhod": "(A)⋀¬(A⋀B⋀C⋀D)",
+      "D_izhod": "SATISFIABLE",
+      "O_vhod": "(A)⋀(A⋀B⋀C⋀D)",
+      "O_izhod": "SATISFIABLE",
+      "vrednost": "U"
+    },
+    {
+      "kljuc": "B|K4|n09",
+      "K": "",
+      "R": "A⋀B⋀C⋀D",
+      "D_vhod": "¬(A⋀B⋀C⋀D)",
+      "D_izhod": "SATISFIABLE",
+      "O_vhod": "A⋀B⋀C⋀D",
+      "O_izhod": "SATISFIABLE",
+      "vrednost": "U"
+    },
+    {
+      "kljuc": "B|K4|n13",
+      "K": "A⋀C",
+      "R": "A⋀B⋀C⋀D",
+      "D_vhod": "(A⋀C)⋀¬(A⋀B⋀C⋀D)",
+      "D_izhod": "SATISFIABLE",
+      "O_vhod": "(A⋀C)⋀(A⋀B⋀C⋀D)",
+      "O_izhod": "SATISFIABLE",
+      "vrednost": "U"
+    },
+    {
+      "kljuc": "B|K4|n14",
+      "K": "A⋀B",
+      "R": "A⋀B⋀C",
+      "D_vhod": "(A⋀B)⋀¬(A⋀B⋀C)",
+      "D_izhod": "SATISFIABLE",
+      "O_vhod": "(A⋀B)⋀(A⋀B⋀C)",
+      "O_izhod": "SATISFIABLE",
+      "vrednost": "U"
+    },
+    {
+      "kljuc": "B|K4|n18",
+      "K": "A⋀B⋀C",
+      "R": "A⋀B⋀C⋀D",
+      "D_vhod": "(A⋀B⋀C)⋀¬(A⋀B⋀C⋀D)",
+      "D_izhod": "SATISFIABLE",
+      "O_vhod": "(A⋀B⋀C)⋀(A⋀B⋀C⋀D)",
+      "O_izhod": "SATISFIABLE",
+      "vrednost": "U"
+    },
+    {
+      "kljuc": "B|K4|n20",
+      "K": "",
+      "R": "(A⋁B)⋀C",
+      "D_vhod": "¬((A⋁B)⋀C)",
+      "D_izhod": "SATISFIABLE",
+      "O_vhod": "(A⋁B)⋀C",
+      "O_izhod": "SATISFIABLE",
+      "vrednost": "U"
+    },
+    {
+      "kljuc": "B|K4|n06",
+      "K": "",
+      "R": "A⋀B⋀C",
+      "D_vhod": "¬(A⋀B⋀C)",
+      "D_izhod": "SATISFIABLE",
+      "O_vhod": "A⋀B⋀C",
+      "O_izhod": "SATISFIABLE",
+      "vrednost": "U"
+    },
+    {
+      "kljuc": "B|K4|n10",
+      "K": "",
+      "R": "A⋀B⋀C⋀D",
+      "D_vhod": "¬(A⋀B⋀C⋀D)",
+      "D_izhod": "SATISFIABLE",
+      "O_vhod": "A⋀B⋀C⋀D",
+      "O_izhod": "SATISFIABLE",
+      "vrednost": "U"
+    },
+    {
+      "kljuc": "B|K4|n19",
+      "K": "C",
+      "R": "A⋁B⋁C⋁D",
+      "D_vhod": "(C)⋀¬(A⋁B⋁C⋁D)",
+      "D_izhod": "CONTRADICTION",
+      "O_vhod": "(C)⋀(A⋁B⋁C⋁D)",
+      "O_izhod": "SATISFIABLE",
+      "vrednost": "T"
+    },
+    {
+      "kljuc": "B|K4|n07",
+      "K": "",
+      "R": "A⋀B⋀C",
+      "D_vhod": "¬(A⋀B⋀C)",
+      "D_izhod": "SATISFIABLE",
+      "O_vhod": "A⋀B⋀C",
+      "O_izhod": "SATISFIABLE",
+      "vrednost": "U"
+    },
+    {
+      "kljuc": "B|K5|n01",
+      "K": "¬C",
+      "R": "A⋀B⋀C",
+      "D_vhod": "(¬C)⋀¬(A⋀B⋀C)",
+      "D_izhod": "SATISFIABLE",
+      "O_vhod": "(¬C)⋀(A⋀B⋀C)",
+      "O_izhod": "CONTRADICTION",
+      "vrednost": "F"
+    },
+    {
+      "kljuc": "B|K5|n22",
+      "K": "",
+      "R": "A⋁B⋁C",
+      "D_vhod": "¬(A⋁B⋁C)",
+      "D_izhod": "SATISFIABLE",
+      "O_vhod": "A⋁B⋁C",
+      "O_izhod": "SATISFIABLE",
+      "vrednost": "U"
+    },
+    {
+      "kljuc": "B|K5|n23",
+      "K": "",
+      "R": "A⋁B",
+      "D_vhod": "¬(A⋁B)",
+      "D_izhod": "SATISFIABLE",
+      "O_vhod": "A⋁B",
+      "O_izhod": "SATISFIABLE",
+      "vrednost": "U"
+    },
+    {
+      "kljuc": "B|K5|n02",
+      "K": "",
+      "R": "A⋀B⋀C",
+      "D_vhod": "¬(A⋀B⋀C)",
+      "D_izhod": "SATISFIABLE",
+      "O_vhod": "A⋀B⋀C",
+      "O_izhod": "SATISFIABLE",
+      "vrednost": "U"
+    },
+    {
+      "kljuc": "B|K5|n12",
+      "K": "",
+      "R": "A⋀B⋀C⋀D",
+      "D_vhod": "¬(A⋀B⋀C⋀D)",
+      "D_izhod": "SATISFIABLE",
+      "O_vhod": "A⋀B⋀C⋀D",
+      "O_izhod": "SATISFIABLE",
+      "vrednost": "U"
+    },
+    {
+      "kljuc": "B|K5|n16",
+      "K": "¬A⋀¬C",
+      "R": "A⋀B⋀C⋀D",
+      "D_vhod": "(¬A⋀¬C)⋀¬(A⋀B⋀C⋀D)",
+      "D_izhod": "SATISFIABLE",
+      "O_vhod": "(¬A⋀¬C)⋀(A⋀B⋀C⋀D)",
+      "O_izhod": "CONTRADICTION",
+      "vrednost": "F"
+    },
+    {
+      "kljuc": "B|K5|n24",
+      "K": "¬A",
+      "R": "A⋁B⋁C⋁D",
+      "D_vhod": "(¬A)⋀¬(A⋁B⋁C⋁D)",
+      "D_izhod": "SATISFIABLE",
+      "O_vhod": "(¬A)⋀(A⋁B⋁C⋁D)",
+      "O_izhod": "SATISFIABLE",
+      "vrednost": "U"
+    },
+    {
+      "kljuc": "B|K5|n25",
+      "K": "",
+      "R": "A⋁B⋁C⋁D",
+      "D_vhod": "¬(A⋁B⋁C⋁D)",
+      "D_izhod": "SATISFIABLE",
+      "O_vhod": "A⋁B⋁C⋁D",
+      "O_izhod": "SATISFIABLE",
+      "vrednost": "U"
+    },
+    {
+      "kljuc": "B|K5|n03",
+      "K": "A",
+      "R": "(A⋁B)⋀C",
+      "D_vhod": "(A)⋀¬((A⋁B)⋀C)",
+      "D_izhod": "SATISFIABLE",
+      "O_vhod": "(A)⋀((A⋁B)⋀C)",
+      "O_izhod": "SATISFIABLE",
+      "vrednost": "U"
+    },
+    {
+      "kljuc": "B|K5|n05",
+      "K": "C⋀D",
+      "R": "A⋀B⋀C⋀D",
+      "D_vhod": "(C⋀D)⋀¬(A⋀B⋀C⋀D)",
+      "D_izhod": "SATISFIABLE",
+      "O_vhod": "(C⋀D)⋀(A⋀B⋀C⋀D)",
+      "O_izhod": "SATISFIABLE",
+      "vrednost": "U"
+    },
+    {
+      "kljuc": "B|K5|n09",
+      "K": "",
+      "R": "A⋀B⋀C⋀D",
+      "D_vhod": "¬(A⋀B⋀C⋀D)",
+      "D_izhod": "SATISFIABLE",
+      "O_vhod": "A⋀B⋀C⋀D",
+      "O_izhod": "SATISFIABLE",
+      "vrednost": "U"
+    },
+    {
+      "kljuc": "B|K5|n13",
+      "K": "",
+      "R": "A⋀B⋀C⋀D",
+      "D_vhod": "¬(A⋀B⋀C⋀D)",
+      "D_izhod": "SATISFIABLE",
+      "O_vhod": "A⋀B⋀C⋀D",
+      "O_izhod": "SATISFIABLE",
+      "vrednost": "U"
+    },
+    {
+      "kljuc": "B|K5|n14",
+      "K": "",
+      "R": "A⋀B⋀C",
+      "D_vhod": "¬(A⋀B⋀C)",
+      "D_izhod": "SATISFIABLE",
+      "O_vhod": "A⋀B⋀C",
+      "O_izhod": "SATISFIABLE",
+      "vrednost": "U"
+    },
+    {
+      "kljuc": "B|K5|n18",
+      "K": "¬A⋀C",
+      "R": "A⋀B⋀C⋀D",
+      "D_vhod": "(¬A⋀C)⋀¬(A⋀B⋀C⋀D)",
+      "D_izhod": "SATISFIABLE",
+      "O_vhod": "(¬A⋀C)⋀(A⋀B⋀C⋀D)",
+      "O_izhod": "CONTRADICTION",
+      "vrednost": "F"
+    },
+    {
+      "kljuc": "B|K5|n20",
+      "K": "",
+      "R": "(A⋁B)⋀C",
+      "D_vhod": "¬((A⋁B)⋀C)",
+      "D_izhod": "SATISFIABLE",
+      "O_vhod": "(A⋁B)⋀C",
+      "O_izhod": "SATISFIABLE",
+      "vrednost": "U"
+    },
+    {
+      "kljuc": "B|K5|n06",
+      "K": "",
+      "R": "A⋀B⋀C",
+      "D_vhod": "¬(A⋀B⋀C)",
+      "D_izhod": "SATISFIABLE",
+      "O_vhod": "A⋀B⋀C",
+      "O_izhod": "SATISFIABLE",
+      "vrednost": "U"
+    },
+    {
+      "kljuc": "B|K5|n10",
+      "K": "",
+      "R": "A⋀B⋀C⋀D",
+      "D_vhod": "¬(A⋀B⋀C⋀D)",
+      "D_izhod": "SATISFIABLE",
+      "O_vhod": "A⋀B⋀C⋀D",
+      "O_izhod": "SATISFIABLE",
+      "vrednost": "U"
+    },
+    {
+      "kljuc": "B|K5|n19",
+      "K": "A⋀B",
+      "R": "A⋁B⋁C⋁D",
+      "D_vhod": "(A⋀B)⋀¬(A⋁B⋁C⋁D)",
+      "D_izhod": "CONTRADICTION",
+      "O_vhod": "(A⋀B)⋀(A⋁B⋁C⋁D)",
+      "O_izhod": "SATISFIABLE",
+      "vrednost": "T"
+    },
+    {
+      "kljuc": "B|K5|n07",
+      "K": "B⋀C",
+      "R": "A⋀B⋀C",
+      "D_vhod": "(B⋀C)⋀¬(A⋀B⋀C)",
+      "D_izhod": "SATISFIABLE",
+      "O_vhod": "(B⋀C)⋀(A⋀B⋀C)",
+      "O_izhod": "SATISFIABLE",
+      "vrednost": "U"
+    }
+  ],
+  "preverjanje": {
+    "tree_proti_python": "190/190",
+    "neujemanja": []
+  },
+  "rezultat": {
+    "S": {
+      "izloceni": [
+        "K5"
+      ],
+      "dokazano_ustrezni": [],
+      "pravilo": "P3",
+      "vrstni_red": [
+        "K3",
+        "K1",
+        "K4",
+        "K2"
+      ],
+      "izbrani": "K3",
+      "status": "PREDNOSTNI ZA PREVERJANJE – ni dokazano ustrezen",
+      "T_M": {
+        "K1": "U",
+        "K2": "U",
+        "K3": "U",
+        "K4": "U",
+        "K5": "F"
+      }
+    },
+    "B": {
+      "izloceni": [
+        "K2",
+        "K3",
+        "K4",
+        "K5"
+      ],
+      "dokazano_ustrezni": [],
+      "pravilo": "P3",
+      "vrstni_red": [
+        "K1"
+      ],
+      "izbrani": "K1",
+      "status": "PREDNOSTNI ZA PREVERJANJE – ni dokazano ustrezen",
+      "T_M": {
+        "K1": "U",
+        "K2": "F",
+        "K3": "F",
+        "K4": "F",
+        "K5": "F"
+      }
+    }
+  },
+  "obcutljivost": {
+    "S": {
+      "izloceni": [
+        "K5"
+      ],
+      "vrstni_red": [
+        "K3",
+        "K1",
+        "K4",
+        "K2"
+      ],
+      "izbrani": "K3"
+    },
+    "B": {
+      "izloceni": [
+        "K2",
+        "K3",
+        "K4",
+        "K5"
+      ],
+      "vrstni_red": [
+        "K1"
+      ],
+      "izbrani": "K1"
+    },
+    "pravila": [
+      {
+        "pravilo": "B1",
+        "ime": "NEG-DOM",
+        "S_plus": {
+          "izloceni": [
+            "K2",
+            "K3",
+            "K4",
+            "K5"
+          ],
+          "vrstni_red": [
+            "K1"
+          ],
+          "izbrani": "K1"
+        },
+        "B_minus": {
+          "izloceni": [
+            "K5"
+          ],
+          "vrstni_red": [
+            "K1",
+            "K3",
+            "K4",
+            "K2"
+          ],
+          "izbrani": "K1"
+        },
+        "spremeni_izbiro": true,
+        "spremeni_izlocene": true,
+        "spremeni_red": true
+      },
+      {
+        "pravilo": "B2",
+        "ime": "DOM-ZAP",
+        "S_plus": {
+          "izloceni": [
+            "K5"
+          ],
+          "vrstni_red": [
+            "K3",
+            "K1",
+            "K4",
+            "K2"
+          ],
+          "izbrani": "K3"
+        },
+        "B_minus": {
+          "izloceni": [
+            "K2",
+            "K3",
+            "K4",
+            "K5"
+          ],
+          "vrstni_red": [
+            "K1"
+          ],
+          "izbrani": "K1"
+        },
+        "spremeni_izbiro": false,
+        "spremeni_izlocene": false,
+        "spremeni_red": false
+      },
+      {
+        "pravilo": "B3",
+        "ime": "VEND",
+        "S_plus": {
+          "izloceni": [
+            "K5"
+          ],
+          "vrstni_red": [
+            "K3",
+            "K1",
+            "K4",
+            "K2"
+          ],
+          "izbrani": "K3"
+        },
+        "B_minus": {
+          "izloceni": [
+            "K2",
+            "K3",
+            "K4",
+            "K5"
+          ],
+          "vrstni_red": [
+            "K1"
+          ],
+          "izbrani": "K1"
+        },
+        "spremeni_izbiro": false,
+        "spremeni_izlocene": false,
+        "spremeni_red": false
+      },
+      {
+        "pravilo": "B4",
+        "ime": "GEN",
+        "S_plus": {
+          "izloceni": [
+            "K5"
+          ],
+          "vrstni_red": [
+            "K3",
+            "K1",
+            "K4",
+            "K2"
+          ],
+          "izbrani": "K3"
+        },
+        "B_minus": {
+          "izloceni": [
+            "K2",
+            "K3",
+            "K4",
+            "K5"
+          ],
+          "vrstni_red": [
+            "K1"
+          ],
+          "izbrani": "K1"
+        },
+        "spremeni_izbiro": false,
+        "spremeni_izlocene": false,
+        "spremeni_red": false
+      },
+      {
+        "pravilo": "B5",
+        "ime": "LET",
+        "S_plus": {
+          "izloceni": [
+            "K5"
+          ],
+          "vrstni_red": [
+            "K3",
+            "K4",
+            "K1",
+            "K2"
+          ],
+          "izbrani": "K3"
+        },
+        "B_minus": {
+          "izloceni": [
+            "K2",
+            "K3",
+            "K4",
+            "K5"
+          ],
+          "vrstni_red": [
+            "K1"
+          ],
+          "izbrani": "K1"
+        },
+        "spremeni_izbiro": false,
+        "spremeni_izlocene": false,
+        "spremeni_red": true
+      },
+      {
+        "pravilo": "B6",
+        "ime": "DR",
+        "S_plus": {
+          "izloceni": [
+            "K5"
+          ],
+          "vrstni_red": [
+            "K3",
+            "K1",
+            "K4",
+            "K2"
+          ],
+          "izbrani": "K3"
+        },
+        "B_minus": {
+          "izloceni": [
+            "K2",
+            "K3",
+            "K4",
+            "K5"
+          ],
+          "vrstni_red": [
+            "K1"
+          ],
+          "izbrani": "K1"
+        },
+        "spremeni_izbiro": false,
+        "spremeni_izlocene": false,
+        "spremeni_red": false
+      },
+      {
+        "pravilo": "B7",
+        "ime": "PLUR",
+        "S_plus": {
+          "izloceni": [
+            "K5"
+          ],
+          "vrstni_red": [
+            "K3",
+            "K1",
+            "K4",
+            "K2"
+          ],
+          "izbrani": "K3"
+        },
+        "B_minus": {
+          "izloceni": [
+            "K2",
+            "K3",
+            "K4",
+            "K5"
+          ],
+          "vrstni_red": [
+            "K1"
+          ],
+          "izbrani": "K1"
+        },
+        "spremeni_izbiro": false,
+        "spremeni_izlocene": false,
+        "spremeni_red": false
+      },
+      {
+        "pravilo": "B8",
+        "ime": "SE",
+        "S_plus": {
+          "izloceni": [
+            "K5"
+          ],
+          "vrstni_red": [
+            "K3",
+            "K1",
+            "K4",
+            "K2"
+          ],
+          "izbrani": "K3"
+        },
+        "B_minus": {
+          "izloceni": [
+            "K2",
+            "K3",
+            "K4",
+            "K5"
+          ],
+          "vrstni_red": [
+            "K1"
+          ],
+          "izbrani": "K1"
+        },
+        "spremeni_izbiro": false,
+        "spremeni_izlocene": false,
+        "spremeni_red": false
+      },
+      {
+        "pravilo": "B9",
+        "ime": "PRIMER",
+        "S_plus": {
+          "izloceni": [
+            "K5"
+          ],
+          "vrstni_red": [
+            "K3",
+            "K1",
+            "K4",
+            "K2"
+          ],
+          "izbrani": "K3"
+        },
+        "B_minus": {
+          "izloceni": [
+            "K2",
+            "K3",
+            "K4",
+            "K5"
+          ],
+          "vrstni_red": [
+            "K1"
+          ],
+          "izbrani": "K1"
+        },
+        "spremeni_izbiro": false,
+        "spremeni_izlocene": false,
+        "spremeni_red": false
+      },
+      {
+        "pravilo": "B10",
+        "ime": "NEG-PREF",
+        "S_plus": {
+          "izloceni": [
+            "K5"
+          ],
+          "vrstni_red": [
+            "K3",
+            "K1",
+            "K4",
+            "K2"
+          ],
+          "izbrani": "K3"
+        },
+        "B_minus": {
+          "izloceni": [
+            "K2",
+            "K3",
+            "K4",
+            "K5"
+          ],
+          "vrstni_red": [
+            "K1"
+          ],
+          "izbrani": "K1"
+        },
+        "spremeni_izbiro": false,
+        "spremeni_izlocene": false,
+        "spremeni_red": false
+      },
+      {
+        "pravilo": "B11",
+        "ime": "SEKT",
+        "S_plus": {
+          "izloceni": [
+            "K5"
+          ],
+          "vrstni_red": [
+            "K3",
+            "K1",
+            "K4",
+            "K2"
+          ],
+          "izbrani": "K3"
+        },
+        "B_minus": {
+          "izloceni": [
+            "K2",
+            "K3",
+            "K4",
+            "K5"
+          ],
+          "vrstni_red": [
+            "K1"
+          ],
+          "izbrani": "K1"
+        },
+        "spremeni_izbiro": false,
+        "spremeni_izlocene": false,
+        "spremeni_red": false
+      }
+    ]
+  },
+  "meja_dopustnosti": {
+    "dokazano_s_TREE": "Samo logična veljavnost: ob navedenih vrednostih propozicij je vsaka formula R dokazana (K⋀¬R protislovje), ovržena (K⋀R protislovje) ali neodločena.",
+    "ni_dokazano": "Resničnost dejstev, pravilnost interpretacije citatov, primernost kandidata, pravičnost politike izbire.",
+    "zahteva_cloveka": [
+      "potrditev vsakega dejstva in njegove vrste (E/I)",
+      "odobritev ali zavrnitev vsakega premostitvenega pravila",
+      "odobritev politike izbire P1–P3",
+      "odločitev o zaposlitvi (avtomatizirana odločitev ni dopustna brez človeškega pregleda)"
+    ]
+  },
+  "podpisi": {
+    "pregledal_dejstva": null,
+    "odobril_pravila": null,
+    "odobril_politiko": null,
+    "datum": null
+  },
+  "pecat_sha256": "80337f5c602148b8bf488f10494ee2d2ecea84527ef85e93dd781bface8b9ade",
+  "_pecat": "SHA-256 kanonične JSON oblike zapisa brez polj 'pecat_sha256' in '_pecat' (sort_keys, brez presledkov). Pečat zaznava spremembe, NI podpis."
+}
