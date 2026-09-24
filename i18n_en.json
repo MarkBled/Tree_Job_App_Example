@@ -1,0 +1,165 @@
+{
+  "_about": "English translation layer for report.py. Presentation only: the evidentiary data (quotes, facts, rules) stays in Slovenian in data/ and cues_sl.json; quote translations are unofficial glosses and are NOT evidence.",
+
+  "labels": {
+    "Obvezne zahteve": "Mandatory requirements",
+    "Dodatno (nice to have)": "Nice to have",
+    "Naloge (pričakovano)": "Responsibilities (expected)",
+    "stopnja izobrazbe": "degree level"
+  },
+  "label_patterns": [
+    ["– del (\\d+)/(\\d+)", "– part \\1/\\2"],
+    ["^≥(\\d+) let: ", "≥\\1 yrs: "],
+    ["^diploma: ", "degree: "],
+    ["^področje: ", "field: "]
+  ],
+
+  "explanations": [
+    ["^izrecna trditev$", "explicit statement"],
+    ["^izrecna negacija$", "explicit negation"],
+    ["^natančno (\\d+) let < prag (\\d+)$", "exactly \\1 yrs < threshold \\2"],
+    ["^([≥=])(\\d+) let ≥ prag (\\d+)$", "\\1\\2 yrs ≥ threshold \\3"],
+    ["^≥(\\d+) let ne doseže praga (\\d+)$", "≥\\1 yrs does not reach threshold \\2"],
+    ["^raven (\\d+) ≥ zahtevana (\\d+)$", "level \\1 ≥ required \\2"],
+    ["^raven (\\d+) < zahtevana (\\d+) \\(spodnja meja, ne ovrže\\)$", "level \\1 < required \\2 (lower bound, does not refute)"],
+    ["^raven (\\d+)$", "level \\1"],
+    ["^ni signala ravni$", "no level cue"]
+  ],
+
+  "status": {
+    "IZBRAN – dokazano izpolnjuje obvezne zahteve": "SELECTED – proven to meet mandatory requirements",
+    "PREDNOSTNI ZA PREVERJANJE – ni dokazano ustrezen": "PRIORITY FOR VERIFICATION – not proven suitable"
+  },
+
+  "modes": {
+    "S": "Strict mode: only type-E facts (the quote states the proposition at translation level).",
+    "B": "Bridge mode: E + type-I facts (each cites exactly one bridge rule B1–B11)."
+  },
+
+  "policy": {
+    "P1": "A candidate whose root T_M = F (proven NOT to meet mandatory requirements) is excluded.",
+    "P2": "If any candidate has T_M = T, that candidate is selected; ties are broken by satisfied atoms in T_N, then T_P.",
+    "P3": "If no candidate has T_M = T, TREE selects nobody as suitable. Among non-excluded candidates a PRIORITY candidate for verification is ranked by: (1) number of mandatory items = T, (2) number of mandatory atoms = T, (3) fewer mandatory atoms = F, (4) T_P, (5) T_N."
+  },
+
+  "rules": {
+    "B1": ["Statement 'I have no experience / background in X' ⇒ ¬(understanding of X ≥ 3).", "Absence of experience does not logically exclude understanding; the rule is stricter than the job ad."],
+    "B2": ["Multi-year (≥ 5 yrs) employment in sector X ⇒ understanding of X ≥ 3.", "Employment does not prove the content of the work or depth of understanding."],
+    "B3": ["Working with OpenAI / Anthropic / Claude / GPT models ⇒ LLM experience.", "World knowledge not contained in the text."],
+    "B4": ["Generative AI models / solutions ⇒ LLM-based solutions.", "Generative models are not necessarily language models (image, audio)."],
+    "B5": ["≥ 5 yrs experience in X ⇒ level 4 in X.", "Duration is not quality."],
+    "B6": ["Title 'Dr.' ⇒ doctorate ⇒ Master's level satisfied (field unknown).", "Title may be medical or honorary; field not stated."],
+    "B7": ["'recent years' (plural) ⇒ ≥ 2 years.", "Grammatical inference about duration."],
+    "B8": ["Leading development of (AI) systems, or multi-year employment with technical work ⇒ software engineering experience for the whole stated period.", "The role (research, management) is not necessarily development; for K1 technical work is explicitly stated only for the last 2 years."],
+    "B9": ["Experience with an example the ad lists under 'such as' ⇒ understanding of the parent concept.", "An example is not the whole concept."],
+    "B10": ["Expressed unwillingness or opposition to a task ⇒ ¬task (applies to responsibilities P only).", "A statement of attitude is not a statement of ability; attitudes can change."],
+    "B11": ["Working in a sector that practises X ⇒ personal practice of X at level 3.", "An organisation's practice is not a personal skill."]
+  },
+
+  "ambiguities": {
+    "range_years": "Year range (e.g. 6–10) read as a lower threshold (≥ min); the upper bound is NOT exclusionary.",
+    "and_or": "'and/or' read as inclusive OR (⋁).",
+    "oklepaj_brez_eg": "A parenthesised list without 'e.g.' is read as a specification of the concept, not as separate obligations.",
+    "including": "A list after 'including' is read as constituent parts (AND).",
+    "degree_implication": "A Master's normally includes a Bachelor's; the logic keeps A⋁B and the minimal form reveals this."
+  },
+
+  "engine_notes": [
+    "MinimalneNormalneForme checks the string 'tautology;)!)' while PrimeImplicants returns 'tautologija;)!)' → every tautology raises ClassCastException (verified on A⇒A, A⋁¬A, (A⋀B)⇒(A⋁B)). All proofs are therefore expressed as contradiction checks.",
+    "The README states Java 8+, but common/UIStrings.java requires Java 15+ (text blocks); the engine does not compile on a machine with Java 11."
+  ],
+
+  "unused_reasons": [
+    "The ad contains no requirement for obedience; the trait is not a proposition.",
+    "Attitude towards work, not a proposition.",
+    "Understanding the IMPORTANCE of standards is not the skill 'security' (a27); linking it would need a new bridge rule.",
+    "An intention for the future, not experience.",
+    "Relevant to a47 (enterprise-scale in production); neither proves nor refutes it → U.",
+    "Self-assessment without a measurable basis; not a proposition.",
+    "A preference, not an ability; not applied to a31 (data engineering patterns) because B10 applies only to responsibilities P.",
+    "An attitude; ambiguous for a08 (Domain Alignment) – not used.",
+    "A claim without verifiable content.",
+    "A generalisation about age; not a proposition and must not be considered.",
+    "TRAP: the word 'mentorship' matches a40 ('interest in mentoring junior AI engineers'), but the direction is reversed (receiving, not giving) → not used."
+  ],
+
+  "quotes": {
+    "visoko usposobljen v jeziku Java (Spring Boot) in Python": "highly skilled in Java (Spring Boot) and Python",
+    "vsakodnevno pa uporabljam Docker, Kubernetes": "and I use Docker, Kubernetes daily",
+    "uporabljam Docker, Kubernetes ter orodja, kot sta GitHub Copilot in Devin, za pospešitev kodiranja": "I use Docker, Kubernetes and tools such as GitHub Copilot and Devin to speed up coding",
+    "Moje izkušnje se popolnoma ujemajo z vašimi zahtevami za regulirana okolja in agilno MVP-dostavo": "My experience fully matches your requirements for regulated environments and agile MVP delivery",
+    "Moje izkušnje se popolnoma ujemajo z vašimi zahtevami za regulirana okolja": "My experience fully matches your requirements for regulated environments",
+    "poznavanjem bančnega ekosistema": "knowledge of the banking ecosystem",
+    "Zadnjih 8 let sem zaposlen v mednarodni banki": "For the last 8 years I have been employed at an international bank",
+    "zadnji dve leti vodil implementacijo generativnih modelov": "for the last two years led the implementation of generative models",
+    "integracijo zunanjih modelov (OpenAI, Anthropic) prek obstoječih API-jev": "integration of external models (OpenAI, Anthropic) via existing APIs",
+    "agilno MVP-dostavo": "agile MVP delivery",
+    "tehnične rešitve brezpogojno slediti viziji poslovnega segmenta": "technical solutions must unconditionally follow the business segment's vision",
+    "ne izgubljam časa z redefiniranjem obstoječih sistemov ali gradnjo lastnih internih ogrodij": "I don't waste time redefining existing systems or building our own internal frameworks",
+    "globokem razumevanju simbolne umetne inteligence, nevronskih mrež": "deep understanding of symbolic artificial intelligence, neural networks",
+    "Moje tehnično znanje obsega Python, PyTorch": "My technical knowledge covers Python, PyTorch",
+    "znanje obsega Python, PyTorch in napredne agentne sisteme (MCP, RAG)": "knowledge covers Python, PyTorch and advanced agentic systems (MCP, RAG)",
+    "obvladam pa tudi celoten spektrum vsebnikov (Docker, OpenShift)": "and I have also mastered the full spectrum of containers (Docker, OpenShift)",
+    "zadnjih 6 let vodila razvoj kritičnih AI sistemov": "for the last 6 years led the development of critical AI systems",
+    "nimam neposrednih izkušenj v korporativnem bančništvu": "I have no direct experience in corporate banking",
+    "Kandidat 2: Dr. Ksenija": "Candidate 2: Dr. Ksenija",
+    "vzpostavitev 'Ground Truth' sistemov preverjanja": "establishing 'Ground Truth' verification systems",
+    "zanesljivih, produkcijskih AI aplikacij ne da razvijati 'bliskovito' brez ustreznih temeljev": "reliable production AI applications cannot be developed 'at lightning speed' without proper foundations",
+    "Imam dobrih 6 let izkušenj s programiranjem": "I have a good 6 years of programming experience",
+    "zadnja 3 leta delam izključno na agentnih AI ogrodjih": "for the last 3 years I have worked exclusively on agentic AI frameworks",
+    "delam izključno na agentnih AI ogrodjih": "I work exclusively on agentic AI frameworks",
+    "delam izključno na agentnih AI ogrodjih, prompt inženiringu": "I work exclusively on agentic AI frameworks, prompt engineering",
+    "integraciji večmodelnih platform (Claude, GPT-4, Google APIs)": "integration of multi-model platforms (Claude, GPT-4, Google APIs)",
+    "Moje glavno orožje so AI coding pomočniki (Devin, Copilot, Claude Code)": "My main weapon is AI coding assistants (Devin, Copilot, Claude Code)",
+    "Odlično se znajdem v JavaScript/TypeScript (Node.js/Angular) in Pythonu": "I am excellent at JavaScript/TypeScript (Node.js/Angular) and Python",
+    "sistemi, kot sta Docker in Kubernetes, pa so zame standardni del CI/CD cevovoda": "and systems such as Docker and Kubernetes are a standard part of my CI/CD pipeline",
+    "standardni del CI/CD cevovoda": "a standard part of the CI/CD pipeline",
+    "full-stack AI navdušenec": "full-stack AI enthusiast",
+    "Nimam bančnih izkušenj": "I have no banking experience",
+    "obožujem rapidno prototipiranje, MVP-je in iterativno dostavo": "I love rapid prototyping, MVPs and iterative delivery",
+    "se ne poglabljam rad v dolgotrajno analizo podatkovnih baz ali gradnjo kompleksnih internih infrastruktur": "I don't like to dig into lengthy database analysis or building complex internal infrastructure",
+    "Prinašam 9 let progresivnih programerskih izkušenj": "I bring 9 years of progressive programming experience",
+    "9 let progresivnih programerskih izkušenj v jeziku Java (Spring Boot) in Python": "9 years of progressive programming experience in Java (Spring Boot) and Python",
+    "9 let progresivnih programerskih izkušenj": "9 years of progressive programming experience",
+    "zadnja leta preživel v visoko regulirani obrambni industriji": "spent recent years in the highly regulated defence industry",
+    "kjer smo razvijali avtonomne in multi-agentne sisteme": "where we developed autonomous and multi-agent systems",
+    "zadnja leta preživel v visoko regulirani obrambni industriji, kjer smo razvijali avtonomne in multi-agentne sisteme": "spent recent years in the highly regulated defence industry, where we developed autonomous and multi-agent systems",
+    "Sem strokovnjak za API-first in dogodkovno vodene arhitekture": "I am an expert in API-first and event-driven architectures",
+    "strokovnjak za API-first in dogodkovno vodene arhitekture ter Docker/Kubernetes platforme": "expert in API-first and event-driven architectures and Docker/Kubernetes platforms",
+    "obrambni sektor v smislu varnosti, CI/CD praks, aplikacijske odpornosti": "the defence sector in terms of security, CI/CD practices, application resilience",
+    "Delujem znotraj agilnih timov": "I work within agile teams",
+    "nimam izkušenj neposredno v bančništvu": "I have no experience directly in banking",
+    "je moja prva naloga vzpostavitev robustnega infrastrukturnega ogrodja in orodij": "my first task is to set up a robust infrastructure framework and tools",
+    "Preden začnemo brezglavo hiteti v produkcijo z MVP rešitvami": "Before we start rushing headlong into production with MVP solutions",
+    "formalno dosegam 4 leta izkušenj na področju programske opreme (kar je manj od navedenih 6–10 let)": "formally I have 4 years of software experience (which is less than the stated 6–10 years)",
+    "zadnja 2 leta v celoti osredotočena na napredne generativne AI rešitve in RAG sisteme": "the last 2 years fully focused on advanced generative AI solutions and RAG systems",
+    "zadnja 2 leta v celoti osredotočena na napredne generativne AI rešitve": "the last 2 years fully focused on advanced generative AI solutions",
+    "osredotočena na napredne generativne AI rešitve in RAG sisteme": "focused on advanced generative AI solutions and RAG systems",
+    "Odlično obvladam Python": "I have an excellent command of Python",
+    "Odlično obvladam Python, knjižnice NumPy/Pandas, strojno učenje (Scikit-learn)": "I have an excellent command of Python, the NumPy/Pandas libraries, machine learning (Scikit-learn)",
+    "Odlično obvladam Python, knjižnice NumPy/Pandas, strojno učenje (Scikit-learn) ter prompt inženiring": "I have an excellent command of Python, the NumPy/Pandas libraries, machine learning (Scikit-learn) and prompt engineering",
+    "uporaba sodobnih AI orodij (Copilot)": "use of modern AI tools (Copilot)",
+    "sposobnost razumevanja kompleksnih problemov": "ability to understand complex problems",
+    "Nimam bančnega ozadja": "I have no banking background",
+    "ne težim k dolgotrajni gradnji lastnih zaprtih infrastruktur": "I don't strive for lengthy building of our own closed infrastructure",
+    "s svojo poslušnostjo, disciplino": "with my obedience, discipline",
+    "sem se strogo držal navodil poslovnih analitikov": "I strictly followed the instructions of business analysts",
+    "Globoko razumem pomen spoštovanja strogih bančnih regulatornih okvirov in varnostnih standardov": "I deeply understand the importance of respecting strict banking regulatory frameworks and security standards",
+    "verifikacijske logične filtre, ki preprečujejo halucinacije LLM modelov": "verification logic filters that prevent LLM hallucinations",
+    "v akademskem in raziskovalnem okolju": "in an academic and research environment",
+    "dosegam 3-kratno hitrost običajnega programerja": "I achieve 3× the speed of an ordinary programmer",
+    "se ne poglabljam rad v dolgotrajno analizo podatkovnih baz": "I don't like to dig into lengthy database analysis",
+    "vedno z distanco zdravega razuma do zahtev netehničnega osebja": "always with a common-sense distance from the demands of non-technical staff",
+    "Moja obrambna referenca deluje kot garant za absolutno stabilnost": "My defence reference acts as a guarantee of absolute stability",
+    "ki ga starejši kadri včasih izgubijo": "which older staff sometimes lose",
+    "pripravljenost na mentorstvo s strani izkušenejših sodelavcev": "readiness to be mentored by more experienced colleagues"
+  },
+
+  "letters": {
+    "K1": "Dear Sir/Madam, I am applying for the Senior AI Engineer position in your banking technology team. For the last 8 years I have been employed at an international bank, where for the last two years I led the implementation of generative models for automating back-office processes and credit-risk analysis. My experience fully matches your requirements for regulated environments and agile MVP delivery. I deeply understand the importance of respecting strict banking regulatory frameworks and security standards, such as those required by Citi and the wider financial sector. In my work to date I have strictly followed the instructions of business analysts and financial advisers, as I believe technical solutions must unconditionally follow the business segment's vision. Technically I am highly skilled in Java (Spring Boot) and Python, and I use Docker, Kubernetes and tools such as GitHub Copilot and Devin daily to speed up coding within our agile squads. My advantage is that I don't waste time redefining existing systems or building our own internal frameworks; instead I focus immediately on integrating external models (OpenAI, Anthropic) via existing APIs to achieve fast business results. I believe that with my obedience, discipline and knowledge of the banking ecosystem I can immediately contribute to achieving your goals.",
+    "K2": "Dear hiring team, I am proud to submit my application for the Senior AI Engineer position. My career is not based on blindly gluing together external APIs, but on a deep understanding of symbolic artificial intelligence, neural networks and knowledge of database reliability. Although I have no direct experience in corporate banking, for the last 6 years I have led the development of critical AI systems in an academic and research environment, where errors mean loss of data integrity. My key position is that reliable production AI applications cannot be developed 'at lightning speed' without proper foundations. Before the team can efficiently fulfil the specific requirements of financial staff, as a senior I must develop and establish for my team a strict, deterministic development environment and verification logic filters that prevent LLM hallucinations. My technical knowledge covers Python, PyTorch and advanced agentic systems (MCP, RAG), and I have also mastered the full spectrum of containers (Docker, OpenShift). My priority is establishing 'Ground Truth' verification systems. If the bank is looking for someone who will merely passively execute ad-hoc orders without questions about data stability, I am not the right choice; but if you are looking for an architect who will build tools for the team for long-term safe and reliable development, my competences are invaluable.",
+    "K3": "Hi! I'm Liam, a full-stack AI enthusiast, and your Senior AI Engineer position in Jersey City is tailor-made for me. I have a good 6 years of programming experience, of which for the last 3 years I have worked exclusively on agentic AI frameworks, prompt engineering and integration of multi-model platforms (Claude, GPT-4, Google APIs). I'm a typical product engineer with an 'AI-first' mindset – I love rapid prototyping, MVPs and iterative delivery. If the business side of the bank needs a working concept by next week, I will deliver it. My main weapon is AI coding assistants (Devin, Copilot, Claude Code), with which I achieve 3× the speed of an ordinary programmer. I am excellent at JavaScript/TypeScript (Node.js/Angular) and Python, and systems such as Docker and Kubernetes are a standard part of my CI/CD pipeline. I admit I don't like to dig into lengthy database analysis or building complex internal infrastructure, as the market moves too fast to waste time building something that already exists as libraries on GitHub. I have no banking experience, but I learn extremely fast and adapt to the dynamics of an agile squad.",
+    "K4": "Dear Sir/Madam, I am sending my application for the Senior AI Engineer position. I bring 9 years of progressive programming experience in Java (Spring Boot) and Python, having spent recent years in the highly regulated defence industry, where we developed autonomous and multi-agent systems. I am aware that I have no experience directly in banking, but in terms of security, CI/CD practices, application resilience and strict regulatory constraints the defence sector is fully equivalent to – if not stricter than – the financial environment. My greatest value for your team is the ability to bridge chaotic neural output into strict, verifiable system logic. Before we start rushing headlong into production with MVP solutions for bank staff, my first task is to set up a robust infrastructure framework and tools that will allow my team to work safely with data without the risk of information leakage. I am an expert in API-first and event-driven architectures and Docker/Kubernetes platforms. I work within agile teams, but always with a common-sense distance from the demands of non-technical staff. My defence reference acts as a guarantee of absolute stability for your future financial AI agents.",
+    "K5": "Hello! I'm Tjaša and I am applying for the advertised position. Although formally I have 4 years of software experience (which is less than the stated 6–10 years), my last 2 years were fully focused on advanced generative AI solutions and RAG systems. My advantage is exceptional creativity and the ability to understand complex problems that technology actually solves. I understand that the bank is looking for experienced engineers, but my profile brings fresh energy and a capacity for lateral thinking, which older staff sometimes lose. I have an excellent command of Python, the NumPy/Pandas libraries, machine learning (Scikit-learn) and prompt engineering. Working in agile groups comes naturally to me, as does the use of modern AI tools (Copilot). I have no banking background and I don't strive for lengthy building of our own closed infrastructure, as I believe in agility and open-source solutions. My application represents a bet on the future, high cognitive potential and readiness to be mentored by more experienced colleagues in your Jersey City ecosystem."
+  }
+}

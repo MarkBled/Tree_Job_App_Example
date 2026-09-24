@@ -1,0 +1,57 @@
+{
+  "_opis": "Slovar besedilnih signalov. Vsa klasifikacija izhaja iz teh pravil; spremeni tukaj, ne v kodi.",
+
+  "oznake_razdelkov": {
+    "Job Overview": "K",
+    "Role Overview": "K",
+    "Key Responsibilities": "P",
+    "Qualifications": "M"
+  },
+  "_oznake_razdelkov": "K = kontekst (ni v logiki), P = pričakovano (naloge), M = obvezno (kvalifikacije). Razdelek velja do naslednje oznake razdelka.",
+
+  "prepis_obveznosti_oznake": {
+    "Nice to Have": "N"
+  },
+  "_prepis_obveznosti_oznake": "Oznaka postavke, ki ne glede na razdelek dobi drugo obveznost (samo za svojo vsebino).",
+
+  "fraze_dodatno": ["is a plus", "nice to have", "preferred", "is an advantage", "bonus"],
+  "_fraze_dodatno": "Stavek s temi frazami dobi obveznost N ne glede na razdelek.",
+
+  "samostalniki_raven": {
+    "familiarity": 1,
+    "interest": 1,
+    "awareness": 1,
+    "understanding": 2,
+    "knowledge": 2,
+    "experience": 3,
+    "proficiency": 3,
+    "grounding": 3,
+    "skills": 3,
+    "expertise": 3,
+    "ability": 3,
+    "background": 3,
+    "degree": 0,
+    "years": 0
+  },
+  "modifikatorji_plus": ["strong", "solid", "deep", "demonstrated", "extensive", "proven", "advanced", "expert"],
+  "modifikatorji_nastavi": {"working": 2, "basic": 1, "hands-on": 3, "practical": 3},
+  "_ravni": "Raven = osnova samostalnika; 'nastavi' jo nastavi na vrednost; 'plus' prišteje 1 (največ 4). Lestvica: 1 poznavanje, 2 delovno, 3 praktično, 4 ekspert. 0 = ni ravni (leta, diploma: pragovni atom).",
+
+  "primeri_uvod": ["e.g.,", "e.g.", "such as"],
+  "_primeri_uvod": "Kar sledi tem izrazom (do konca oklepaja ali stavka), so zgolj primeri in niso atomi.",
+
+  "komponente_uvod": ["including"],
+  "_komponente_uvod": "Našteto za 'including' razlagam kot sestavne dele (AND) – označeno kot dvoumnost.",
+
+  "locila_klavzul": [";"],
+  "vezniki_klavzul_and": [" with the ability to ", " with a strong ", " and interest in "],
+  "_vezniki_klavzul_and": "Deli stavka, ki postaneta ločena atoma, povezana z AND. Pri deljenju se ohrani uvodna beseda (ability, strong ..., interest) za določanje ravni.",
+
+  "dvoumnosti": {
+    "range_years": "Razpon let (npr. 6–10): razlagam kot spodnji prag (≥ min); zgornja meja NI izločilna.",
+    "and_or": "'and/or' razlagam kot vključujoči ALI (⋁).",
+    "oklepaj_brez_eg": "Naštevanje v oklepaju brez 'e.g.' razlagam kot specifikacijo pojma, ne kot ločene obveznosti.",
+    "including": "Naštevanje za 'including' razlagam kot sestavne dele (AND).",
+    "degree_implication": "Master's praviloma vključuje Bachelor's; v logiki ostane A⋁B, minimalna oblika to razkrije."
+  }
+}

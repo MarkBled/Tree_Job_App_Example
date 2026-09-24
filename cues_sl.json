@@ -1,0 +1,99 @@
+{
+  "_opis": "Slovar za prošnje (slovensko). Raven dokaza iz signalne fraze v citatu. Raven je SPODNJA MEJA: nižja raven od zahtevane NE pomeni 'ne izpolnjuje' (U), ampak 'ni dokazano'.",
+  "ravni_signalov": {
+    "visoko usposobljen": 4,
+    "odlično obvladam": 4,
+    "odlično se znajdem": 4,
+    "obvladam": 4,
+    "strokovnjak": 4,
+    "globokem razumevanju": 3,
+    "vsakodnevno uporabljam": 3,
+    "uporabljam": 3,
+    "uporaba": 3,
+    "izkušnje": 3,
+    "izkušenj": 3,
+    "delam": 3,
+    "razvijali": 3,
+    "vodil": 3,
+    "vodila": 3,
+    "standardni del": 3,
+    "glavno orožje": 3,
+    "osredotočena": 3,
+    "preživel": 3,
+    "delujem": 3,
+    "sposobnost": 3,
+    "znanje obsega": 2,
+    "poznavanjem": 2,
+    "navdušenec": 1
+  },
+  "_ravni_signalov": "Enaka lestvica kot pri oglasu: 1 poznavanje, 2 delovno, 3 praktično, 4 ekspert. 'globokem razumevanju' = razumevanje (2) + globoko (+1), zrcalno pravilu 'solid understanding'.",
+  "premostitvena_pravila": {
+    "B1": {
+      "ime": "NEG-DOM",
+      "pravilo": "Izjava 'nimam izkušenj / ozadja v področju X' ⇒ ¬(razumevanje X ≥ 3).",
+      "tveganje": "Odsotnost izkušenj logično ne izključuje razumevanja; pravilo je strožje od besedila oglasa."
+    },
+    "B2": {
+      "ime": "DOM-ZAP",
+      "pravilo": "Večletna (≥ 5 let) zaposlitev v sektorju X ⇒ razumevanje X ≥ 3.",
+      "tveganje": "Zaposlitev ne dokazuje vsebine dela ali globine razumevanja."
+    },
+    "B3": {
+      "ime": "VEND",
+      "pravilo": "Delo z modeli OpenAI / Anthropic / Claude / GPT ⇒ izkušnje z LLM.",
+      "tveganje": "Svetovno znanje, ki ga besedilo ne vsebuje."
+    },
+    "B4": {
+      "ime": "GEN",
+      "pravilo": "Generativni AI modeli / rešitve ⇒ rešitve na osnovi LLM.",
+      "tveganje": "Generativni modeli niso nujno jezikovni (slika, zvok)."
+    },
+    "B5": {
+      "ime": "LET",
+      "pravilo": "≥ 5 let izkušenj v X ⇒ raven 4 v X.",
+      "tveganje": "Trajanje ni kakovost."
+    },
+    "B6": {
+      "ime": "DR",
+      "pravilo": "Naziv 'Dr.' ⇒ doktorat ⇒ izpolnjena stopnja Master's (področje neznano).",
+      "tveganje": "Naziv je lahko medicinski ali častni; področje ni navedeno."
+    },
+    "B7": {
+      "ime": "PLUR",
+      "pravilo": "'zadnja leta' (množina) ⇒ ≥ 2 leti.",
+      "tveganje": "Slovnično sklepanje o trajanju."
+    },
+    "B8": {
+      "ime": "SE",
+      "pravilo": "Vodenje razvoja (AI) sistemov oz. večletna zaposlitev s tehničnim delom ⇒ izkušnje programskega inženirstva za ves navedeni čas.",
+      "tveganje": "Vloga (raziskovalna, vodstvena) ni nujno razvojna; pri K1 je tehnično delo izrecno navedeno le za zadnji 2 leti."
+    },
+    "B9": {
+      "ime": "PRIMER",
+      "pravilo": "Izkušnja s primerom, ki ga oglas navaja pod 'such as' ⇒ razumevanje nadpojma.",
+      "tveganje": "Primer ni celoten pojem."
+    },
+    "B10": {
+      "ime": "NEG-PREF",
+      "pravilo": "Izražena nepripravljenost ali nasprotovanje nalogi ⇒ ¬naloga (velja samo za naloge P).",
+      "tveganje": "Izjava o stališču ni izjava o zmožnosti; stališče se lahko spremeni."
+    },
+    "B11": {
+      "ime": "SEKT",
+      "pravilo": "Delo v sektorju, ki izvaja prakso X ⇒ osebna praksa X na ravni 3.",
+      "tveganje": "Praksa organizacije ni osebna veščina."
+    }
+  },
+  "nacini": {
+    "S": "Strogi način: samo dejstva vrste E (dobesedna vsebina citata ustreza atomu na ravni prevoda).",
+    "B": "Premostitveni način: E + dejstva vrste I (vsako sklicuje eno pravilo B1–B11)."
+  },
+  "politika_izbire": {
+    "P1": "Kandidat, pri katerem je koren T_M = F (dokazano ne izpolnjuje obveznih zahtev), je izločen.",
+    "P2": "Če je pri katerem kandidatu T_M = T, je izbran tisti; ob izenačenju odloča število izpolnjenih atomov v T_N, nato T_P.",
+    "P3": "Če T_M = T ni pri nikomer, TREE ne izbere nikogar kot ustreznega. Med neizločenimi se določi PREDNOSTNI kandidat za preverjanje po vrstnem redu: (1) število obveznih postavk z vrednostjo T, (2) število obveznih atomov z vrednostjo T, (3) manj obveznih atomov z vrednostjo F, (4) T_P, (5) T_N.",
+    "_opomba": "Politika NI izpeljana iz oglasa; je odločitev naročnika in jo mora odobriti človek.",
+    "privzeti_nacin": "S",
+    "_privzeti_nacin": "Primarni rezultat se poroča v strogem načinu S (samo izrecna dejstva). Način B se poroča kot alternativa z navedbo odločilnih pravil."
+  }
+}
