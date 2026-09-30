@@ -115,6 +115,27 @@ The report explains:
 - all assumptions and missing inferences;
 - the admissibility boundary of the record.
 
+---
+
+## Part 3 – Z3 (SMT) logic core, for comparison with TREE
+
+```bash
+pip install z3-solver
+python3 run_z3.py      # → out/report_z3.html (same layout as report.html, EN + SL) + out/zapis_z3.json + out/z3/*.smt2
+```
+
+| step | script | output | what it does |
+|---|---|---|---|
+| 1 | `z3_core.py` | `out/z3_odlocitev.json`, `out/z3/*.smt2` | encodes the same propositions **numerically** (level `L_aXX ∈ 0..4`, years `Y_aXX`) and the whole tree as **one formula**; facts are tracked assumptions `d_Dxxx`, and bridge rules switch type-I facts on or off |
+| 2 | `report_z3.py` | `out/report_z3.html`, `out/zapis_z3.json` | writes a report with the same sections 1–6 as the TREE report, plus section 7 (TREE ↔ Z3 comparison) |
+
+- **Proof:** `facts ∧ ¬φ` is UNSAT ⇒ **T**. **Refutation:** `facts ∧ φ` is UNSAT ⇒ **F**. Each UNSAT answer comes with a **minimal unsat core**, i.e. the smallest set of facts that causes it.
+- **MaxSAT** (`z3.Optimize`) finds the fewest missing proofs a candidate would need for T_M = T.
+- Every problem is exported as **SMT-LIB2**, so any SMT solver can re-check it. The export is reloaded and re-checked automatically.
+- **Result:** agrees with TREE on 750/750 atom and node values, gives the same selection in both modes and the same sensitivity. Additional findings:
+  - Liam still needs at least 25 more proofs for T_M = T;
+  - Tjaša's exclusion rests on a single fact (D067, “4 years”).
+
 ## Verification of the first part
 
 `verify/Harness.java` is a separate test class; the original code is not modified. It parses every formula with the original `propMinimization` parser. The result is in `out/preverjanje_java.txt`: all 19 formulas parse, and the prime implicants match `minimalna_DNF`.

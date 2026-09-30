@@ -1,5 +1,7 @@
 # Klasifikacija zahtev → logična drevesa
 
+> English version: [README.md](README.md)
+
 Besedilo oglasa (PDF ali TXT) razčleni na postavke, vsako oceni **zgolj na podlagi besedila** in zgradi hierarhijo, ki jo izvozi v formule za pregledovalnik **TreeOfKnowledge** (mapa `../Tree`).
 
 ## Zagon
@@ -83,3 +85,24 @@ python3 run_proof.py        # → out/report.html (offline, angleščina privzet
 **TREE vhodi:** D `(K)⋀¬(R)` protislovje ⇒ T; O `(K)⋀(R)` protislovje ⇒ F. Oba sta testa protislovja, ker pot za tavtologije v propMinimization pade (ClassCastException, neujemanje `tautologija`/`tautology`).
 
 Dejstva (`data/dejstva.json`) je izluščil jezikovni model; pred uporabo jih mora potrditi človek.
+
+---
+
+# Tretji del: logično jedro Z3 (SMT) za primerjavo s TREE
+
+```bash
+pip install z3-solver
+python3 run_z3.py      # → out/report_z3.html (enaka zgradba kot report.html, EN + SL) + out/zapis_z3.json + out/z3/*.smt2
+```
+
+| korak | skripta | izhod | kaj naredi |
+|---|---|---|---|
+| 1 | `z3_core.py` | `out/z3_odlocitev.json`, `out/z3/*.smt2` | iste propozicije zapiše **številsko** (raven `L_aXX ∈ 0..4`, leta `Y_aXX`), celo drevo pa kot **eno formulo**; dejstva so sledljive predpostavke `d_Dxxx`, premostitvena pravila vklopijo ali izklopijo dejstva vrste I |
+| 2 | `report_z3.py` | `out/report_z3.html`, `out/zapis_z3.json` | poročilo z enakimi razdelki 1–6 kot poročilo TREE in z dodatnim razdelkom 7 (primerjava TREE ↔ Z3) |
+
+- **Dokaz:** `dejstva ∧ ¬φ` je UNSAT ⇒ **T**. **Ovržba:** `dejstva ∧ φ` je UNSAT ⇒ **F**. Vsak odgovor UNSAT ima **minimalno jedro**, torej najmanjši nabor dejstev, ki ga povzroči.
+- **MaxSAT** (`z3.Optimize`) poišče najmanjše število dokazil, ki kandidatu manjkajo do T_M = T.
+- Vsak problem je izvožen v **SMT-LIB2**, zato ga lahko ponovno preveri katerikoli reševalnik SMT. Izvoz se samodejno ponovno naloži in preveri.
+- **Rezultat:** s TREE se ujema v 750/750 vrednostih atomov in vozlišč, izbor v obeh načinih in občutljivost sta enaka. Dodatni ugotovitvi:
+  - Liamu do T_M = T manjka najmanj 25 dokazil;
+  - Tjašina izločitev sloni na enem samem dejstvu (D067, „4 leta“).
