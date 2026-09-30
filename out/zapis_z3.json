@@ -1,0 +1,775 @@
+{
+  "zapis": "Minimalni pregledljivi zapis odločitve – jedro Z3",
+  "razpis": "Citi Job Req 26984690 – Senior AI Engineer, Banking Technology",
+  "ustvarjeno": "2026-09-25 21:17 UTC",
+  "jedro": "Z3 5.1.0 (SMT)",
+  "viri_in_programi": [
+    {
+      "pot": "data/JobReqId26984690.pdf",
+      "sha256": "75bec96d61261a72e709c644d7c29e404d108aaf2fd79077d03ecae69e39bfff"
+    },
+    {
+      "pot": "data/Prosnje_kandidatov.pdf",
+      "sha256": "ca92d8af99e3de7dbd650b15d4eaa9aa0f9d75c4f601dbfb6104321ce81c77e9"
+    },
+    {
+      "pot": "cues.json",
+      "sha256": "6c6f462a0211c8642fad524357b685f7ceb36432bb39831cb9736df5a41e7212"
+    },
+    {
+      "pot": "cues_sl.json",
+      "sha256": "0c7e9676abfd27586cd510c93c35aa58d1c14cc24f3dd76daeb7cf851be34fd2"
+    },
+    {
+      "pot": "data/dejstva.json",
+      "sha256": "5a1be324ac7cbe67289dfa0b6feb786bd02cd7b62aadaa3fbf41d557aec426fa"
+    },
+    {
+      "pot": "segment.py",
+      "sha256": "90d37635498e05005a3f85123e784f4f06387d9eb10761605f133b2c45626169"
+    },
+    {
+      "pot": "classify.py",
+      "sha256": "f1fa3e2193623397af085318ab1e5e8b3d60c077c82c04bbe1a0183f99c025a1"
+    },
+    {
+      "pot": "build_tree.py",
+      "sha256": "8cb7526ea75e3cf5dd335a0d4e8076dcf2dce2ddd81f52b13f49abe1e69145cb"
+    },
+    {
+      "pot": "candidates.py",
+      "sha256": "1fd0b93f1b87fd7a33c595087d2bb08b790f4c6905f616be27dd75bc675b66e2"
+    },
+    {
+      "pot": "facts.py",
+      "sha256": "9fe029620fa67674997d6dfbad161b1cb9a0018ef9c7d1163ae1c4823192b6f0"
+    },
+    {
+      "pot": "decide.py",
+      "sha256": "17799bb7a644358dde72a555317a239065c263ca5abae4c2511ccc103d0b0ecc"
+    },
+    {
+      "pot": "z3_core.py",
+      "sha256": "eb08ee476476f404734db3cbc9df28c6015fe99a256d48cc688fa1520172e411"
+    },
+    {
+      "pot": "report_z3.py",
+      "sha256": "e1c5f0a7a287edebcd3ffaa0d3227165b84fe5be97a454d49dd39315b8e28153"
+    },
+    {
+      "pot": "i18n_en.json",
+      "sha256": "7a99ba0f0c86cb2a2ac6c4bed7a7eee5673281fee8f55dcb165fb50b4c70f4d5"
+    },
+    {
+      "pot": "out/tree.json",
+      "sha256": "4228db22b92f577917213de5856956f4f64b19eaa6fcf71c0b0c20e08659fed6"
+    },
+    {
+      "pot": "out/dejstva_ocenjena.json",
+      "sha256": "697c8a334779fca2b75d672c491a649964b669e9304defd7a305cfbecab3c90b"
+    },
+    {
+      "pot": "out/z3_odlocitev.json",
+      "sha256": "5bc54162bd889b93c0bf1c6d058366c8e3905a4960da6c1907e6e9cc78fd4fba"
+    },
+    {
+      "pot": "out/z3/B_K1.smt2",
+      "sha256": "480ca8b67db5ce01560c8078575612e43bc972e1282de942b9a15588e49b9751"
+    },
+    {
+      "pot": "out/z3/B_K2.smt2",
+      "sha256": "716b774de34f03a8c415bacbe0a373c361b1a13c186ab2486ee749b79dec231d"
+    },
+    {
+      "pot": "out/z3/B_K3.smt2",
+      "sha256": "7217c139e00049cd13bdeb626341197aab346c65a66271a1499fca1accc5e466"
+    },
+    {
+      "pot": "out/z3/B_K4.smt2",
+      "sha256": "633bddd3d6140684389f485679bad642a0a0ae88283e29e061ffabee3d0af69f"
+    },
+    {
+      "pot": "out/z3/B_K5.smt2",
+      "sha256": "8fa41dee9660e203f7a227a5dd84d9ea552d2a971fecc6e54f09ea15f4455734"
+    },
+    {
+      "pot": "out/z3/S_K1.smt2",
+      "sha256": "50a084927a97893388949bd3e6afa99629765bc7da8339d08a04fb77b949c86b"
+    },
+    {
+      "pot": "out/z3/S_K2.smt2",
+      "sha256": "56adc3b76109a33cc7215248d401c7eac3b55718f3e844a17ce9410ac234cf59"
+    },
+    {
+      "pot": "out/z3/S_K3.smt2",
+      "sha256": "050cbf3b38bb5a2b25dc7601b0b9418eaec12426a4bb275604a6707b0824e41e"
+    },
+    {
+      "pot": "out/z3/S_K4.smt2",
+      "sha256": "6eb7cf8465f62abad35c598c0eb30fc1802ccc2f88ab378c1e08d6ebdf8210e1"
+    },
+    {
+      "pot": "out/z3/S_K5.smt2",
+      "sha256": "efde57a899e2c957a877ac949131709f784ef856b7f66191f58793a2be8eb505"
+    }
+  ],
+  "nacin_primarni": "S",
+  "nacini": {
+    "S": "Strogi način: samo dejstva vrste E (dobesedna vsebina citata ustreza atomu na ravni prevoda).",
+    "B": "Premostitveni način: E + dejstva vrste I (vsako sklicuje eno pravilo B1–B11)."
+  },
+  "politika_izbire": {
+    "P1": "Kandidat, pri katerem je koren T_M = F (dokazano ne izpolnjuje obveznih zahtev), je izločen.",
+    "P2": "Če je pri katerem kandidatu T_M = T, je izbran tisti; ob izenačenju odloča število izpolnjenih atomov v T_N, nato T_P.",
+    "P3": "Če T_M = T ni pri nikomer, TREE ne izbere nikogar kot ustreznega. Med neizločenimi se določi PREDNOSTNI kandidat za preverjanje po vrstnem redu: (1) število obveznih postavk z vrednostjo T, (2) število obveznih atomov z vrednostjo T, (3) manj obveznih atomov z vrednostjo F, (4) T_P, (5) T_N.",
+    "_opomba": "Politika NI izpeljana iz oglasa; je odločitev naročnika in jo mora odobriti človek.",
+    "privzeti_nacin": "S",
+    "_privzeti_nacin": "Primarni rezultat se poroča v strogem načinu S (samo izrecna dejstva). Način B se poroča kot alternativa z navedbo odločilnih pravil."
+  },
+  "premostitvena_pravila": {
+    "B1": {
+      "ime": "NEG-DOM",
+      "pravilo": "Izjava 'nimam izkušenj / ozadja v področju X' ⇒ ¬(razumevanje X ≥ 3).",
+      "tveganje": "Odsotnost izkušenj logično ne izključuje razumevanja; pravilo je strožje od besedila oglasa."
+    },
+    "B2": {
+      "ime": "DOM-ZAP",
+      "pravilo": "Večletna (≥ 5 let) zaposlitev v sektorju X ⇒ razumevanje X ≥ 3.",
+      "tveganje": "Zaposlitev ne dokazuje vsebine dela ali globine razumevanja."
+    },
+    "B3": {
+      "ime": "VEND",
+      "pravilo": "Delo z modeli OpenAI / Anthropic / Claude / GPT ⇒ izkušnje z LLM.",
+      "tveganje": "Svetovno znanje, ki ga besedilo ne vsebuje."
+    },
+    "B4": {
+      "ime": "GEN",
+      "pravilo": "Generativni AI modeli / rešitve ⇒ rešitve na osnovi LLM.",
+      "tveganje": "Generativni modeli niso nujno jezikovni (slika, zvok)."
+    },
+    "B5": {
+      "ime": "LET",
+      "pravilo": "≥ 5 let izkušenj v X ⇒ raven 4 v X.",
+      "tveganje": "Trajanje ni kakovost."
+    },
+    "B6": {
+      "ime": "DR",
+      "pravilo": "Naziv 'Dr.' ⇒ doktorat ⇒ izpolnjena stopnja Master's (področje neznano).",
+      "tveganje": "Naziv je lahko medicinski ali častni; področje ni navedeno."
+    },
+    "B7": {
+      "ime": "PLUR",
+      "pravilo": "'zadnja leta' (množina) ⇒ ≥ 2 leti.",
+      "tveganje": "Slovnično sklepanje o trajanju."
+    },
+    "B8": {
+      "ime": "SE",
+      "pravilo": "Vodenje razvoja (AI) sistemov oz. večletna zaposlitev s tehničnim delom ⇒ izkušnje programskega inženirstva za ves navedeni čas.",
+      "tveganje": "Vloga (raziskovalna, vodstvena) ni nujno razvojna; pri K1 je tehnično delo izrecno navedeno le za zadnji 2 leti."
+    },
+    "B9": {
+      "ime": "PRIMER",
+      "pravilo": "Izkušnja s primerom, ki ga oglas navaja pod 'such as' ⇒ razumevanje nadpojma.",
+      "tveganje": "Primer ni celoten pojem."
+    },
+    "B10": {
+      "ime": "NEG-PREF",
+      "pravilo": "Izražena nepripravljenost ali nasprotovanje nalogi ⇒ ¬naloga (velja samo za naloge P).",
+      "tveganje": "Izjava o stališču ni izjava o zmožnosti; stališče se lahko spremeni."
+    },
+    "B11": {
+      "ime": "SEKT",
+      "pravilo": "Delo v sektorju, ki izvaja prakso X ⇒ osebna praksa X na ravni 3.",
+      "tveganje": "Praksa organizacije ni osebna veščina."
+    }
+  },
+  "rezultat": {
+    "S": {
+      "izloceni": [
+        "K5"
+      ],
+      "vrstni_red": [
+        "K3",
+        "K1",
+        "K4",
+        "K2"
+      ],
+      "izbrani": "K3",
+      "status": "PREDNOSTNI ZA PREVERJANJE – ni dokazano ustrezen",
+      "T_M": {
+        "K1": "U",
+        "K2": "U",
+        "K3": "U",
+        "K4": "U",
+        "K5": "F"
+      },
+      "jedra_T_M": {
+        "K1": [],
+        "K2": [],
+        "K3": [],
+        "K4": [],
+        "K5": [
+          "D067"
+        ]
+      },
+      "manjka_najmanj": {
+        "K1": [
+          "a11",
+          "a13",
+          "a14",
+          "a15",
+          "a16",
+          "a17",
+          "a18",
+          "a19",
+          "a21",
+          "a22",
+          "a23",
+          "a24",
+          "a25",
+          "a26",
+          "a27",
+          "a28",
+          "a29",
+          "a30",
+          "a31",
+          "a34",
+          "a35",
+          "a36",
+          "a37",
+          "a41",
+          "a42",
+          "a47",
+          "a48",
+          "a50"
+        ],
+        "K2": [
+          "a09",
+          "a11",
+          "a14",
+          "a15",
+          "a16",
+          "a17",
+          "a18",
+          "a19",
+          "a20",
+          "a21",
+          "a22",
+          "a23",
+          "a24",
+          "a25",
+          "a26",
+          "a27",
+          "a28",
+          "a29",
+          "a30",
+          "a31",
+          "a33",
+          "a35",
+          "a36",
+          "a37",
+          "a38",
+          "a41",
+          "a42",
+          "a47",
+          "a48",
+          "a50"
+        ],
+        "K3": [
+          "a13",
+          "a14",
+          "a15",
+          "a17",
+          "a19",
+          "a21",
+          "a22",
+          "a23",
+          "a24",
+          "a25",
+          "a26",
+          "a27",
+          "a28",
+          "a29",
+          "a30",
+          "a31",
+          "a34",
+          "a35",
+          "a36",
+          "a37",
+          "a38",
+          "a42",
+          "a47",
+          "a48",
+          "a50"
+        ],
+        "K4": [
+          "a09",
+          "a11",
+          "a13",
+          "a14",
+          "a15",
+          "a16",
+          "a17",
+          "a18",
+          "a19",
+          "a20",
+          "a21",
+          "a22",
+          "a23",
+          "a24",
+          "a25",
+          "a26",
+          "a27",
+          "a29",
+          "a31",
+          "a34",
+          "a35",
+          "a36",
+          "a37",
+          "a42",
+          "a45",
+          "a47",
+          "a48",
+          "a50"
+        ],
+        "K5": null
+      }
+    },
+    "B": {
+      "izloceni": [
+        "K2",
+        "K3",
+        "K4",
+        "K5"
+      ],
+      "vrstni_red": [
+        "K1"
+      ],
+      "izbrani": "K1",
+      "status": "PREDNOSTNI ZA PREVERJANJE – ni dokazano ustrezen",
+      "T_M": {
+        "K1": "U",
+        "K2": "F",
+        "K3": "F",
+        "K4": "F",
+        "K5": "F"
+      },
+      "jedra_T_M": {
+        "K1": [],
+        "K2": [
+          "D026"
+        ],
+        "K3": [
+          "D042"
+        ],
+        "K4": [
+          "D064"
+        ],
+        "K5": [
+          "D067"
+        ]
+      },
+      "manjka_najmanj": {
+        "K1": [
+          "a11",
+          "a13",
+          "a15",
+          "a16",
+          "a17",
+          "a18",
+          "a19",
+          "a21",
+          "a22",
+          "a23",
+          "a24",
+          "a25",
+          "a26",
+          "a27",
+          "a28",
+          "a29",
+          "a30",
+          "a31",
+          "a34",
+          "a35",
+          "a36",
+          "a42",
+          "a47",
+          "a48",
+          "a50"
+        ],
+        "K2": null,
+        "K3": null,
+        "K4": null,
+        "K5": null
+      }
+    }
+  },
+  "obcutljivost": [
+    {
+      "pravilo": "B1",
+      "ime": "NEG-DOM",
+      "S_plus": {
+        "izloceni": [
+          "K2",
+          "K3",
+          "K4",
+          "K5"
+        ],
+        "vrstni_red": [
+          "K1"
+        ],
+        "izbrani": "K1"
+      },
+      "B_minus": {
+        "izloceni": [
+          "K5"
+        ],
+        "vrstni_red": [
+          "K1",
+          "K3",
+          "K4",
+          "K2"
+        ],
+        "izbrani": "K1"
+      },
+      "spremeni_izbiro": true,
+      "spremeni_izlocene": true,
+      "spremeni_red": true
+    },
+    {
+      "pravilo": "B2",
+      "ime": "DOM-ZAP",
+      "S_plus": {
+        "izloceni": [
+          "K5"
+        ],
+        "vrstni_red": [
+          "K3",
+          "K1",
+          "K4",
+          "K2"
+        ],
+        "izbrani": "K3"
+      },
+      "B_minus": {
+        "izloceni": [
+          "K2",
+          "K3",
+          "K4",
+          "K5"
+        ],
+        "vrstni_red": [
+          "K1"
+        ],
+        "izbrani": "K1"
+      },
+      "spremeni_izbiro": false,
+      "spremeni_izlocene": false,
+      "spremeni_red": false
+    },
+    {
+      "pravilo": "B3",
+      "ime": "VEND",
+      "S_plus": {
+        "izloceni": [
+          "K5"
+        ],
+        "vrstni_red": [
+          "K3",
+          "K1",
+          "K4",
+          "K2"
+        ],
+        "izbrani": "K3"
+      },
+      "B_minus": {
+        "izloceni": [
+          "K2",
+          "K3",
+          "K4",
+          "K5"
+        ],
+        "vrstni_red": [
+          "K1"
+        ],
+        "izbrani": "K1"
+      },
+      "spremeni_izbiro": false,
+      "spremeni_izlocene": false,
+      "spremeni_red": false
+    },
+    {
+      "pravilo": "B4",
+      "ime": "GEN",
+      "S_plus": {
+        "izloceni": [
+          "K5"
+        ],
+        "vrstni_red": [
+          "K3",
+          "K1",
+          "K4",
+          "K2"
+        ],
+        "izbrani": "K3"
+      },
+      "B_minus": {
+        "izloceni": [
+          "K2",
+          "K3",
+          "K4",
+          "K5"
+        ],
+        "vrstni_red": [
+          "K1"
+        ],
+        "izbrani": "K1"
+      },
+      "spremeni_izbiro": false,
+      "spremeni_izlocene": false,
+      "spremeni_red": false
+    },
+    {
+      "pravilo": "B5",
+      "ime": "LET",
+      "S_plus": {
+        "izloceni": [
+          "K5"
+        ],
+        "vrstni_red": [
+          "K3",
+          "K4",
+          "K1",
+          "K2"
+        ],
+        "izbrani": "K3"
+      },
+      "B_minus": {
+        "izloceni": [
+          "K2",
+          "K3",
+          "K4",
+          "K5"
+        ],
+        "vrstni_red": [
+          "K1"
+        ],
+        "izbrani": "K1"
+      },
+      "spremeni_izbiro": false,
+      "spremeni_izlocene": false,
+      "spremeni_red": true
+    },
+    {
+      "pravilo": "B6",
+      "ime": "DR",
+      "S_plus": {
+        "izloceni": [
+          "K5"
+        ],
+        "vrstni_red": [
+          "K3",
+          "K1",
+          "K4",
+          "K2"
+        ],
+        "izbrani": "K3"
+      },
+      "B_minus": {
+        "izloceni": [
+          "K2",
+          "K3",
+          "K4",
+          "K5"
+        ],
+        "vrstni_red": [
+          "K1"
+        ],
+        "izbrani": "K1"
+      },
+      "spremeni_izbiro": false,
+      "spremeni_izlocene": false,
+      "spremeni_red": false
+    },
+    {
+      "pravilo": "B7",
+      "ime": "PLUR",
+      "S_plus": {
+        "izloceni": [
+          "K5"
+        ],
+        "vrstni_red": [
+          "K3",
+          "K1",
+          "K4",
+          "K2"
+        ],
+        "izbrani": "K3"
+      },
+      "B_minus": {
+        "izloceni": [
+          "K2",
+          "K3",
+          "K4",
+          "K5"
+        ],
+        "vrstni_red": [
+          "K1"
+        ],
+        "izbrani": "K1"
+      },
+      "spremeni_izbiro": false,
+      "spremeni_izlocene": false,
+      "spremeni_red": false
+    },
+    {
+      "pravilo": "B8",
+      "ime": "SE",
+      "S_plus": {
+        "izloceni": [
+          "K5"
+        ],
+        "vrstni_red": [
+          "K3",
+          "K1",
+          "K4",
+          "K2"
+        ],
+        "izbrani": "K3"
+      },
+      "B_minus": {
+        "izloceni": [
+          "K2",
+          "K3",
+          "K4",
+          "K5"
+        ],
+        "vrstni_red": [
+          "K1"
+        ],
+        "izbrani": "K1"
+      },
+      "spremeni_izbiro": false,
+      "spremeni_izlocene": false,
+      "spremeni_red": false
+    },
+    {
+      "pravilo": "B9",
+      "ime": "PRIMER",
+      "S_plus": {
+        "izloceni": [
+          "K5"
+        ],
+        "vrstni_red": [
+          "K3",
+          "K1",
+          "K4",
+          "K2"
+        ],
+        "izbrani": "K3"
+      },
+      "B_minus": {
+        "izloceni": [
+          "K2",
+          "K3",
+          "K4",
+          "K5"
+        ],
+        "vrstni_red": [
+          "K1"
+        ],
+        "izbrani": "K1"
+      },
+      "spremeni_izbiro": false,
+      "spremeni_izlocene": false,
+      "spremeni_red": false
+    },
+    {
+      "pravilo": "B10",
+      "ime": "NEG-PREF",
+      "S_plus": {
+        "izloceni": [
+          "K5"
+        ],
+        "vrstni_red": [
+          "K3",
+          "K1",
+          "K4",
+          "K2"
+        ],
+        "izbrani": "K3"
+      },
+      "B_minus": {
+        "izloceni": [
+          "K2",
+          "K3",
+          "K4",
+          "K5"
+        ],
+        "vrstni_red": [
+          "K1"
+        ],
+        "izbrani": "K1"
+      },
+      "spremeni_izbiro": false,
+      "spremeni_izlocene": false,
+      "spremeni_red": false
+    },
+    {
+      "pravilo": "B11",
+      "ime": "SEKT",
+      "S_plus": {
+        "izloceni": [
+          "K5"
+        ],
+        "vrstni_red": [
+          "K3",
+          "K1",
+          "K4",
+          "K2"
+        ],
+        "izbrani": "K3"
+      },
+      "B_minus": {
+        "izloceni": [
+          "K2",
+          "K3",
+          "K4",
+          "K5"
+        ],
+        "vrstni_red": [
+          "K1"
+        ],
+        "izbrani": "K1"
+      },
+      "spremeni_izbiro": false,
+      "spremeni_izlocene": false,
+      "spremeni_red": false
+    }
+  ],
+  "primerjava_tree": {
+    "vrednosti": "750/750",
+    "izbor_S": true,
+    "izbor_B": true,
+    "obcutljivost_enaka": true
+  },
+  "smt2_ponovitev": "10/10",
+  "meja_dopustnosti": {
+    "dokazano_z_Z3": "Ob navedenih omejitvah (dejstva kot spodnje meje, negacije, natančna števila) je vsaka propozicija/vozlišče dokazano (dejstva ∧ ¬φ UNSAT), ovrženo (dejstva ∧ φ UNSAT) ali neodločeno; minimalno jedro navaja dejstva, ki to povzročijo.",
+    "ni_dokazano": "Resničnost dejstev, pravilnost interpretacije citatov, primernost kandidata, pravičnost politike izbire, pravilnost samega reševalnika Z3.",
+    "zahteva_cloveka": [
+      "potrditev vsakega dejstva in njegove vrste (E/I)",
+      "odobritev ali zavrnitev vsakega premostitvenega pravila",
+      "odobritev politike izbire P1–P3",
+      "odločitev o zaposlitvi"
+    ]
+  },
+  "podpisi": {
+    "pregledal_dejstva": null,
+    "odobril_pravila": null,
+    "odobril_politiko": null,
+    "datum": null
+  },
+  "pecat_sha256": "047edd0e1bb240700d898735bdc96d944a1fc4a4279255010a2236e0c9069070",
+  "_pecat": "SHA-256 kanonične JSON oblike zapisa brez polj 'pecat_sha256' in '_pecat'. Pečat zaznava spremembe, NI podpis."
+}
